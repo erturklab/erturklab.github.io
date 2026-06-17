@@ -122,7 +122,7 @@ export function GalleryVideoPlayer({
         muted
         loop
         autoPlay
-        preload="auto"
+        preload={inView ? "auto" : "metadata"}
         aria-label={visible === "a" ? title : undefined}
         aria-hidden={visible !== "a"}
         className={layerClass("a")}
@@ -136,7 +136,7 @@ export function GalleryVideoPlayer({
           muted
           loop
           autoPlay
-          preload="auto"
+          preload={inView ? "auto" : "metadata"}
           aria-label={visible === "b" ? title : undefined}
           aria-hidden={visible !== "b"}
           className={layerClass("b")}

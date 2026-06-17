@@ -26,6 +26,12 @@ export function ProjectMediaGallery({
           "overflow-hidden rounded-3xl border border-[var(--border)] bg-[var(--card)] shadow-[0_24px_80px_-32px_rgba(0,0,0,0.55)]"
       )}
     >
+      {/* Hidden preloader — buffers all videos so tab switches are instant */}
+      <div aria-hidden className="sr-only">
+        {items.map((item) => (
+          <video key={item.src} src={item.src} preload="auto" muted playsInline />
+        ))}
+      </div>
       {!prominent && (
         <>
           <SectionLabel>3D imaging</SectionLabel>
