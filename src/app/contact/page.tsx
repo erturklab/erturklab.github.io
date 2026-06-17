@@ -49,7 +49,7 @@ export default function ContactPage() {
               <div>
                 <p className="text-base font-medium">Job applications</p>
                 <p className="mt-2 text-base text-[var(--muted-foreground)] leading-relaxed">
-                  Please apply through our careers portal — applications are processed through our hiring system.
+                  Open positions are announced on Prof. Ertürk&apos;s LinkedIn page. Follow him to stay up to date.
                 </p>
                 <Link
                   href="/jobs"

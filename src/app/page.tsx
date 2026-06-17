@@ -97,7 +97,7 @@ export default function HomePage() {
           <Sparkles className="mx-auto h-8 w-8 text-[var(--primary)] opacity-80" />
           <h2 className="font-display mt-6 text-3xl md:text-5xl">Join our team</h2>
           <p className="mx-auto mt-4 max-w-lg text-[var(--muted-foreground)]">
-            Passionate researchers at the interface of imaging, AI, and medicine — apply through our live job portal.
+            Passionate researchers at the interface of imaging, AI, and medicine — follow Prof. Ertürk on LinkedIn for open positions.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
             <Link
