@@ -45,29 +45,13 @@ To enable deployment on a new repo:
 1. Go to **Settings → Pages → Source** and select **GitHub Actions**
 2. Push to `main` — the workflow builds and deploys automatically
 
-## Project videos
-
-Project supplementary movies (~6 GB, 87 files) are **not stored in this repo**. They are served directly from their original sources at runtime:
-
-| Project | Source |
-|---------|--------|
-| MouseMapper, wildDISCO, DISCO-MS, SHANEL, VesSAP, DeepMACT | `discotechnologies.org` |
-| SCP-Nano, DELIVR, uDISCO | `static-content.springer.com` |
-
-Video URLs are stored in [`src/content/project-media.json`](src/content/project-media.json).
-
-To re-download videos locally for development (optional):
-```bash
-bash scripts/sync-disco-media.sh
-```
-
 ## Content & assets
 
 | Folder | Contents |
 |--------|----------|
 | `src/content/site.json` | Lab identity, technologies, publications, science art |
 | `src/content/team.json` | Team member profiles |
-| `src/content/project-media.json` | Video URLs per project |
+| `src/content/project-media.json` | Project media entries |
 | `public/images/showcase/` | Hero and technology images |
 | `public/images/team/` | Team member photos |
 | `public/logos/` | Helmholtz Munich / LMU logos |
@@ -78,7 +62,6 @@ Maintenance scripts in `scripts/` (run from this directory):
 
 | Script | Purpose |
 |--------|---------|
-| `sync-disco-media.sh` | Download project videos locally for dev |
 | `sync-assets.sh` | Download images from legacy erturk-lab.com |
 | `sync-scholar-publications.py` | Import publications from Google Scholar |
 | `sync-team-publication-authors.py` | Link team members to publication authors |
@@ -96,8 +79,7 @@ src/
 
 public/
 ├── images/           # Local images (in git)
-├── logos/            # Partner logos (in git)
-└── videos/           # Project videos (NOT in git — served from CDN)
+└── logos/            # Partner logos (in git)
 ```
 
 ## Pages
