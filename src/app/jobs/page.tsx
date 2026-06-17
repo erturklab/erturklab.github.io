@@ -75,6 +75,15 @@ export default function JobsPage() {
               >
                 Helmholtz Munich website
               </a>
+              . Official job listings across the institute are also available at{" "}
+              <a
+                href="https://www.helmholtz-munich.de/en/career/jobs"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--primary)] hover:underline underline-offset-4"
+              >
+                helmholtz-munich.de/career/jobs
+              </a>
               .
             </p>
           </div>
