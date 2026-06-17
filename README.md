@@ -1,12 +1,21 @@
-# Ertürk Lab — Public Website
+# Ertürk Lab — Website
 
-Modern lab website for the [Ertürk Lab](https://erturklab.github.io) at Helmholtz Munich / LMU. Built with Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS v4. Deployed as a fully static site on GitHub Pages.
+**[erturklab.github.io](https://erturklab.github.io)** — demo, feedback collection in progress.
 
-## Live site
+## How to open an issue (give feedback)
 
-[https://erturklab.github.io](https://erturklab.github.io)
+1. Go to [github.com/erturklab/erturklab.github.io/issues](https://github.com/erturklab/erturklab.github.io/issues)
+2. Click **New issue**
+3. Give it a short title (e.g. "Team page — missing photo for X")
+4. Describe what's wrong or what should change
+5. Click **Submit new issue**
 
-## Quick start (Docker — recommended)
+---
+
+<details>
+<summary>Local development</summary>
+
+### Quick start (Docker — recommended)
 
 ```bash
 docker compose up --build -d
@@ -21,7 +30,7 @@ npm install
 npm run dev
 ```
 
-## Development commands
+### Development commands
 
 ```bash
 make dev         # Start dev container
@@ -35,7 +44,10 @@ make sync-deps   # Copy node_modules from Docker volume (IDE TypeScript)
 make sync-assets # Re-download images from erturk-lab.com
 ```
 
-## Deployment
+</details>
+
+<details>
+<summary>Deployment</summary>
 
 The site is deployed to **GitHub Pages** via GitHub Actions on every push to `main`.
 
@@ -45,7 +57,10 @@ To enable deployment on a new repo:
 1. Go to **Settings → Pages → Source** and select **GitHub Actions**
 2. Push to `main` — the workflow builds and deploys automatically
 
-## Content & assets
+</details>
+
+<details>
+<summary>Content & assets</summary>
 
 | Folder | Contents |
 |--------|----------|
@@ -56,9 +71,7 @@ To enable deployment on a new repo:
 | `public/images/team/` | Team member photos |
 | `public/logos/` | Helmholtz Munich / LMU logos |
 
-## Content scripts
-
-Maintenance scripts in `scripts/` (run from this directory):
+### Content scripts
 
 | Script | Purpose |
 |--------|---------|
@@ -68,7 +81,10 @@ Maintenance scripts in `scripts/` (run from this directory):
 | `build-team-json.py` | Rebuild `src/content/team.json` |
 | `audit-team-profiles.py` | Validate team profile data |
 
-## Project structure
+</details>
+
+<details>
+<summary>Project structure</summary>
 
 ```
 src/
@@ -82,7 +98,7 @@ public/
 └── logos/            # Partner logos (in git)
 ```
 
-## Pages
+### Pages
 
 | Route | Content source |
 |-------|----------------|
@@ -95,6 +111,8 @@ public/
 | `/jobs` | Static contact page |
 | `/news`, `/contact`, `/imprint`, `/privacy` | Static pages |
 
-## Themes
+### Themes
 
 Obsidian · Daylight · Midnight · Slate · Ember · Paper — persisted in `localStorage`.
+
+</details>
