@@ -1,118 +1,76 @@
-# Erturk Lab — Public Website
+# Ertürk Lab — Public Website
 
-Modern lab website with 6 appearance themes and **Hire Agent Portal Connection** for live job listings and applications.
+Modern lab website for the [Ertürk Lab](https://erturklab.github.io) at Helmholtz Munich / LMU. Built with Next.js 16 (App Router), React 19, TypeScript, and Tailwind CSS v4. Deployed as a fully static site on GitHub Pages.
 
-Part of the [HR Agent workspace](../README.md). Requires [`hire-agent/`](../hire-agent/) running for `/jobs` and application intake.
+## Live site
+
+[https://erturklab.github.io](https://erturklab.github.io)
 
 ## Quick start (Docker — recommended)
 
-No **pnpm/npm** required on the host.
-
-> **Note:** `make` commands require Xcode Command Line Tools on macOS (`xcode-select --install`).
-> If `make` is not available, use the `docker compose` equivalents shown below.
-
 ```bash
-# 1. Start Hire Agent (port 3000)
-cd ../hire-agent
-cp .env.example .env          # only needed first time
-docker compose up --build -d
-
-# 2. Activate portal connection (no SMTP needed for local dev)
-docker compose exec app npx tsx scripts/portal/activate-local.ts
-# → writes site_id + public_key directly to ../erturk-lab-web/.env.local
-
-# 3. Start lab site (port 3001)
-cd ../erturk-lab-web
 docker compose up --build -d
 ```
 
 Open **[http://localhost:3001](http://localhost:3001)**
 
-Docker connects to Hire Agent at `http://host.docker.internal:3000` automatically (set in `docker-compose.yaml`).
-
-### After changing .env.local
-
-```bash
-# Clear Next.js cache and restart (required for env changes to take effect)
-docker compose down -v && docker compose up -d
-```
-
-### Alternative: npm (if Node is installed on the host)
+### Alternative: npm
 
 ```bash
 npm install
 npm run dev
 ```
 
-Use `HIRE_AGENT_API_URL=http://localhost:3000` in `.env.local`.
-
-## Development
+## Development commands
 
 ```bash
-make dev         # Start dev containers
-make stop        # Stop containers
-make restart     # Reload after .env.local changes
+make dev         # Start dev container
+make stop        # Stop container
+make restart     # Restart container
 make logs        # Follow app logs
 make shell       # Shell into web container
-make build       # Production build check
+make build       # Static export build check
 make clean       # Remove containers + volumes
 make sync-deps   # Copy node_modules from Docker volume (IDE TypeScript)
 make sync-assets # Re-download images from erturk-lab.com
 ```
 
-## Portal connection
+## Deployment
 
-Jobs and applications are **not** managed manually on this site. They sync from Hire Agent when:
+The site is deployed to **GitHub Pages** via GitHub Actions on every push to `main`.
 
-- A job has `status: active` in Hire Agent
-- Portal Connection is active with matching allowed domain
+Workflow: [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml)
 
-Env vars (server-only — never expose `PORTAL_PUBLIC_KEY` to the browser):
-
-```env
-HIRE_AGENT_API_URL=http://localhost:3000
-PORTAL_SITE_ID=site_...
-PORTAL_PUBLIC_KEY=pk_...
-PORTAL_ORIGIN=http://localhost:3001
-```
-
-Shared template: [`../shared/portal-client/`](../shared/portal-client/) (copy into new lab sites)
-
-Quick local portal activation helper (from Hire Agent):
-
-```bash
-cd ../hire-agent && npx tsx scripts/portal/activate-local.ts
-```
-
-## Content & assets
-
-Static copy lives in `src/content/site.json`; team profiles in `src/content/team.json` (individual pages at `/team/[slug]`). Publications metadata is synced into `src/lib/publications.ts`. Images are **stored locally** under `public/images/` (not loaded from the legacy WordPress site at runtime).
-
-| Folder | Contents |
-|--------|----------|
-| `public/images/showcase/` | Hero, technologies, publications, science art |
-| `public/images/team/` | Team member photos |
-| `public/logos/` | Helmholtz / LMU partner logos |
-| `public/videos/projects/` | Project supplementary movies (~6 GB — **not in git**) |
-
-To re-fetch images from erturk-lab.com (e.g. after adding new URLs to `site.json`):
-
-```bash
-make sync-assets
-```
+To enable deployment on a new repo:
+1. Go to **Settings → Pages → Source** and select **GitHub Actions**
+2. Push to `main` — the workflow builds and deploys automatically
 
 ## Project videos
 
-Project supplementary movies (~6 GB, 87 files) are **excluded from git** (GitHub 100 MB file limit). They are re-downloadable from upstream sources via manifest:
+Project supplementary movies (~6 GB, 87 files) are **not stored in this repo**. They are served directly from their original sources at runtime:
 
+| Project | Source |
+|---------|--------|
+| MouseMapper, wildDISCO, DISCO-MS, SHANEL, VesSAP, DeepMACT | `discotechnologies.org` |
+| SCP-Nano, DELIVR, uDISCO | `static-content.springer.com` |
+
+Video URLs are stored in [`src/content/project-media.json`](src/content/project-media.json).
+
+To re-download videos locally for development (optional):
 ```bash
 bash scripts/sync-disco-media.sh
 ```
 
-Manifest: [`scripts/disco-download-manifest.txt`](scripts/disco-download-manifest.txt)  
-Regenerate manifest: `python3 scripts/generate-project-media.py`
+## Content & assets
 
-After cloning the repo, run the sync script before testing project pages with local video playback. See **[../RESTORE.md](../RESTORE.md)** for full restore steps.
+| Folder | Contents |
+|--------|----------|
+| `src/content/site.json` | Lab identity, technologies, publications, science art |
+| `src/content/team.json` | Team member profiles |
+| `src/content/project-media.json` | Video URLs per project |
+| `public/images/showcase/` | Hero and technology images |
+| `public/images/team/` | Team member photos |
+| `public/logos/` | Helmholtz Munich / LMU logos |
 
 ## Content scripts
 
@@ -120,7 +78,7 @@ Maintenance scripts in `scripts/` (run from this directory):
 
 | Script | Purpose |
 |--------|---------|
-| `sync-disco-media.sh` | Download project videos from discotechnologies.org |
+| `sync-disco-media.sh` | Download project videos locally for dev |
 | `sync-assets.sh` | Download images from legacy erturk-lab.com |
 | `sync-scholar-publications.py` | Import publications from Google Scholar |
 | `sync-team-publication-authors.py` | Link team members to publication authors |
@@ -132,25 +90,29 @@ Maintenance scripts in `scripts/` (run from this directory):
 ```
 src/
 ├── app/              # Next.js App Router pages
-├── components/       # UI components (site header, galleries, forms)
+├── components/       # UI components (header, galleries, video players)
 ├── content/          # site.json, team.json, project-media.json
-└── lib/              # publications, projects, team, portal-client
+└── lib/              # publications, projects, team utilities
 
 public/
 ├── images/           # Local images (in git)
 ├── logos/            # Partner logos (in git)
-└── videos/           # Project videos (not in git — sync script)
+└── videos/           # Project videos (NOT in git — served from CDN)
 ```
+
+## Pages
+
+| Route | Content source |
+|-------|----------------|
+| `/` | `site.json` hero, technologies, publications |
+| `/research`, `/research/projects` | `site.json` technologies |
+| `/research/projects/[slug]` | `site.json` + `project-media.json` |
+| `/team`, `/team/[slug]` | `team.json` |
+| `/publications` | `site.json` publications |
+| `/science-art` | `site.json` scienceArt |
+| `/jobs` | Static contact page |
+| `/news`, `/contact`, `/imprint`, `/privacy` | Static pages |
 
 ## Themes
 
 Obsidian · Daylight · Midnight · Slate · Ember · Paper — persisted in `localStorage`.
-
-## Pages
-
-| Route | Source |
-|-------|--------|
-| `/`, `/research`, `/team`, `/publications`, … | `src/content/site.json` + synced data |
-| `/jobs`, `/jobs/[slug]` | Hire Agent Portal API |
-| `/team/[slug]` | `src/content/team.json` |
-
