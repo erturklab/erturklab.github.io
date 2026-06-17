@@ -1,0 +1,7 @@
+node_modules
+.next
+out
+public/videos
+.git
+.github
+*.tar.gz

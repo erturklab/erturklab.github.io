@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="ring" x1="10" y1="54" x2="54" y2="10" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FDE047"/>
+      <stop offset="0.5" stop-color="#F472B6"/>
+      <stop offset="1" stop-color="#A855F7"/>
+    </linearGradient>
+    <radialGradient id="core" cx="32" cy="32" r="18" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#34D399" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#0C0C0E" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <!-- MouseMapper / organ atlas — radial emblem -->
+  <circle cx="32" cy="32" r="27" stroke="url(#ring)" stroke-width="1.4" fill="url(#core)"/>
+  <circle cx="32" cy="32" r="20" stroke="#34D399" stroke-width="0.6" opacity="0.35"/>
+  <!-- Organ nodes around body map -->
+  <circle cx="32" cy="14" r="2" fill="#FDE047"/>
+  <circle cx="48" cy="24" r="1.6" fill="#34D399"/>
+  <circle cx="48" cy="40" r="1.6" fill="#F472B6"/>
+  <circle cx="32" cy="50" r="2" fill="#C026D3"/>
+  <circle cx="16" cy="40" r="1.6" fill="#F472B6"/>
+  <circle cx="16" cy="24" r="1.6" fill="#34D399"/>
+  <circle cx="32" cy="32" r="2.2" fill="#A855F7"/>
+  <!-- AI connections -->
+  <g stroke="#A855F7" stroke-width="0.7" opacity="0.65">
+    <path d="M32 16 L32 30 M32 34 L32 48"/>
+    <path d="M46 25 L34 31 M34 33 L46 39"/>
+    <path d="M18 25 L30 31 M30 33 L18 39"/>
+    <path d="M32 30 L46 25 M32 30 L18 25 M32 34 L46 39 M32 34 L18 39"/>
+  </g>
+</svg>

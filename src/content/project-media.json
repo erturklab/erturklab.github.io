@@ -1,0 +1,484 @@
+{
+  "mousemapper": [
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%201.m4v",
+      "title": "Whole-body nerve architecture",
+      "description": "Whole-body reconstructions of normal (left) and obese (right) UCHL1-EGFP mice. Peripheral nerves (UCHL1-EGFP+) are shown in green, bones and organs are shown in red (propidium iodide labeled) and muscle (autofluorescence) is shown in blue.",
+      "label": "Nerves"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%202.m4v",
+      "title": "CD68+ immune map (chow vs obese)",
+      "description": "Whole-body reconstructions of normal (left) and obese (right) CD68-EGFP mice. Immune cells (CD68-EGFP+) are shown in cyan, bones and organs are shown in magenta (propidium iodide labeled) and muscle (autofluorescence) is shown in yellow.",
+      "label": "Immune cells"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%203%20-%20CD68%20chow.m4v",
+      "title": "CD68+ cells in chow-fed mouse",
+      "description": "Whole-body reconstructions of a chow-fed CD68-EGFP mouse showing CD68-EGFP+ cells in the whole mouse. Immune cells (CD68-EGFP+) are shown in cyan, bones and organs are shown in magenta (propidium iodide labeled) and muscle (autofluorescence) is shown in yellow.",
+      "label": "Immune · chow"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20video%204%20-%20CD68%20HFD%20Syglass.m4v",
+      "title": "CD68+ infiltration in high-fat diet",
+      "description": "Supplementary Video 4. Whole-body reconstructions of a  HFD-fed CD68-EGFP mouse showing infiltrating CD68-EGFP+ cells in the whole mouse with accumulations in ScAT, ViscAT and the peritoneum. Immune cells (CD68-EGFP+) are shown in cyan, bones and organs are shown in magenta (propidium iodide labeled) and muscle (autofluorescence) is shown in yellow.",
+      "label": "Immune · obese"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%205-%20Tissue%20module%20chow.mp4",
+      "title": "AI organ segmentation (chow-fed)",
+      "description": "Representative chow-fed mouse showing AI-segmented organs and tissue. Each color represents a different organ or tissue segmented using the Tissue-Module of MouseMapper.",
+      "label": "Segmentation"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%206%20-%20Tissue%20module%20on%20HFD.mp4",
+      "title": "AI organ segmentation (obese)",
+      "description": "Representative obese mouse showing AI-segmented organs and tissue. Each color represents a different organ or tissue segmented using the Tissue-Module of MouseMapper.",
+      "label": "Segmentation · obese"
+    },
+    {
+      "src": "https://discotechnologies.org/MouseMapper/Supplementary%20Video%207.mp4",
+      "title": "AI immune cell clusters",
+      "description": "Representative obese CD68-EGFP mouse showing AI-segmented immune cell clusters (blue: small clusters, green: medium-sized clusters, red: large-sized clusters).",
+      "label": "Immune clusters"
+    }
+  ],
+  "wilddisco": [
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S1%20PGP9.5%20peripheral%20nerves%20in%20wholebody.m4v",
+      "title": "PGP 9.5 peripheral nerve map",
+      "description": "3D reconstruction of a mouse labeled with PGP 9.5 and imaged with light-sheet microscopy. Different PGP 9.5 innervation regions (green) are visualized with high contrast over background (gray).",
+      "label": "Whole-body nerves"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S2%20PGP%209.5%20peripheral%20nerves%20on%20heart.m4v",
+      "title": "Heart innervation",
+      "description": "3D view of PGP 9.5 positive peripheral nerve in mouse heart showing in magenta.",
+      "label": "Heart"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S3%20Tyrosine%20Hydroxylase%20%28TH%29%20sympathetic%20nerves%20on%20spleen.m4v",
+      "title": "Sympathetic nerves in spleen",
+      "description": "3D visualization of sympathetic nerve in mouse spleen labeled with tyrosine hydroxylase (TH) in magenta.",
+      "label": "Spleen"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S4%20PGP%209.5%20peripheral%20nerves%20on%20liver.m4v",
+      "title": "Liver & gallbladder nerves",
+      "description": "3D visualization of mouse liver and gallbladder innervated with PGP 9.5 positive peripheral nerves in magenta.",
+      "label": "Liver"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S5%20Tyrosine%20Hydroxylase%20%28TH%29%20sympathetic%20nerves%20on%20gut.m4v",
+      "title": "Intestinal sympathetic nerves",
+      "description": "3D annotation of mouse intestinal innervation with TH positive nerve in magenta. Grid-like lattice structures can be seen in the intestinal wall.",
+      "label": "Gut"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S6%20PGP%209.5%20labeled%20vagus%20nerves%20innervate%20multiple%20organs%20%28Kidney%2C%20Spleen%2C%20Liver%20and%20Gut%29.m4v",
+      "title": "Vagus nerve multi-organ connections",
+      "description": "3D annotation of neuronal connections in multiple organs (kidney, spleen, liver, and intestine) labeled with PGP 9.5 in green.",
+      "label": "Vagus"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S7%20LYVE1%20lymphatic%20system%20in%20wholebody.m4v",
+      "title": "Whole-body lymphatic vasculature",
+      "description": "3D visualization of the entire lymphatic vessels in the whole mouse. The lymphatic vessels of a 4-weekold\nmouse were labeled with LYVE1 in yellow.",
+      "label": "Lymphatics"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S8%20LYVE1%20Lymph%20node%20on%20hindlimb.m4v",
+      "title": "Hind limb lymphatics & nodes",
+      "description": "3D visualization of the hind limb of a mouse with LYVE1 lymphatic vessel labeling in yellow. Fine\ndetails of the lymphatic vessels and lymph nodes are shown.",
+      "label": "Hind limb"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S9%20LYVE1%20lymphatic%20vessels%20on%20kidney.m4v",
+      "title": "Kidney lymphatic vessels",
+      "description": "3D visualization of mouse kidney with LYVE1 lymphatic vessels labeled in yellow.",
+      "label": "Kidney"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S10%20LYVE1%20lymphatics%20on%20the%20surface%20and%20inside%20of%20stomach.m4v",
+      "title": "Stomach lymphatic network",
+      "description": "3D annotation of mouse stomach with LYVE1 lymphatic vessels highlighted in yellow. The fine details of the lymphatic vessels are clearly visible throughout the scan.",
+      "label": "Stomach"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S11%20LYVE1%20labeled%20lacteal%20and%20lymph%20node.m4v",
+      "title": "Intestinal lymphatics & node",
+      "description": "3D annotation of mouse intestine lymphatic vessels with yellow color labeled by LYVE1 and scanned with light-sheet microscopy. Fine details of the lymphatic vessels can be seen in the intestine and a lymph node is located adjacent to the intestine.",
+      "label": "Intestine"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S12%20LYVE1%20lymphatic%20vessels%20on%20the%20intestine%20wall.m4v",
+      "title": "Lymphatics in intestinal wall",
+      "description": "3D view of the intestinal wall of a mouse with LYVE1 lymphatic vessels labeled in yellow.",
+      "label": "Intestinal wall"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S13%20PROX1%20labelling%20lympatic%20vessels%20and%20alpha-SMA%20labelling%20artery%20in%20cortex.m4v",
+      "title": "Lymphatic vessels in cortex",
+      "description": "wildDISCO staining of PROX1 lymphatic vessels in green and arterial staining of alpha-SMA in red, revealing lymphatic vessels penetrated in mouse cerebral cortex.",
+      "label": "Brain cortex"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S14_LYVE1%20and%20Podoplanin%20both%20labelling%20lymphatic%20vessels%2C%20which%20enters%20into%20brain%20parenchyma%20around%20thalamus.mp4",
+      "title": "Lymphatic capillaries on brain",
+      "description": "3D illustration showing wildDISCO staining of LYVE1 in yellow and podoplanin in magenta to visualize lymphatic capillaries covered on the surface of the mouse brain, and also entering the brain parenchyma around thalamus.",
+      "label": "Brain surface"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S15%20CD45%20immune%20cells%20innervated%20by%20TH%20positive%20sympathetic%20nerve%20on%20the%20intestine%20wall.m4v",
+      "title": "Sympathetic nerves & immune cells",
+      "description": "3D illustration showing innervation of intestinal lymph nodes by sympathetic neurons using TH staining to label sympathetic nerves in magenta and CD45 staining to label immune cells in green.",
+      "label": "Gut · immunity"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S16%20CD45%20immune%20cells%20innervated%20by%20TH%20positive%20sympathetic%20nerve%20on%20the%20intestine%20wall%20and%20also%20inside%20intestine.m4v",
+      "title": "Immune cells on intestinal neurons",
+      "description": "Representative 3D reconstructions of immune cells on the intestine neurons. CD45 is stained in green for immune cell distribution and TH stained in magenta for sympathetic nerves.",
+      "label": "Gut · neurons"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S17%20TH%20sympathetic%20nerves%20innervate%20LVYE1%20lymphatic%20vessel%20in%20wholebody.m4v",
+      "title": "Sympathetic–lymphatic whole body",
+      "description": "3D reconstruction of a TH and LYVE1 labeled mouse by light sheet microscopy. Different regions of sympathetic nerve innervation in green and lymphatic vessels in blue can be seen.",
+      "label": "Nerves & lymph"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S18%20TH%20sympathetic%20nerves%20innervate%20LYVE1%20lymphatic%20vessel%20on%20the%20intestine%20wall.m4v",
+      "title": "Sympathetic–lymphatic on gut wall",
+      "description": "3D illustration of the TH stained sympathetic nerve in green interacting with LYVE1-labeled lymphatic vessels in yellow on the intestinal wall.",
+      "label": "Gut wall"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S19%20TH%20sympathetic%20nerves%20innervate%20LYVE1%20lymphatic%20vessel%20inside%20intestine.m4v",
+      "title": "Sympathetic–lymphatic in intestine",
+      "description": "3D illustration of TH+ sympathetic nerve (green) interacting with LYVE1+ lymphatic vessels (yellow) inside the intestine.",
+      "label": "Inside intestine"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S20%20whole%20body%20distribution%20of%20lymph%20nodes%20innervated%20by%20pan-neuron%20PGP9.5.m4v",
+      "title": "Whole-body lymph node distribution",
+      "description": "3D illustration showing the distribution of multiple lymph nodes throughout the mouse. Innervation of pan-neuron markers PGP 9.5 in green and lymph node masked color in cyan.",
+      "label": "Lymph nodes"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S21%20PGP9.5%20nerves%20innervate%20the%20posterior%20limb%20lymph%20node%20.m4v",
+      "title": "Posterior limb lymph node nerves",
+      "description": "Representative 3D illustration of a posterior limb lymph node innervated by PGP 9.5 positive nerves in green and PROX1 positive lymph nodes in magenta.",
+      "label": "Limb node"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S22%20PGP9.5%20nerves%20in%20germ-free%20mouse%20gut.m4v",
+      "title": "Myenteric nerves (germ-free)",
+      "description": "3D illustration showing PGP 9.5 staining of myenteric nerves in green from germ-free mouse gut. In germ-free mice, the myenteric plexus appears disorganized in some regions of the gut wall, with fewer ganglia and thinner nerve connecting fibers.",
+      "label": "Germ-free gut"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S23%20Summary%20of%20homogeneous%20and%20simultaneous%20whole%20mouse%20antibody%20staining.mp4",
+      "title": "Homogeneous whole-body staining",
+      "description": "Summary of results showing a homogeneous and simultaneous antibody staining throughout the entire mouse bodies.",
+      "label": "Staining"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S24_PGP_Vagus_nerve_connection_360%20%281%29.mp4",
+      "title": "VR multi-organ nerve connections",
+      "description": "3D VR visualization of neuronal connections in multiple organs labeled with PGP 9.5 in green and masked colors for kidney, spleen, liver, and intestine.",
+      "label": "VR · organs"
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S25_TH%20innervates%20in%20gut.mp4",
+      "title": "VR intestinal innervation",
+      "description": "3D VR visualization of mouse intestinal innervation with TH positive nerve in magenta referred to Movie S5. Grid-like structures can be clearly visible throughout the intestinal wall.",
+      "label": "VR · gut"
+    }
+  ],
+  "disco-ms": [
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_1.mp4",
+      "title": "DISCO-MS pipeline on 5xFAD brain",
+      "description": "Step-by-step DISCO-MS pipeline illustrated on a 5xFAD mouse brain (6 weeks old). LCM extracted ROIs around the single plaques subjected to ultra-high sensitive mass spectrometry based proteome analyses.",
+      "label": "Pipeline"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_2.mp4",
+      "title": "Robotic ROI extraction workflow",
+      "description": "Robotic arm illustration showing the steps of extraction from DISCO/SHANEL cleared whole mouse and large human organs. DISCO-bot uses the biopsy needles of various sizes to extract the ROIs for the subsequent molecular analysis.",
+      "label": "DISCO-bot"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_3.mp4",
+      "title": "Microglia after mild brain injury",
+      "description": "vDISCO labeled and cleared CX3CR1-EGFP brain showing microglia activation in a region-specific manner after mTBI compared to sham. Particularly, highlighted regions are along the corpus callosum and optic tract (segmented microglia in magenta).",
+      "label": "mTBI"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_4.mp4",
+      "title": "AI-segmented plaques in Alzheimer model",
+      "description": "5xFAD whole mouse brain showing deep learning-based segmentation of plaques at later stage of disease (6 months old).",
+      "label": "Amyloid plaques"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_5.mp4",
+      "title": "Real-time scapula extraction",
+      "description": "Robotic arm guided real time extraction of ROIs from bone marrow of scapula in mouse. The procedure involves 4 major steps: 1) Finding the target of interest and approaching with needle 2) cutting through bone to reach the marrow 3) excising around the target and extracting the tissue with vacuum, and 4) examining the extracted area to ensure successful extraction.",
+      "label": "Bone marrow"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_6.mp4",
+      "title": "LysM+ immune ROIs across mouse",
+      "description": "DISCO-bot ROIs extraction from the scapula and cranium of a LysM-EGFP mouse cleared with vDISCO. LysM immune cells are shown in magenta; PI labelled nuclei are in yellow and autofluorescence is in cyan.",
+      "label": "Whole body"
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_7.mp4",
+      "title": "Coronary atherosclerotic plaques",
+      "description": "Atherosclerotic human heart after SHANEL clearing and imaging, showing the plaque vs. non-plaque regions along the right coronary artery. Plaques are segmented in gold; vessels are in magenta and autofluorescence is in cyan.",
+      "label": "Heart"
+    }
+  ],
+  "shanel": [
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_1.mov",
+      "title": "Beta cells in pig pancreas",
+      "description": "SHANEL histology revealed individual or groups of beta cells within islets of INS-EGFP transgenic pig pancreas that is several centimeters in size. 3D reconstruction of nanobody boosted EGFP transgenic pancreas imaged by light-sheet microscopy. After SHANEL, all labelled beta cells became evident in the islets throughout the pancreas. In the second part of the movie, segmented EGFP+ islets are shown.",
+      "label": "Pancreas"
+    },
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_2.mov",
+      "title": "Intact human eye in 3D",
+      "description": "3D reconstruction of intact human eye imaged by light-sheet microscopy. SHANEL technology revealed structural details of sclera, iris and suspensory ligament in intact human eye.",
+      "label": "Human eye"
+    },
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_3.mov",
+      "title": "Abeta plaques in aged human brain",
+      "description": "Upright confocal microscopy imaging of 0.4 cm thickness of a human brain slice with the cellular resolution (before clearing size: 10 x 7 x 1.5 cm; after clearing size 7.5 x 5 x 1.1 cm). The large scan shows the Abeta plaques are heavily accumulated in specific cortex regions including middle temporal gyrus (MTG) and cingulate gyrus (CG).",
+      "label": "Brain · plaques"
+    },
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_4.mov",
+      "title": "Microglia across human brain tissue",
+      "description": "3D reconstruction of Iba1 antibody labeled microglia cells were evident throughout the centimeters size human brain tissue imaged by light-sheet microscopy. Individual microglia across the gray matter and white matter showed ramified and unramified morphological differences.",
+      "label": "Microglia"
+    },
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_5.mov",
+      "title": "TH+ neuronal processes in human brain",
+      "description": "3D reconstruction of Tyrosine hydroxylase (TH) antibody labeled neuronal processes were evident throughout centimeters size human brain tissue imaged by light-sheet microscopy. Individual axonal extension across the gray matter and white matter were visible.",
+      "label": "Neurons"
+    },
+    {
+      "src": "https://discotechnologies.org/SHANEL/Supplementary_Video_6.mov",
+      "title": "Human kidney glomeruli & vessels",
+      "description": "3D reconstruction of human kidney cortex showing TRITC-dextran labeled vessels and TO-PRO-3 labeled glomeruli structures, imaged by light-sheet microscopy. Individual glomerulus was tracked by afferent arteriole. Structural profiles of cortex were characterized by the width, glomerular capillary diameter and afferent arteriole diameter.",
+      "label": "Kidney"
+    }
+  ],
+  "vessap": [
+    {
+      "src": "https://discotechnologies.org/VesSAP/Supplementary_Video_1.mov",
+      "title": "Representative brain vasculature scan",
+      "description": "Visualization of a representative CD1-E mouse brain by VesSAP showing the data quality.",
+      "label": "Data quality"
+    },
+    {
+      "src": "https://discotechnologies.org/VesSAP/Supplementary_Video_2.mov",
+      "title": "Vessel segmentation demonstration",
+      "description": "Segmentation and features demonstration on a subset of the whole dataset. VesSAP enables reliable segmentation (red) and",
+      "label": "Segmentation"
+    },
+    {
+      "src": "https://discotechnologies.org/VesSAP/Supplementary_Video_3.mov",
+      "title": "Atlas registration & overlay",
+      "description": "Whole brain data registered to the Allen adult brain atlas. The video shows the alignment accuracy and segmentation overlaid.",
+      "label": "Allen atlas"
+    },
+    {
+      "src": "https://discotechnologies.org/VesSAP/Supplementary_Video_4.mov",
+      "title": "Full-resolution segmentation substack",
+      "description": "Substack of the whole brain data registered to the Allen adult brain atlas. This video reveals the full resolution segmentation on a small set of the brain scans data.",
+      "label": "High resolution"
+    },
+    {
+      "src": "https://discotechnologies.org/VesSAP/Supplementary_Video_5.mov",
+      "title": "Capillary-level vasculature detail",
+      "description": "Capillary-level vasculature segmentation across the whole brain dataset, registered to the Allen adult brain atlas.",
+      "label": "Capillaries"
+    }
+  ],
+  "deepmact": [
+    {
+      "src": "https://discotechnologies.org/DeepMACT/3Dcontent/Supplementary_Video_1.mov",
+      "title": "Torso metastasis mapping",
+      "description": "3D reconstruction of a mouse torso scanned by light-sheet microscopy. The left side shows the segmented view, in which the torso is represented in gray, the lungs in yellow and the heart in green. The right side shows the original 2D data from the light-sheet microscopy. Various macro- and micro-metastases (magenta) are visualized in high contrast over the background.",
+      "label": "Whole body"
+    },
+    {
+      "src": "https://discotechnologies.org/DeepMACT/3Dcontent/Supplementary_Video_2.mov",
+      "title": "Lung micrometastases",
+      "description": "3D visualization of some micrometastases in the lungs obtained by light-sheet microscopy. The tumors are shown in magenta and PI nuclear labeling in green.",
+      "label": "Lung"
+    },
+    {
+      "src": "https://discotechnologies.org/DeepMACT/3Dcontent/Supplementary_Video_3.mov",
+      "title": "Therapeutic antibody biodistribution",
+      "description": "3D animation of a mouse body scanned by light-sheet microscopy. The outline of the mouse (scan of the unlabeled autofluorescence channel at 488 nm excitation) is shown in gray, some segmented organs (lungs, kidney, liver and brain) in blue, the tumors in magenta, and the tumor & therapeutic antibody 6A10 co-localization in white. The first part of the animation shows tumor macro- and micrometastasis throughout the body, and the second part shows the biodistribution of the therapeutic antibody 6A10 along with tumor macro- and micrometastases.",
+      "label": "Antibody"
+    },
+    {
+      "src": "https://discotechnologies.org/DeepMACT/3Dcontent/Supplementary_Video_4.mov",
+      "title": "Antibody binding at micrometastases",
+      "description": "3D animation of the lungs demonstrating the details of the therapeutic antibody binding. Micrometastases are shown in magenta and the co-localization of micrometastases and therapeutic antibody in white. While most of the micrometastases were targeted by the therapeutic antibody (white), a fraction was not (the ones remaining magenta throughout the movie).",
+      "label": "Lung binding"
+    }
+  ],
+  "scp-nano": [
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM8_ESM.mp4",
+      "label": "RetroAAV",
+      "title": "RetroAAV across whole body",
+      "description": "RetroAAV GFP distribution throughout the entire mouse body at cell-level resolution."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM6_ESM.mov",
+      "label": "DNA origami",
+      "title": "DNA origami across whole body",
+      "description": "DNA origami (red) at cell level throughout the entire mouse body."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM3_ESM.mp4",
+      "label": "LNP · lung",
+      "title": "LNP biodistribution in lung",
+      "description": "Lipid nanoparticles (magenta) in the lung after intranasal injection at 0.0005 mg kg⁻¹."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM4_ESM.mp4",
+      "label": "Heart · EGFP",
+      "title": "EGFP expression in heart",
+      "description": "EGFP protein expression (green) in the heart 72 h after intramuscular LNP EGFP mRNA."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM5_ESM.mp4",
+      "label": "Spike mRNA",
+      "title": "LNP spike mRNA in heart",
+      "description": "LNP spike mRNA (magenta) in the heart after intramuscular injection."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41587-024-02528-1/MediaObjects/41587_2024_2528_MOESM7_ESM.mp4",
+      "label": "AAV · brain",
+      "title": "PHP.eB AAV in brain regions",
+      "description": "GFP from PHP.eB-AAV in different brain regions (Allen CCF3 color coding)."
+    }
+  ],
+  "delivr": [
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-024-02245-2/MediaObjects/41592_2024_2245_MOESM3_ESM.mp4",
+      "label": "VR · brain",
+      "title": "VR-empowered 3D brain cell analysis",
+      "description": "Virtual reality interface for navigating and annotating cleared brain datasets at cellular resolution."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-024-02245-2/MediaObjects/41592_2024_2245_MOESM4_ESM.mp4",
+      "label": "Segmentation",
+      "title": "Deep-learning cell segmentation in 3D",
+      "description": "Automated segmentation of brain cells in optically cleared tissue using DELiVR deep learning."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-024-02245-2/MediaObjects/41592_2024_2245_MOESM5_ESM.mp4",
+      "label": "Light sheet",
+      "title": "Cleared brain light-sheet imaging",
+      "description": "High-resolution 3D imaging of immunolabeled cells across cleared mouse brain volumes."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-024-02245-2/MediaObjects/41592_2024_2245_MOESM6_ESM.mp4",
+      "label": "Classification",
+      "title": "Cell-type classification workflow",
+      "description": "DELiVR pipeline for classifying and quantifying brain cell populations in 3D."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fs41592-024-02245-2/MediaObjects/41592_2024_2245_MOESM7_ESM.mp4",
+      "label": "Whole brain",
+      "title": "Whole-brain cellular map",
+      "description": "Reconstructed whole-brain map of segmented and classified cells after DELiVR analysis."
+    }
+  ],
+  "udisco": [
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM343_ESM.mov",
+      "label": "Whole body",
+      "title": "Transparent whole-mouse uDISCO",
+      "description": "3D reconstruction of an entire uDISCO-cleared mouse body imaged with light-sheet microscopy."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM344_ESM.mov",
+      "label": "Organs",
+      "title": "Organ-level uDISCO imaging",
+      "description": "High-contrast 3D visualization of internal organs after shrinkage-mediated tissue clearing."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM345_ESM.mov",
+      "label": "Brain",
+      "title": "Whole-brain uDISCO map",
+      "description": "Cellular-resolution 3D view of a cleared mouse brain using the uDISCO pipeline."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM346_ESM.mov",
+      "label": "Vasculature",
+      "title": "Vascular networks in 3D",
+      "description": "Whole-organ vasculature revealed after uDISCO clearing and volumetric imaging."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM347_ESM.mov",
+      "label": "Detail",
+      "title": "Cellular detail in cleared tissue",
+      "description": "Zoomed 3D view showing cellular structures preserved through uDISCO tissue clearing."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM348_ESM.mov",
+      "label": "Rotation",
+      "title": "Rotating 3D uDISCO specimen",
+      "description": "Rotating view of a cleared and labeled organ highlighting uDISCO imaging depth."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM349_ESM.mov",
+      "label": "Multi-organ",
+      "title": "Multi-organ uDISCO survey",
+      "description": "Survey of multiple organ systems in a single uDISCO-cleared mouse specimen."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM350_ESM.mov",
+      "label": "Zoom",
+      "title": "Micro-scale uDISCO features",
+      "description": "Fine structural features resolved in uDISCO-cleared tissue at cellular scale."
+    },
+    {
+      "src": "https://static-content.springer.com/esm/art%3A10.1038%2Fnmeth.3964/MediaObjects/41592_2016_BFnmeth3964_MOESM351_ESM.mov",
+      "label": "Overview",
+      "title": "uDISCO whole-organism overview",
+      "description": "Overview of shrinkage-mediated imaging across an entire cleared organism."
+    }
+  ],
+  "disco-guidebook": [
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S23%20Summary%20of%20homogeneous%20and%20simultaneous%20whole%20mouse%20antibody%20staining.mp4",
+      "label": "Protocol",
+      "title": "Homogeneous whole-body DISCO staining",
+      "description": "Summary of simultaneous antibody staining throughout entire mouse bodies — illustrating the DISCO clearing workflow covered in the lab guidebook."
+    },
+    {
+      "src": "https://discotechnologies.org/wildDISCO/Movie%20S1%20PGP9.5%20peripheral%20nerves%20in%20wholebody.m4v",
+      "label": "Nerves",
+      "title": "PGP 9.5 peripheral nerve map",
+      "description": "3D reconstruction of peripheral nerves after DISCO clearing and light-sheet microscopy."
+    },
+    {
+      "src": "https://discotechnologies.org/DISCO-MS/Supplementary_Video_1.mp4",
+      "label": "Pipeline",
+      "title": "DISCO tissue clearing pipeline",
+      "description": "Step-by-step DISCO workflow on cleared specimens, from labeling to volumetric imaging."
+    }
+  ]
+}

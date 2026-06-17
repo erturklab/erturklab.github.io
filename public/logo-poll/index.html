@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Ertürk Lab — Logo vote</title>
+  <style>
+    :root {
+      --bg: #0c0c0e;
+      --card: #141418;
+      --border: #2a2a30;
+      --text: #e4e4e7;
+      --muted: #71717a;
+      --gold: #c9a26a;
+      --green: #34d399;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 2rem 1.25rem 4rem; }
+    h1 { font-size: 1.75rem; font-weight: 650; letter-spacing: -0.02em; margin: 0 0 0.5rem; }
+    .intro { color: var(--muted); max-width: 42rem; margin-bottom: 2rem; font-size: 0.95rem; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
+    .option {
+      border: 1px solid var(--border);
+      border-radius: 1rem;
+      background: var(--card);
+      padding: 1.25rem;
+      transition: border-color 0.2s, box-shadow 0.2s;
+    }
+    .option:has(input:checked) {
+      border-color: var(--gold);
+      box-shadow: 0 0 0 1px color-mix(in srgb, var(--gold) 40%, transparent);
+    }
+    .option label { display: block; cursor: pointer; }
+    .option input { margin: 0 0.5rem 0 0; accent-color: var(--gold); }
+    .badge {
+      display: inline-block;
+      font-size: 0.65rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 0.35rem;
+    }
+    .title { font-weight: 600; font-size: 1.05rem; }
+    .desc { font-size: 0.8rem; color: var(--muted); margin: 0.35rem 0 1rem; min-height: 2.5rem; }
+    .preview {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      padding: 1rem;
+      border-radius: 0.75rem;
+      background: #0a0a0c;
+      border: 1px solid var(--border);
+      margin-bottom: 0.75rem;
+    }
+    .icon-box {
+      flex-shrink: 0;
+      width: 3rem;
+      height: 3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 0.75rem;
+      border: 1px solid color-mix(in srgb, var(--gold) 35%, var(--border));
+      background: color-mix(in srgb, var(--gold) 8%, transparent);
+    }
+    .icon-box img { width: 2.25rem; height: 2.25rem; }
+    .header-mock { font-size: 0.85rem; font-weight: 600; }
+    .header-sub { font-size: 0.6rem; color: var(--muted); }
+    .large {
+      display: flex;
+      justify-content: center;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+      background: radial-gradient(circle at 50% 50%, rgba(52,211,153,0.08), transparent 70%);
+      border: 1px solid var(--border);
+    }
+    .large img { width: 5.5rem; height: 5.5rem; }
+    .note {
+      margin-top: 2rem;
+      padding: 1rem 1.25rem;
+      border-radius: 0.75rem;
+      border: 1px dashed var(--border);
+      font-size: 0.85rem;
+      color: var(--muted);
+    }
+    .note strong { color: var(--text); }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <h1>Ertürk Lab logo — pick your favourite</h1>
+    <p class="intro">
+      Five mark options for the website header (replacing the home icon). Each reflects whole-body DISCO imaging,
+      vasculature mapping, and AI — in a different visual style. Choose one and tell the web team (or reply in the lab chat).
+    </p>
+
+    <form class="grid" id="poll">
+      <div class="option">
+        <label>
+          <input type="radio" name="logo" value="A"/>
+          <span class="badge">Option A</span>
+          <div class="title">Whole-body + vasculature + AI</div>
+          <p class="desc">Mouse silhouette, internal vessel tree, AI nodes, DISCO ghost layers, light-sheet line.</p>
+          <div class="preview">
+            <div class="icon-box"><img src="/logos/erturk-lab-mark-v2.svg" alt="A in header"/></div>
+            <div>
+              <div class="header-mock">Ertürk Lab</div>
+              <div class="header-sub">iBIO · Helmholtz Munich</div>
+            </div>
+          </div>
+          <div class="large"><img src="/logos/erturk-lab-mark-v2.svg" alt="Option A large"/></div>
+        </label>
+      </div>
+
+      <div class="option">
+        <label>
+          <input type="radio" name="logo" value="B"/>
+          <span class="badge">Option B</span>
+          <div class="title">DISCO slice stack</div>
+          <p class="desc">Stacked cleared tissue slices — 3D histology and optical sectioning.</p>
+          <div class="preview">
+            <div class="icon-box"><img src="/logos/erturk-lab-mark-alt-b.svg" alt="B in header"/></div>
+            <div>
+              <div class="header-mock">Ertürk Lab</div>
+              <div class="header-sub">iBIO · Helmholtz Munich</div>
+            </div>
+          </div>
+          <div class="large"><img src="/logos/erturk-lab-mark-alt-b.svg" alt="Option B large"/></div>
+        </label>
+      </div>
+
+      <div class="option">
+        <label>
+          <input type="radio" name="logo" value="C"/>
+          <span class="badge">Option C</span>
+          <div class="title">Organ atlas emblem</div>
+          <p class="desc">Radial map with connected nodes — MouseMapper / whole-body organ segmentation.</p>
+          <div class="preview">
+            <div class="icon-box"><img src="/logos/erturk-lab-mark-alt-c.svg" alt="C in header"/></div>
+            <div>
+              <div class="header-mock">Ertürk Lab</div>
+              <div class="header-sub">iBIO · Helmholtz Munich</div>
+            </div>
+          </div>
+          <div class="large"><img src="/logos/erturk-lab-mark-alt-c.svg" alt="Option C large"/></div>
+        </label>
+      </div>
+
+      <div class="option">
+        <label>
+          <input type="radio" name="logo" value="D"/>
+          <span class="badge">Option D</span>
+          <div class="title">Minimal outline</div>
+          <p class="desc">Clean mouse + vasculature only. Gold accent, best at small sizes.</p>
+          <div class="preview">
+            <div class="icon-box"><img src="/logos/erturk-lab-mark-alt-d.svg" alt="D in header"/></div>
+            <div>
+              <div class="header-mock">Ertürk Lab</div>
+              <div class="header-sub">iBIO · Helmholtz Munich</div>
+            </div>
+          </div>
+          <div class="large"><img src="/logos/erturk-lab-mark-alt-d.svg" alt="Option D large"/></div>
+        </label>
+      </div>
+
+      <div class="option">
+        <label>
+          <input type="radio" name="logo" value="E"/>
+          <span class="badge">Option E</span>
+          <div class="title">Network emblem</div>
+          <p class="desc">Omics / AI network in a circle — computational biology motif.</p>
+          <div class="preview">
+            <div class="icon-box"><img src="/logos/erturk-lab-mark-alt-e.svg" alt="E in header"/></div>
+            <div>
+              <div class="header-mock">Ertürk Lab</div>
+              <div class="header-sub">iBIO · Helmholtz Munich</div>
+            </div>
+          </div>
+          <div class="large"><img src="/logos/erturk-lab-mark-alt-e.svg" alt="Option E large"/></div>
+        </label>
+      </div>
+    </form>
+
+    <p class="note">
+      <strong>How to vote:</strong> Share this page while <code>make dev</code> is running —
+      open <code>http://localhost:3001/logo-poll/</code> — or send the SVG files from
+      <code>public/logos/</code>. Reply with <strong>Option A–E</strong> (or rank your top 3).
+      Not for public production until Ali/Mike approve.
+    </p>
+  </div>
+</body>
+</html>

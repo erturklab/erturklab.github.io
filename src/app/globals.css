@@ -1,0 +1,350 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  --font-display: var(--font-display-face), Georgia, "Times New Roman", serif;
+}
+
+:root,
+.dark {
+  --background: #0a0a0c;
+  --foreground: #ececef;
+  --card: #12121a;
+  --card-foreground: #ececef;
+  --primary: #c9a26a;
+  --primary-foreground: #0a0a0c;
+  --secondary: #1a1a22;
+  --secondary-foreground: #a1a1aa;
+  --muted: #14141a;
+  --muted-foreground: #6b6b76;
+  --accent: #1e1e28;
+  --accent-foreground: #ececef;
+  --border: #252530;
+  --input: #252530;
+  --ring: #c9a26a;
+}
+
+.light {
+  --background: #f8f8fa;
+  --foreground: #18181b;
+  --card: #ffffff;
+  --card-foreground: #18181b;
+  --primary: #a67c3a;
+  --primary-foreground: #ffffff;
+  --secondary: #f0f0f3;
+  --secondary-foreground: #52525b;
+  --muted: #ececf0;
+  --muted-foreground: #71717a;
+  --accent: #f4f4f5;
+  --accent-foreground: #18181b;
+  --border: #e0e0e8;
+  --input: #e0e0e8;
+  --ring: #a67c3a;
+}
+
+.midnight {
+  --background: #050810;
+  --foreground: #dbeafe;
+  --card: #0a1020;
+  --card-foreground: #dbeafe;
+  --primary: #60a5fa;
+  --primary-foreground: #050810;
+  --secondary: #0f172a;
+  --secondary-foreground: #93c5fd;
+  --muted: #0c1220;
+  --muted-foreground: #64748b;
+  --accent: #1e293b;
+  --accent-foreground: #dbeafe;
+  --border: #1a2744;
+  --input: #1a2744;
+  --ring: #60a5fa;
+}
+
+.slate {
+  --background: #0e1016;
+  --foreground: #e2e8f0;
+  --card: #151820;
+  --card-foreground: #e2e8f0;
+  --primary: #94a3b8;
+  --primary-foreground: #0f172a;
+  --secondary: #1a2030;
+  --secondary-foreground: #cbd5e1;
+  --muted: #121620;
+  --muted-foreground: #64748b;
+  --accent: #1e2430;
+  --accent-foreground: #e2e8f0;
+  --border: #252b38;
+  --input: #252b38;
+  --ring: #94a3b8;
+}
+
+.warm {
+  --background: #110d09;
+  --foreground: #f5ebe0;
+  --card: #1a1410;
+  --card-foreground: #f5ebe0;
+  --primary: #e08a24;
+  --primary-foreground: #110d09;
+  --secondary: #221a14;
+  --secondary-foreground: #d6c4b0;
+  --muted: #161008;
+  --muted-foreground: #8b7355;
+  --accent: #261f18;
+  --accent-foreground: #f5ebe0;
+  --border: #2d241c;
+  --input: #2d241c;
+  --ring: #e08a24;
+}
+
+.paper {
+  --background: #f5f0e6;
+  --foreground: #292524;
+  --card: #fffcf7;
+  --card-foreground: #292524;
+  --primary: #92650a;
+  --primary-foreground: #fffbeb;
+  --secondary: #ebe4d8;
+  --secondary-foreground: #57534e;
+  --muted: #e8e0d2;
+  --muted-foreground: #78716c;
+  --accent: #e7e0d4;
+  --accent-foreground: #292524;
+  --border: #d8cfc0;
+  --input: #d8cfc0;
+  --ring: #92650a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+}
+
+.page-section {
+  scroll-margin-top: 5rem;
+  animation: section-enter 0.7s ease both;
+}
+
+@keyframes section-enter {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .page-section {
+    animation: none;
+  }
+
+  .animate-hero-ken-burns {
+    animation: none;
+  }
+}
+
+@keyframes hero-ken-burns {
+  from {
+    transform: scale(1.05);
+  }
+  to {
+    transform: scale(1.12);
+  }
+}
+
+.animate-hero-ken-burns {
+  animation: hero-ken-burns 14s ease-in-out infinite alternate;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Hero atmosphere — layered depth */
+.hero-mesh {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 10% 0%, color-mix(in srgb, var(--primary) 14%, transparent), transparent 55%),
+    radial-gradient(ellipse 50% 40% at 90% 20%, color-mix(in srgb, var(--primary) 8%, transparent), transparent 50%),
+    linear-gradient(180deg, color-mix(in srgb, var(--card) 40%, transparent) 0%, var(--background) 100%);
+}
+
+/* Subtle microscopy grid — background decoration only (used inside absolute layers) */
+.cell-grid {
+  background-image:
+    linear-gradient(color-mix(in srgb, var(--primary) 6%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in srgb, var(--primary) 6%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  mask-image: linear-gradient(to bottom, black 0%, black 70%, transparent 100%);
+  opacity: 0.85;
+}
+
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+
+/* YouTube embed — Firefox PiP (iframe) vs fullscreen (below) stay separated */
+.video-embed__shell {
+  position: relative;
+  width: 100%;
+}
+
+.video-embed__player {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+  background: #000;
+}
+
+.video-embed__iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.video-embed__fs-btn {
+  display: none;
+}
+
+@supports (-moz-appearance: none) {
+  /* Shrink iframe from the bottom so Firefox PiP sits above the fullscreen row */
+  .video-embed:not(.video-embed--ambient) .video-embed__iframe {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    height: calc(100% - 3.25rem);
+  }
+
+  .video-embed:not(.video-embed--ambient) .video-embed__fs-btn {
+    display: inline-flex;
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.375rem;
+    z-index: 5;
+    align-items: center;
+    justify-content: center;
+    width: 2.25rem;
+    height: 2.25rem;
+    border: 0;
+    border-radius: 9999px;
+    background: rgb(0 0 0 / 55%);
+    color: #fff;
+    cursor: pointer;
+    transition: background 150ms ease;
+  }
+
+  .video-embed:not(.video-embed--ambient) .video-embed__fs-btn:hover {
+    background: rgb(0 0 0 / 75%);
+  }
+
+  .video-embed:not(.video-embed--ambient) .video-embed__fs-btn:focus-visible {
+    outline: 2px solid color-mix(in srgb, var(--primary) 70%, white);
+    outline-offset: 2px;
+  }
+}
+
+.video-embed--ambient,
+.video-embed--ambient .video-embed__shell {
+  height: 100%;
+}
+
+.video-embed--ambient .video-embed__player {
+  height: 100%;
+  aspect-ratio: unset;
+}
+
+/* Job posting markdown (portal descriptions from Hire Agent) */
+.job-markdown {
+  color: var(--muted-foreground);
+  line-height: 1.75;
+}
+
+.job-markdown h2 {
+  margin-top: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.job-markdown h2:first-child {
+  margin-top: 0;
+}
+
+.job-markdown h3 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--foreground);
+}
+
+.job-markdown p {
+  margin-bottom: 1rem;
+}
+
+.job-markdown ul {
+  margin: 0.75rem 0 1.25rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.job-markdown li {
+  margin-bottom: 0.5rem;
+}
+
+.job-markdown strong {
+  color: var(--foreground);
+  font-weight: 600;
+}
+
+.job-markdown em {
+  font-style: italic;
+}
+
+.job-markdown code {
+  font-size: 0.875em;
+  padding: 0.1em 0.35em;
+  border-radius: 0.25rem;
+  background: var(--muted);
+}
+
+.job-markdown a {
+  color: var(--primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.job-markdown a:hover {
+  opacity: 0.85;
+}

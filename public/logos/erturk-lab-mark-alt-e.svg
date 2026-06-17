@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <defs>
+    <linearGradient id="net" x1="12" y1="52" x2="52" y2="12" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DD4BF"/>
+      <stop offset="1" stop-color="#E879F9"/>
+    </linearGradient>
+  </defs>
+  <!-- Network motif + Ertürk imaging palette -->
+  <circle cx="32" cy="32" r="26" stroke="url(#net)" stroke-width="1.2" fill="rgba(45,212,191,0.06)"/>
+  <g stroke="url(#net)" stroke-width="1" stroke-linecap="round" opacity="0.75">
+    <path d="M32 10 L32 54 M10 32 L54 32 M16 16 L48 48 M48 16 L16 48"/>
+    <path d="M22 14 L42 22 L38 42 L18 34 Z"/>
+  </g>
+  <g>
+    <circle cx="32" cy="10" r="2" fill="#34D399"/>
+    <circle cx="54" cy="32" r="2" fill="#F472B6"/>
+    <circle cx="32" cy="54" r="2" fill="#C026D3"/>
+    <circle cx="10" cy="32" r="2" fill="#34D399"/>
+    <circle cx="22" cy="14" r="1.5" fill="#FDE047"/>
+    <circle cx="42" cy="22" r="1.5" fill="#FDE047"/>
+    <circle cx="38" cy="42" r="1.5" fill="#A855F7"/>
+    <circle cx="18" cy="34" r="1.5" fill="#A855F7"/>
+    <circle cx="32" cy="32" r="3" fill="#C026D3"/>
+    <circle cx="32" cy="32" r="5.5" stroke="#34D399" stroke-width="0.8" fill="none" opacity="0.5"/>
+  </g>
+</svg>

@@ -1,0 +1,1167 @@
+{
+  "lab": {
+    "name": "Ertürk Lab",
+    "institute": "Institute for Intelligent Biotechnologies (iBIO)",
+    "instituteShort": "iBIO",
+    "location": "Helmholtz Munich · LMU Munich",
+    "tagline": "Mapping biology in three dimensions",
+    "email": "erturk@helmholtz-muenchen.de",
+    "address": {
+      "street": "Ingolstädter Landstraße 1",
+      "building": "Building 43",
+      "city": "85764 Neuherberg",
+      "country": "Germany",
+      "mapsQuery": "Building 43, Helmholtz Munich, Ingolstädter Landstraße 1, 85764 Neuherberg, Germany",
+      "mapsLat": 48.2169,
+      "mapsLng": 11.5858
+    },
+    "mission": "Our major goal is to accelerate biomedical research by developing and combining enabling technologies. We combine biomedical research with artificial intelligence, nanotechnology, and engineering to solve major bottlenecks in research — from whole-body imaging to molecular analysis at single-cell resolution.",
+    "missionHeadline": "Accelerating biomedical research with enabling technologies",
+    "missionParagraphs": [
+      "Our major goal is to accelerate biomedical research by developing and combining enabling technologies. We combine biomedical research with artificial intelligence, nanotechnology, and engineering.",
+      "From unbiased whole-body imaging to molecular analysis at single-cell resolution — we tackle major bottlenecks in understanding health and disease."
+    ],
+    "social": {
+      "github": "https://github.com/erturklab",
+      "twitter": "https://twitter.com/erturklab",
+      "instagram": "https://instagram.com/erturklab"
+    }
+  },
+  "heroFeatures": [
+    {
+      "title": "Whole-body imaging",
+      "description": "DISCO tissue clearing renders entire organisms transparent — then maps them at cellular resolution.",
+      "image": "/images/showcase/whole-body-disco.jpg"
+    },
+    {
+      "title": "AI-driven analysis",
+      "description": "Deep learning segments organs, vasculature, and metastasis across terabyte-scale 3D datasets.",
+      "image": "/images/showcase/deepmact-cell.jpg"
+    },
+    {
+      "title": "Spatial omics",
+      "description": "DISCO-MS and DISCO-seq link 3D anatomy to proteomics and transcriptomics in intact specimens.",
+      "image": "/images/showcase/transparent-human-brain.jpg"
+    }
+  ],
+  "heroVisuals": [
+    {
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "alt": "Whole-body DISCO imaging"
+    },
+    {
+      "image": "/images/showcase/transparent-human-brain.jpg",
+      "alt": "Transparent human brain · SHANEL"
+    },
+    {
+      "image": "/images/showcase/brain-vasculature.jpg",
+      "alt": "Brain vasculature · VesSAP"
+    },
+    {
+      "image": "/images/showcase/disco-ms-cover.jpg",
+      "alt": "DISCO-MS spatial proteomics"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "mousemapper",
+      "name": "MouseMapper",
+      "headline": "Whole-body nervous & immune architecture in 3D",
+      "description": "Foundation-model deep learning segments and quantifies whole-body nervous and immune systems in cleared mice — revealing systemic remodeling in obesity and disease.",
+      "journal": "Nature · 2026",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1038/s41586-026-10535-2",
+      "atlas": "https://discotechnologies.org/MouseMapper/",
+      "slogan": "Teaching AI to map the whole body."
+    },
+    {
+      "id": "scp-nano",
+      "name": "SCP-Nano",
+      "headline": "Nanocarriers traced cell-by-cell through the whole mouse",
+      "description": "Single Cell Precision Nanocarrier Identification maps lipid nanoparticles, AAVs, and other carriers across entire mouse bodies at doses 100–1000× below conventional limits.",
+      "journal": "Nature Biotechnology · 2025",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1038/s41587-024-02528-1",
+      "atlas": "https://www.nature.com/articles/s41587-024-02528-1#Sec27",
+      "slogan": "Teaching AI to trace every nanocarrier."
+    },
+    {
+      "id": "wilddisco",
+      "name": "wildDISCO",
+      "headline": "Whole-body cellular maps with standard antibodies",
+      "description": "Whole-body immunolabeling with standard IgG antibodies and DISCO clearing. Maps nervous, lymphatic, and vascular systems at cellular resolution — no transgenic mice required.",
+      "journal": "Nature Biotechnology · 2023",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "credit": "© Ali Ertürk · Ertürk Lab",
+      "link": "https://doi.org/10.1038/s41587-023-01846-0",
+      "atlas": "https://discotechnologies.org/wildDISCO/",
+      "interactiveAtlas": "http://discotechnologies.org/wildDISCO/atlas/index.php",
+      "slogan": "Teaching antibodies to map entire organisms."
+    },
+    {
+      "id": "disco-ms",
+      "name": "DISCO-MS",
+      "headline": "Spatial proteomics inside cleared organs",
+      "description": "Combines 3D imaging with AI-guided robotic extraction and mass spectrometry — spatial proteomics directly in optically cleared pre-clinical and clinical specimens.",
+      "journal": "Cell · 2022",
+      "image": "/images/showcase/disco-ms-cover.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1016/j.cell.2022.11.021",
+      "atlas": "https://discotechnologies.org/DISCO-MS/",
+      "slogan": "Teaching cleared tissue to reveal its proteome."
+    },
+    {
+      "id": "shanel",
+      "name": "SHANEL",
+      "headline": "Transparent human organs at centimeter scale",
+      "description": "Permeabilization-based clearing enables antibody-based 3D histology in large human organs — brain, kidney, and beyond — paired with scalable computational analysis.",
+      "journal": "Cell · 2020",
+      "image": "/images/showcase/transparent-human-brain.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1016/j.cell.2020.01.030",
+      "atlas": "https://discotechnologies.org/SHANEL/",
+      "slogan": "Teaching human organs to become transparent."
+    },
+    {
+      "id": "vessap",
+      "name": "VesSAP",
+      "headline": "Every capillary in the brain — mapped by AI",
+      "description": "End-to-end staining, imaging, and deep-learning segmentation quantifies the entire brain vasculature down to capillaries from terabyte-scale 3D datasets.",
+      "journal": "Nature Methods · 2020",
+      "image": "/images/showcase/brain-vasculature.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1038/s41592-020-0792-1",
+      "atlas": "https://discotechnologies.org/VesSAP/",
+      "slogan": "Teaching AI to see every capillary."
+    },
+    {
+      "id": "deepmact",
+      "name": "DeepMACT",
+      "headline": "AI-detected cancer metastasis across the whole body",
+      "description": "Integrates vDISCO tissue clearing, light-sheet microscopy, and deep learning to find micrometastases and quantify therapeutic antibody targeting at single-cell level — 300× faster than manual annotation.",
+      "journal": "Cell · 2019",
+      "image": "/images/showcase/deepmact-cell.jpg",
+      "credit": "© Ali Ertürk",
+      "link": "https://doi.org/10.1016/j.cell.2019.11.013",
+      "atlas": "https://discotechnologies.org/DeepMACT/3Dcontent/",
+      "slogan": "Teaching AI to find metastasis."
+    }
+  ],
+  "scienceArt": [
+    {
+      "title": "Whole-body imaging",
+      "caption": "uDISCO / vDISCO · transparent mice",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "DeepMACT · Cell cover",
+      "caption": "Whole-body metastasis imaging",
+      "image": "/images/showcase/deepmact-cell.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Light-sheet snapshot",
+      "caption": "DISCO clearing pipeline",
+      "image": "/images/showcase/light-sheet-snapshot.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "DISCO-MS",
+      "caption": "Spatial proteomics in cleared tissue",
+      "image": "/images/showcase/disco-ms-cover.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Brain vasculature",
+      "caption": "VesSAP · capillary-level mapping",
+      "image": "/images/showcase/brain-vasculature.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Transparent human brain",
+      "caption": "SHANEL · 3D histology",
+      "image": "/images/showcase/transparent-human-brain.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Cleared human kidney",
+      "caption": "Human organ clearing",
+      "image": "/images/showcase/cleared-human-kidney.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Human eye · cleared",
+      "caption": "Large-specimen 3D histology",
+      "image": "/images/showcase/human-eye-cleared.jpg",
+      "credit": "© Ali Ertürk"
+    },
+    {
+      "title": "Whole-body imaging detail",
+      "caption": "Cellular resolution in cleared specimens",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "credit": "© Ali Ertürk"
+    }
+  ],
+  "scienceArtMedia": [
+    {
+      "title": "wildDISCO — AI at Helmholtz Munich",
+      "description": "Prof. Ali Ertürk on whole-body cellular mapping with standard antibodies and deep learning.",
+      "type": "video",
+      "youtubeId": "w57BU40-BCo"
+    },
+    {
+      "title": "DeepMACT — Cell video abstract",
+      "description": "Deep learning reveals cancer metastasis and therapeutic antibody targeting across the entire body.",
+      "type": "video",
+      "youtubeId": "ZnkNw5a-gvs"
+    },
+    {
+      "title": "SHANEL — transparent human organs",
+      "description": "Cellular and molecular probing of intact human organs at centimeter scale.",
+      "type": "video",
+      "youtubeId": "i1-upP0kq5o"
+    },
+    {
+      "title": "wildDISCO 3D atlas",
+      "description": "Interactive atlas of mouse nervous, vascular, and immune systems — explore cleared whole-body maps.",
+      "type": "link",
+      "href": "http://discotechnologies.org/wildDISCO/atlas/index.php",
+      "thumbnail": "/images/showcase/whole-body-disco.jpg"
+    }
+  ],
+  "researchPillars": [
+    {
+      "id": "organ-mapping",
+      "title": "AI-based organ mapping",
+      "summary": "Using tissue clearing paired with AI deep learning algorithms we map mouse and human organs at the cellular level.",
+      "highlights": [
+        "Skull–meninges connections and drug delivery routes into the brain (Nature Neuroscience, 2019)",
+        "Mapping the human brain using SHANEL transparency (Cell, 2020)",
+        "Exploiting unbiased vascular analysis (Todorov…Ertürk, 2020, Nature Methods) to investigate brain pathologies including stroke and dementia"
+      ]
+    },
+    {
+      "id": "precision-medicine",
+      "title": "Precision medicine in cancer",
+      "summary": "DeepMACT images and analyses cancer metastasis and drug targeting in whole mice at cellular resolution, combined with organoid models and AI profiling.",
+      "highlights": [
+        "DeepMACT — whole-body metastasis imaging (Cell, 2019)",
+        "Organoid screening pipelines for treatment resistance",
+        "Cell-level precision in cancer treatment strategies"
+      ]
+    }
+  ],
+  "publications": [
+    {
+      "featured": true,
+      "title": "A deep-learning framework reveals whole-body perturbations at cell level",
+      "authors": "Doris Kaltenecker, Izabela Horvath, Rami Al-Maskari, Ying Chen, Zeynep Ilgin Kolabas, Luciano Hoeher, Mihail Todorov, David-Paul Minde, Saketh Kapoor, Sena Gül Turhan, Louis B. Kuemmerle, Hanno Steinke, Tim Wohlgemuth, Mayar Ali, Florian Kofler, Pauline Morigny, Julia Geppert, Denise Jeridi, Bastian Wittmann, Jie Luo, Suprosanna Shit, Carolina Cigankova, Victor Miro Kolenic, Nilsu Gür, Eren Aydeniz, Alara Yücecan, Melissa Ertürk, Laurent H. A. Simons, Chenchen Pan, Marie Piraud, Daniel Rueckert, Maria Rohm, Farida Hellal, Markus Elsner, Harsharan Singh Bhatia, Ingo Bechmann, Bjoern H. Menze, Stephan Herzig, Johannes Christian Paetzold, Mauricio Berriel Diaz, Ali Ertürk",
+      "journal": "Nature",
+      "year": 2026,
+      "note": "MouseMapper",
+      "link": "https://doi.org/10.1038/s41586-026-10535-2"
+    },
+    {
+      "featured": false,
+      "type": "preprint",
+      "title": "A Multimodal 3D Foundation Model for Light Sheet Fluorescence Microscopy Enables Few-Shot Segmentation, Classification, and Deblurring",
+      "authors": "Adina Scheinfeld, Haotan Zhang, Shang Mu, Rudolf L. M. van Herten, Lucas Stoffl, Ali Ertürk, Zhuhao Wu, Johannes C. Paetzold",
+      "journal": "arXiv",
+      "year": 2026,
+      "link": "https://arxiv.org/abs/2605.26026"
+    },
+    {
+      "featured": false,
+      "title": "Aging reprograms the response to chronic stress",
+      "authors": "Gregor Stein, Mihail Ivilinov Todorov, Lisa De Lange, Konstantin Riege, Emilio Cirri, Iqra Hussain, Martina Korfei, Nadine Pömpner, Christian A. Hübner, Karl Lenhard Rudolph, Farida Hellal, Ali Ertürk, Steve Hoffmann, Olivia Engmann",
+      "journal": "bioRxiv",
+      "year": 2026,
+      "link": "https://doi.org/10.64898/2026.02.16.702827",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "BaSiCPy: Scalable and Robust Shading Correction for Optical Microscopy Images",
+      "authors": "Yu Liu, Yohsuke T. Fukai, Santiago Cano-Muniz, Victor Perez, Mihail Todorov, Germán Ortega, Timothy Morello, Dirk Loeffler, Johannes Paetzold, Xun Xu, Lorenz Lamm, Nan Ma, Ali Ertürk, Timm Schroeder, Lucas Boeck, Denis Schapiro, Nicholas Schaub, C Marr, Tingying Peng, Carsten Marr, Tingying Peng",
+      "journal": "bioRxiv",
+      "year": 2026,
+      "link": "https://doi.org/10.64898/2026.04.28.721386",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "De novo H3.3K27M-altered diffuse midline glioma in human brainstem organoids to dissect GD2 CAR T cell function",
+      "authors": "Nils Bessler, Amber K. L. Wezenaar, Hendrikus C. R. Ariese, Celina Honhoff, Noëlle Dommann, Ellen J. Wehrens, Cristian Ruiz Moreno, Thijs J. M. van den Broek, Raphaël Collot, Daan J. Kloosterman, Farid Keramati, Mieke Roosen, Sam de Blank, Esmée J. van Vliet, Mario Barrera Román, Lucrezia C. D. E. Gatti, Ali Ertürk, Jürgen Kuball, Zsolt Sebestyén, M. Kool, Sara Patrizi, Evelina Miele, Annette Künkele, Mariëtte E.G. Kranendonk, Annelisa M. Cornel, Stefan Nierkens, Christian Mayer, Hendrik G. Stunnenberg, Anna Alemany, María Alieva, Anne C. Rios",
+      "journal": "Nature Cancer",
+      "year": 2026,
+      "link": "https://doi.org/10.1038/s43018-025-01084-0"
+    },
+    {
+      "featured": false,
+      "type": "preprint",
+      "title": "Neutrophils are critical for placental and fetal infection with the human pathogen Listeria monocytogenes",
+      "authors": "Myriam Ripphahn, Nikita Raj, Hellen Ishikawa-Ankerhold, Zhouyi Rong, Bastian Popper, Bianca Portugal Tavares de Moraes, Xia Li, Ying Chen, Roland Immler, Lou Martha Wackerbarth, Dominic van den Heuvel, Barbara Schmidinger, Rainer Haas, Udo Jeschke, Sven Kehl, Anne Kathrin Loesslein, S Massberg, Farida Hellal, Ali Ertürk, Markus Sperandio",
+      "journal": "bioRxiv",
+      "year": 2026,
+      "link": "https://doi.org/10.64898/2026.03.16.712023"
+    },
+    {
+      "featured": false,
+      "title": "Physiological brain clearance architecture revealed by neuronal protein tracing",
+      "authors": "Yuichi Chayama, Nalini R. Rao, Daniela Perla, Zimo Zhang, Madigan Reid, Sophia Nelson, Xinlan Wen, Bella Ding, Jessica Blumenfeld, Amanda Apolonio, Sahith Doddipalli, Haoyue Zhou, Sena Gül Turhan, Pu-Yun Shih, Matthias Brendel, Y Fu, Ali Ertürk, Zeynep Ilgin Kolabas, Yadong Huang, Andrew C. Yang",
+      "journal": "Cell",
+      "year": 2026,
+      "link": "https://doi.org/10.1016/j.cell.2026.04.048"
+    },
+    {
+      "featured": false,
+      "title": "Reversible hypervascularization drives cognitive decline and blood-brain barrier damage during aging",
+      "authors": "Mihail Ivilinov Todorov, Katalin Todorov-Völgyi, David-Paul Minde, Saketh Kapoor, Mayar Ali, Rainer Malik, Johannes Christian Paetzold, Julian McGinnis, Lanyue Zhang, Alessia Nottebrock, Lu Liu, Mikael Simons, Harsharan Singh Bhatia, Marios K Georgakis, Martin Dichgans, Farida Hellal, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2026,
+      "link": "https://doi.org/10.64898/2026.05.04.720441.abstract",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Transport vehicle–mediated TREM2 PET maps myeloid cells in the glioblastoma microenvironment",
+      "authors": "M. Brendel, Laura M. Bartos, Ruoqing Feng, Katharina Mueller, Anna Laura Kössinger, Nina C. Teske, Thomas Greve, Sabrina Viktoria Kirchleitner, Jens Blobner, Elene Nikolaishvili, Julia Lorenz, Leonie Hoermann, Lea H. Kunze, Rebecca Schaefer, Lu Liu, Marlies Haertel, Dario Dhoqina, Johannes Gnörich, Stephan A. Müller, Zeynep Ilgin Kolabas, Selin Ulukaya, Sena Gül Turhan, Ali Ertürk, Justus Flinn Thevis, Ha Eun Park, Karin Wind, Felix Lindheimer, Valerio Zenatti, Krishna Bhat, Matthias Prestel, Sabina Tahirović, Stefan Lichtenthaler, Rudolf Werner, Markus Riemenschneider, Darius Kalasauskas, Michael Schmutzer-Sondergeld, Veit M. Stoecklein, Florian Ringel, Ana-Claire Meyer, Joseph W. Lewcock, Kathryn M. Monroe, Kai Schlepckow, Christian Haass, Jochen Herms, Nathalie L. Albert, Louisa von Baumgarten, Patrick N. Harter, Mikael Simons, Simon Lindner",
+      "journal": "Research Square",
+      "year": 2026,
+      "link": "https://doi.org/10.21203/rs.3.rs-8627080/v1",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Whole-mouse immunolabeling at cellular resolution for comprehensive 3D atlases",
+      "authors": "Hongcheng Mai, Yuewei Wang, Yu Zhu, Yin Zhao, Ying Chen, Luciano Hoeher, Rami Al-Maskari, Jie Luo, Ali Ertürk",
+      "journal": "Nature Protocols",
+      "year": 2026,
+      "link": "https://doi.org/10.1038/s41596-026-01363-9"
+    },
+    {
+      "featured": false,
+      "title": "A fully iPS-cell-derived 3D model of the human blood–brain barrier for exploring neurovascular disease mechanisms and therapeutic interventions",
+      "authors": "Judit González-Gallego, Katalin Völgyi, Stephan A. Müller, Sophie Antesberger, Mihail Ivilinov Todorov, Rainer Malik, Rita Grimalt-Mirada, Carolina Cardoso Gonçalves, Martina Schifferer, Georg Kislinger, Isabel Weisheit, Barbara Lindner, Dennis Crusius, Joseph Kroeger, Mila Borri, Ali Ertürk, Mark D. Nelson, Thomas Misgeld, Stefan F. Lichtenthaler, Martin Dichgans, Dominik Paquet",
+      "journal": "Nature Neuroscience",
+      "year": 2025,
+      "link": "https://doi.org/10.1038/s41593-025-02123-w"
+    },
+    {
+      "featured": false,
+      "title": "A novel tamoxifen-inducible Mct8-CreERT2 mouse model for targeted studies of Mct8-expressing cells and thyroid hormone transport and function",
+      "authors": "Anna Molenaar, Noémi Mallet, Marin Bralo, Luciano Hoeher, Sonja C. Schriever, Ekta Pathak, Miriam Bernecker, Timo D. Müller, Ali Ertürk, Alberto Cebrian-Serrano, Paul T. Pfluger",
+      "journal": "Transgenic Research",
+      "year": 2025,
+      "link": "https://doi.org/10.1007/s11248-025-00471-8"
+    },
+    {
+      "featured": false,
+      "title": "Cortex folding by combined progenitor expansion and adhesion-controlled neuronal migration",
+      "authors": "Seung Hee Chun, Da Eun Yoon, D. Santiago Diaz Almeida, Mihail Ivilinov Todorov, Tobias Straub, Tobias Ruff, Wei Shao, Jianjun Yang, G. Seyit-Bremer, Yi-Ru Shen, Ali Ertürk, Daniel del Toro, Song‐Hai Shi, Rüdiger Klein",
+      "journal": "Nature Communications",
+      "year": 2025,
+      "link": "https://doi.org/10.1038/s41467-025-62858-9"
+    },
+    {
+      "featured": false,
+      "type": "preprint",
+      "title": "DISCO-seq: 3D single-cell transcriptomics of intact biological systems",
+      "authors": "Harsharan S. Bhatia, Laurent H. A. Simons, Louis B. Kuemmerle, Cristin McCabe, Sophie Jansen, Zhisong He, Mayar Ali, Denise Jeridi, Mihail Ivilinov Todorov, Luciano Hoeher, Sudharsan Padmarasu, Ha Eun Park, Justus Flinn Thevis, Laura M. Bartos, Inderjeet Singh, Siegfried Ussar, Kivanc Gorgulu, Hana Alguel, Kenny Roberts, Omer Ali Bayraktar, Matthias Brendel, Fabian J. Theis, Barbara Treutlein, Aviv Regev, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2025,
+      "note": "DISCO-seq",
+      "link": "https://doi.org/10.64898/2025.12.10.693352"
+    },
+    {
+      "featured": false,
+      "title": "Fc-engineered large molecules targeting blood-brain barrier transferrin receptor and CD98hc have distinct central nervous system and peripheral biodistribution",
+      "authors": "Nathalie Khoury, Michelle E. Pizzo, Claire B. Discenza, David Joy, David Tatarakis, Mihail Ivilinov Todorov, Moritz Negwer, Connie Ha, Gabrielly Lunkes de Melo, Lily Sarrafha, Matthew Simon, Darren Chan, Roni Chau, Kylie S. Chew, Johann Chow, Allisa Clemens, Yaneth Robles‐Colmenares, Jason C. Dugas, Joseph Duque, Doris Kaltenecker, Holly Kane, Amy Leung, Edwin I. Lozano, Arash Moshkforoush, Elysia Roche, Thomas Sandmann, Mabel Tong, Kaitlin Xa, Yinhan Zhou, Joseph W. Lewcock, Ali Ertürk, Robert G. Thorne, Meredith Calvert, Y. Joy Yu Zuchero",
+      "journal": "Nature Communications",
+      "year": 2025,
+      "link": "https://doi.org/10.1038/s41467-025-57108-x"
+    },
+    {
+      "featured": false,
+      "title": "Functional liver genomics identifies hepatokines promoting wasting in cancer cachexia",
+      "authors": "Doris Kaltenecker, Søren Fisker Schmidt, Peter Weber, Anne Loft, Pauline Morigny, Juliano Machado, Julia Geppert, Kerstin Beate Saul, Pia Benedikt, Claudia‐Eveline Molocea, Rachel Scott, Kerstin Haase, Marc E. Martignoni, Ana Jimena Alfaro, Kan Kau Chow, Estefanía Simoes, José Pinhata Otoch, Joanna D.C.C. Lima, Charles Swanton, Nadine Spielmann, Martin Hrabě de Angelis, Markus Elsner, Ali Ertürk, Kenneth A. Dyar, Maria Rohm, Olga Prokopchuk, Mariam Jamal‐Hanjani, Marília Seelaender, Johannes Backs, Stephan Herzig, Mauricio Berriel Díaz",
+      "journal": "Cell",
+      "year": 2025,
+      "link": "https://doi.org/10.1016/j.cell.2025.06.039"
+    },
+    {
+      "featured": false,
+      "title": "Graph neural networks learn emergent tissue properties from spatial molecular profiles",
+      "authors": "Mayar Ali, Sabrina Richter, Ali Ertürk, David S. Fischer, Fabian J. Theis",
+      "journal": "Nature Communications",
+      "year": 2025,
+      "link": "https://doi.org/10.1038/s41467-025-63758-8"
+    },
+    {
+      "featured": false,
+      "title": "Leonardo: a toolset to correct sample-induced artifacts in light sheet microscopy images",
+      "authors": "Yu Liu, Gesine F. Müller, Lennart Kowitz, Tomáš Chobola, Kurt Weiss, Paul Maier, Jie Luo, Malte Roeßing, M Stenzel, Anika Grüneboom, Johannes C. Paetzold, Ali Ertürk, Nassir Navab, Carsten Marr, Jianxun Chen, Jan Huisken, Tingying Peng",
+      "journal": "bioRxiv",
+      "year": 2025,
+      "link": "https://doi.org/10.1101/2025.10.26.684661",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Leonardo: A Toolset to Remove Sample-Induced Aberrations in Light Sheet Microscopy Images",
+      "authors": "Tingying Peng, Yu Liu, G.A. Müller, Lennart Kowitz, Tomáš Chobola, Kurt Weiss, Paul Maier, Jie Luo, Malte Roeßing, M Stenzel, Anika Grüneboom, Johannes C. Paetzold, Ali Ertürk, Nassir Navab, Carsten Marr, Jianxu Chen, Jan Huisken",
+      "journal": "Research Square",
+      "year": 2025,
+      "link": "https://doi.org/10.21203/rs.3.rs-5853941/v1",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "type": "preprint",
+      "title": "LipiGo: A Versatile DNA-Lipid Nanoparticle Hybrid for Precision Drug Delivery",
+      "authors": "Karoline Kadletz, Ceren Kımna, Valentin Kenneth Reichenbach, Olga Carofiglio, Denise Jeridi, Igor Khalin, Ying Chen, Izabela Horvath, David‐Paul Minde, Mayar Ali, Taras Sych, Sofia Hu, Luciano Hoeher, Eren Aydeniz, Yagmur Ayse Kulcu, Jakub Grzejdak, Alessio Ricci, Erdinç Sezgin, Nikolaus Plesnila, Arthur Liesz, Siegfried Ussar, Farida Hellal, Markus Elsner, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2025,
+      "note": "LipiGo",
+      "link": "https://doi.org/10.1101/2025.09.15.676334"
+    },
+    {
+      "featured": true,
+      "title": "Nanocarrier imaging at single-cell resolution across entire mouse bodies with deep learning",
+      "authors": "Jie Luo, Müge Molbay, Ying Chen, Izabela Horvath, Karoline Kadletz, Benjamin Kick, Shan Zhao, Rami Al-Maskari, Inderjeet Singh, Mayar Ali, Harsharan S. Bhatia, David‐Paul Minde, Moritz Negwer, Luciano Hoeher, Gian Marco Calandra, Bernhard Groschup, Jinpeng Su, Ceren Kımna, Zhouyi Rong, Nikolas F. B. Galensowske, Mihail Ivilinov Todorov, Denise Jeridi, Tzu‐Lun Ohn, Stefan Roth, Alba Simats, Vikramjeet Singh, Igor Khalin, Chenchen Pan, Bernardo A. Arús, Oliver T. Bruns, Reinhard Zeidler, Arthur Liesz, Ulrike Protzer, Nikolaus Plesnila, Siegfried Ussar, Farida Hellal, Johannes C. Paetzold, Markus Elsner, Hendrik Dietz, Ali Ertürk",
+      "journal": "Nature Biotechnology",
+      "year": 2025,
+      "note": "SCP-Nano",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "link": "https://doi.org/10.1038/s41587-024-02528-1"
+    },
+    {
+      "featured": false,
+      "title": "The stroke risk gene Foxf2 maintains brain endothelial cell function via Tie2 signaling",
+      "authors": "Katalin Völgyi, Judit González-Gallego, Stephan A. Müller, Mihail Ivilinov Todorov, Fatma Burcu Şeker, Simon Frerich, Filippo M. Cernilogar, Luise Schröger, Rainer Malik, Jiayu Cao, Gemma Llovera, Stefan Roth, Ulrike Schillinger, Martina Schifferer, Azadeh Reyahi, Dennis Crusius, Liliana D. Pedro, Mikael Simons, Peter Carlsson, Ali Ertürk, Arthur Liesz, Gunnar Schotta, Nikolaus Plesnila, Stefan F. Lichtenthaler, Dominik Paquet, Martin Dichgans",
+      "journal": "Nature Neuroscience",
+      "year": 2025,
+      "link": "https://doi.org/10.1038/s41593-025-02136-5"
+    },
+    {
+      "featured": false,
+      "title": "Tissue Clearing and Its Application in Nanoparticle Development",
+      "authors": "Zhouyi Rong, Ali Ertürk, Yamei Tang, Hongcheng Mai",
+      "journal": "Small",
+      "year": 2025,
+      "link": "https://doi.org/10.1002/smll.202410032"
+    },
+    {
+      "featured": false,
+      "title": "Benchtop mesoSPIM: a next-generation open-source light-sheet microscope for cleared samples",
+      "authors": "Nikita Vladimirov, Fabian F. Voigt, Thomas Naert, G. R. Araujo, Ruiyao Cai, Anna Maria Reuss, Shan Zhao, Patricia C. Schmid, Sven Hildebrand, Martina Schaettin, Dominik Groos, José Marı́a Mateos, Philipp Bethge, Taiyo Yamamoto, Valentino Aerne, Alard Roebroeck, Ali Ertürk, Adriano Aguzzi, Urs Ziegler, Esther T. Stoeckli, L. Baudis, Soeren S. Lienkamp, Fritjof Helmchen",
+      "journal": "Nature Communications",
+      "year": 2024,
+      "link": "https://doi.org/10.1038/s41467-024-46770-2"
+    },
+    {
+      "featured": false,
+      "title": "Creating bottom-up RNA transfer vehicles from synthetic protein assemblies",
+      "authors": "Wolfgang Wurst, Maren Kirstin Schuhmacher, Christoph Gruber, Christopher M. Lang, Ricardo Ruijpers, Lyupka Mazneykova, Ariane Krus, Barbara Tremmel, Friederike Reinhardt, Karoline Kadletz, Zhe Ma, Lucie Casalta, Dina Yehia Otify, Brice Beinsteiner, Irene van Balken, Leon Hetzel, Juliane Merl‐Pham, Marina Luchner, Lea Krautner, K. Ganea, Natascha Wiesner, Alexander Emrich, Emirhan Yağmur, Katrin Rager, Gauhar Sagindykova, Niklas Armbrust, Julian Geilenkeuser, Gil G. Westmeyer, Elvir Bećirović, Martin Biel, Rouzanna Istvánffy, Daniela M. Vogt Weisenhorn, Dong‐Jiunn Jeffery Truong, Marion Jasnin, Fabian J. Theis, Gregor Ebert, Ali Ertürk, Andrea Bähr, Nikolai Klymiuk, Florian Giesert",
+      "journal": "Research Square",
+      "year": 2024,
+      "link": "https://doi.org/10.21203/rs.3.rs-5123765/v1",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Decoding diseases in 3D: AI-powered cell level imaging and omics",
+      "authors": "Ali Ertürk",
+      "journal": "Free Radical Biology and Medicine",
+      "year": 2024,
+      "link": "https://doi.org/10.1016/j.freeradbiomed.2024.04.205"
+    },
+    {
+      "featured": false,
+      "title": "Deep 3D histology powered by tissue clearing, omics and AI",
+      "authors": "Ali Ertürk",
+      "journal": "Nature Methods",
+      "year": 2024,
+      "note": "Perspective",
+      "image": "/images/showcase/transparent-human-brain.jpg",
+      "link": "https://doi.org/10.1038/s41592-024-02327-1"
+    },
+    {
+      "featured": false,
+      "title": "Deep Learning and 3D Imaging Reveal Whole-Body Alterations in Obesity",
+      "authors": "Doris Kaltenecker, Izabela Horvath, Rami Al-Maskari, Zeynep Ilgin Kolabas, Ying Chen, Luciano Hoeher, Mihail Ivilinov Todorov, Saketh Kapoor, Mayar Ali, Florian Kofler, Pauline Morigny, Julia Geppert, Denise Jeridi, Carolina Cigankova, Victor Miro Kolenic, Nilsu Gur, Chenchen Pan, Marie Piraud, Daniel Rueckert, Maria Rohm, Farida Hellal, Markus Elsner, Harsharan S. Bhatia, Bjoern Menze, Stephan Herzig, Johannes C. Paetzold, Mauricio Berriel Díaz, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2024,
+      "link": "https://doi.org/10.1101/2024.08.18.608300",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "ICU patient-on-a-chip emulating orchestration of mast cells and cerebral organoids in neuroinflammation",
+      "authors": "Pelin Saglam‐Metiner, Sena Yanasik, Yusuf Caglar Odabasi, Jennifer Modamio, Moritz Negwer, Çığır Biray Avcı, Ayşe Güler, Ali Ertürk, Ender Yıldırım, Özlem Yeşil-Çeliktaş",
+      "journal": "Communications Biology",
+      "year": 2024,
+      "link": "https://doi.org/10.1038/s42003-024-07313-z"
+    },
+    {
+      "featured": false,
+      "title": "Persistence of spike protein at the skull-meninges-brain axis may contribute to the neurological sequelae of COVID-19",
+      "authors": "Zhouyi Rong, Hongcheng Mai, Gregor Ebert, Saketh Kapoor, Victor G. Puelles, Jan Czogalla, Senbin Hu, Jinpeng Su, Danilo Prtvar, Inderjeet Singh, Julia Schädler, Claire Delbridge, Hanno Steinke, H. Frenzel, Katja Schmidt, C. Braun, Gina Bruch, Viktoria Ruf, Mayar Ali, Kurt‐Wolfram Sühs, Mojtaba Nemati, Franziska Hopfner, Selin Ulukaya, Denise Jeridi, Daniele Mistretta, Özüm Şehnaz Çalışkan, Jochen M. Wettengel, Fatma Cherif, Zeynep Ilgin Kolabas, Müge Molbay, Izabela Horvath, Shan Zhao, Natalie Krahmer, Ali Önder Yildirim, Siegfried Ussar, Jochen Herms, Tobias B. Huber, Sabina Tahirović, Susanne M. Schwarzmaier, Nikolaus Plesnila, Günter U. Höglinger, Benjamin Ondruschka, Ingo Bechmann, Ulrike Protzer, Markus Elsner, Harsharan S. Bhatia, Farida Hellal, Ali Serol Ertürk",
+      "journal": "Cell Host & Microbe",
+      "year": 2024,
+      "link": "https://doi.org/10.1016/j.chom.2024.11.007"
+    },
+    {
+      "featured": false,
+      "title": "Probe set selection for targeted spatial transcriptomics",
+      "authors": "Louis B. Kuemmerle, Malte D. Luecken, Alexandra B. Firsova, Lisa Barros de Andrade e Sousa, Lena Straßer, Ilhem Isra Mekki, Francesco Campi, Lukas Heumos, Maiia Shulman, Valentina Beliaeva, Soroor Hediyeh-zadeh, Anna C. Schaar, Krishnaa T. Mahbubani, Alexandros Sountoulidis, Tamás Balassa, Ferenc Kovács, Péter Horváth, Marie Piraud, Ali Ertürk, Christos Samakovlis, Fabian J. Theis",
+      "journal": "Nature Methods",
+      "year": 2024,
+      "link": "https://doi.org/10.1038/s41592-024-02496-z"
+    },
+    {
+      "featured": false,
+      "title": "Proteomics of mouse brain endothelium uncovers dysregulation of vesicular transport pathways during aging",
+      "authors": "Katalin Völgyi, Judit González-Gallego, Stephan A. Müller, Nathalie Beaufort, Rainer Malik, Martina Schifferer, Mihail Ivilinov Todorov, Dennis Crusius, Sophie Robinson, Andree Schmidt, Jakob Körbelin, Florence M. Bareyre, Ali Ertürk, Christian Haass, Mikael Simons, Dominik Paquet, Stefan F. Lichtenthaler, Martin Dichgans",
+      "journal": "Nature Aging",
+      "year": 2024,
+      "link": "https://doi.org/10.1038/s43587-024-00598-z"
+    },
+    {
+      "featured": false,
+      "title": "Remote Neuroinflammation in Newly Diagnosed Glioblastoma Correlates with Unfavorable Clinical Outcome",
+      "authors": "Laura M. Bartos, Stefanie Quach, Valerio Zenatti, Sabrina V. Kirchleitner, Jens Blobner, Karin Wind, Zeynep Ilgin Kolabas, Selin Ulukaya, Adrien Holzgreve, Viktoria Ruf, Lea H. Kunze, Sebastian T. Kunte, Leonie Hoermann, M. Hartel, Ha Eun Park, Mattes Groß, Nicolai Franzmeier, Artem Zatcepin, Adrian Zounek, Lena Kaiser, Markus J. Riemenschneider, Robert Perneczky, Boris‐Stephan Rauchmann, Sophia Stoecklein, Sibylle Ziegler, Jochen Herms, Ali Ertürk, J. C. Tonn, Niklas Thon, Louisa von Baumgarten, Matthias Prestel, Sabina Tahirović, Nathalie L. Albert, Matthias Brendel",
+      "journal": "Clinical Cancer Research",
+      "year": 2024,
+      "link": "https://doi.org/10.1158/1078-0432.ccr-24-1563"
+    },
+    {
+      "featured": false,
+      "title": "Virtual reality-empowered deep-learning analysis of brain cells",
+      "authors": "Doris Kaltenecker, Rami Al-Maskari, Moritz Negwer, Luciano Hoeher, Florian Kofler, Shan Zhao, Mihail Ivilinov Todorov, Zhouyi Rong, Johannes C. Paetzold, Benedikt Wiestler, Marie Piraud, Daniel Rueckert, Julia Geppert, Pauline Morigny, Maria Rohm, Bjoern Menze, Stephan Herzig, Mauricio Berriel Díaz, Ali Ertürk",
+      "journal": "Nature Methods",
+      "year": 2024,
+      "note": "DELiVR · Nature Methods cover",
+      "image": "/images/showcase/brain-vasculature.jpg",
+      "link": "https://doi.org/10.1038/s41592-024-02245-2"
+    },
+    {
+      "featured": false,
+      "title": "Deciphering sources of PET signals in the tumor microenvironment of glioblastoma at cellular resolution",
+      "authors": "Laura M. Bartos, Sabrina V. Kirchleitner, Zeynep Ilgin Kolabas, Stefanie Quach, Alexander Beck, Julia Lorenz, Jens Blobner, Stephan A. Müller, Selin Ulukaya, Luciano Hoeher, Izabela Horvath, Karin Wind, Adrien Holzgreve, Viktoria Ruf, Lukas Gold, Lea H. Kunze, Sebastian T. Kunte, Philipp Beumers, Ha Eun Park, Melissa Antons, Artem Zatcepin, Nils Briel, Leonie Hoermann, Rebecca Schaefer, Denise Messerer, Peter Bartenstein, Markus J. Riemenschneider, Simon Lindner, Sibylle Ziegler, Jochen Herms, Stefan F. Lichtenthaler, Ali Ertürk, J. C. Tonn, Louisa von Baumgarten, Nathalie L. Albert, Matthias Brendel",
+      "journal": "Science Advances",
+      "year": 2023,
+      "link": "https://doi.org/10.1126/sciadv.adi8986"
+    },
+    {
+      "featured": false,
+      "title": "Distinct molecular profiles of skull bone marrow in health and neurological disorders",
+      "authors": "Zeynep Ilgin Kolabas, Louis B. Kuemmerle, Robert Perneczky, Benjamín Förstera, Selin Ulukaya, Mayar Ali, Saketh Kapoor, Laura M. Bartos, Maren Büttner, Özüm Şehnaz Çalışkan, Zhouyi Rong, Hongcheng Mai, Luciano Höher, Denise Jeridi, Müge Molbay, Igor Khalin, Ioannis K. Deligiannis, Moritz Negwer, Kenny Roberts, Alba Simats, Olga Carofiglio, Mihail Ivilinov Todorov, Izabela Horvath, Furkan Öztürk, Selina Hummel, Gloria Biechele, Artem Zatcepin, Marcus Unterrainer, Johannes Gnörich, Jay Roodselaar, Joshua Shrouder, Pardis Khosravani, Benjamin Tast, Lisa Richter, Laura Díaz-Marugán, Doris Kaltenecker, Laurin Lux, Ying Chen, Shan Zhao, Boris‐Stephan Rauchmann, Michael Sterr, Ines Kunze, Karen Stanic, Vanessa W. Y. Kan, Simon Besson‐Girard, Sabrina Katzdobler, Carla Palleis, Julia Schädler, Johannes C. Paetzold, Sabine Liebscher, Anja E. Hauser, Özgün Gökçe, Heiko Lickert, Hanno Steinke, Corinne Benakis, C. Braun, Celia Pilar Martinez‐Jimenez, Katharina Büerger, Nathalie L. Albert, Günter U. Höglinger, Johannes Levin, Christian Haass, Anna Kopczak, Martin Dichgans, Joachim Havla, Tania Kümpfel, Martin Kerschensteiner, Martina Schifferer, Mikael Simons, Arthur Liesz, Natalie Krahmer, Omer Ali Bayraktar, Nicolai Franzmeier, Nikolaus Plesnila, Süheda Erener, Victor G. Puelles, Claire Delbridge, Harsharan S. Bhatia, Farida Hellal, Markus Elsner, Ingo Bechmann, Benjamin Ondruschka, Matthias Brendel, Fabian J. Theis, Ali Ertürk",
+      "journal": "Cell",
+      "year": 2023,
+      "link": "https://doi.org/10.1016/j.cell.2023.07.009"
+    },
+    {
+      "featured": false,
+      "title": "Early Dissemination Highly Enhances Liver Metastasis Development During Intestinal Tumorigenesis",
+      "authors": "Zeinab Homayed, Guillaume Belthier, Tinhinan Lahlou, Laia Bassaganyas, Emmanuelle Sidot, Pierre Giroux, Jennifer Series, Céline Bouclier, Lucile Bansard, François Gerbe, Chenchen Pan, Moritz Newger, Jean François Bourgaux, Julie Guillermet‐Guibert, Matthieu Lacroix, Laurent Le Cam, Silvia Fré, Rachel A. Ridgway, Owen J. Sansom, Ali Ertürk, Philippe Jay, Daniel Häußler, Achim Krüger, Zena Werb, Andrei Turtoï, Damien Grégoire, Frédéric Lagarrigue, Caroline Bonnans, Julie Pannequin",
+      "journal": "SSRN",
+      "year": 2023,
+      "link": "https://doi.org/10.2139/ssrn.4484642",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Immune-mediated denervation of the pineal gland underlies sleep disturbance in cardiac disease",
+      "authors": "Karin A. Ziegler, Andrea Ahles, Anne Dueck, Dena Esfandyari, P. Pichler, K. Weber, Stefan Kotschi, Alexander Bartelt, Inga Sinicina, Matthias Graw, Heinrich Leonhardt, Ludwig T. Weckbach, Steffen Maßberg, Martina Schifferer, Mikael Simons, Luciano Hoeher, Jie Luo, Ali Ertürk, Gabriele G. Schiattarella, Yassine Sassi, Thomas Misgeld, Stefan Engelhardt",
+      "journal": "Science",
+      "year": 2023,
+      "link": "https://doi.org/10.1126/science.abn6366"
+    },
+    {
+      "featured": false,
+      "title": "Panoptica -- instance-wise evaluation of 3D semantic and instance segmentation maps",
+      "authors": "Florian Kofler, Hendrik Möller, Josef A. Buchner, Ezequiel de la Rosa, Ivan Ezhov, Marcel Rosier, Isra Mekki, Suprosanna Shit, Moritz Negwer, Rami Al-Maskari, Ali Ertürk, Shankeeth Vinayahalingam, Fabian Isensee, Sarthak Pati, Daniel Rueckert, Jan S. Kirschke, Stefan K. Ehrlich, Annika Reinke, Bjoern Menze, Benedikt Wiestler, Marie Piraud",
+      "journal": "arXiv",
+      "year": 2023,
+      "link": "https://doi.org/10.48550/arxiv.2312.02608",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Single-cell precision nanotechnology in vivo",
+      "authors": "Müge Molbay, Benjamin Kick, Shan Zhao, Mihail Ivilinov Todorov, Tzu‐Lun Ohn, Stefan Roth, Alba Simats, Vikramjeet Singh, Igor Khalin, Chenchen Pan, Harsharan S. Bhatia, Farida Hellal, Reinhard Zeidler, Arthur Liesz, Nikolaus Plesnila, Hendrik Dietz, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2023,
+      "link": "https://doi.org/10.1101/2023.07.24.550304",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "The state of brain activity modulates cerebrospinal fluid transport",
+      "authors": "Leo M. Miyakoshi, Frederik Filip Stæger, Qianliang Li, Chenchen Pan, Lulu Xie, Hongyi Kang, Chiara Pavan, Juliana A. M. L. Dang, Qian Sun, Ali Ertürk, Maiken Nedergaard",
+      "journal": "Progress in Neurobiology",
+      "year": 2023,
+      "link": "https://doi.org/10.1016/j.pneurobio.2023.102512"
+    },
+    {
+      "featured": false,
+      "title": "Whole mouse body histology using standard IgG antibodies",
+      "authors": "Hongcheng Mai, Jie Luo, Luciano Hoeher, Rami Al-Maskari, Izabela Horvath, Johannes C. Paetzold, Mihail Ivilinov Todorov, Farida Hellal, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2023,
+      "link": "https://doi.org/10.1101/2023.02.17.528921",
+      "type": "preprint"
+    },
+    {
+      "featured": true,
+      "title": "Whole-body cellular mapping in mouse using standard IgG antibodies",
+      "authors": "Hongcheng Mai, Jie Luo, Luciano Hoeher, Rami Al-Maskari, Izabela Horvath, Ying Chen, Florian Kofler, Marie Piraud, Johannes C. Paetzold, Jennifer Modamio, Mihail Ivilinov Todorov, Markus Elsner, Farida Hellal, Ali Ertürk",
+      "journal": "Nature Biotechnology",
+      "year": 2023,
+      "note": "wildDISCO · cover",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "videoId": "w57BU40-BCo",
+      "link": "https://doi.org/10.1038/s41587-023-01846-0"
+    },
+    {
+      "featured": false,
+      "title": "Whole-mouse clearing and imaging at the cellular level with vDISCO",
+      "authors": "Ruiyao Cai, Zeynep Ilgin Kolabas, Chenchen Pan, Hongcheng Mai, Shan Zhao, Doris Kaltenecker, Fabian F. Voigt, Müge Molbay, Tzu‐Lun Ohn, Cécile Vincke, Mihail Ivilinov Todorov, Fritjof Helmchen, Jo A. Van Ginderachter, Ali Ertürk",
+      "journal": "Nature Protocols",
+      "year": 2023,
+      "link": "https://doi.org/10.1038/s41596-022-00788-2"
+    },
+    {
+      "featured": false,
+      "title": "A BioID-derived proximity interactome for Protein Phosphatase PP2A",
+      "authors": "Shveta Bathla, Jean Kanyo, Angus C. Nairn, Harsharan S. Bhatia, Andreas Brunner, Zhouyi Rong, Hongcheng Mai, Marvin Thielert, Rami AI -Maskari, Johannes C. Paetzold, Florian Kofler, Mihail Ivilinov Todorov, Mayar Ali, Müge Molbay, Zeynep Ilgin Kolabas, Doris Kaltenecker, Stephan A. Müller, Stefan F. Lichtenthaler, Bjoern Menze, Fabian J. Theis, Matthias Mann, Ali Ertürk",
+      "journal": "Molecular & Cellular Proteomics",
+      "year": 2022,
+      "link": "https://doi.org/10.1016/j.mcpro.2022.100324"
+    },
+    {
+      "featured": false,
+      "title": "blob loss: instance imbalance aware loss functions for semantic segmentation",
+      "authors": "Florian Kofler, Suprosanna Shit, Bjoern Menze, Lucas Fidon, Izabela Horvath, Rami Al-Maskari, Hongwei Li, Harsharan S. Bhatia, Timo Loehr, Marie Piraud, Ali Ertürk, Jan S. Kirschke, Jan C. Peeken, Tom Vercauteren, Claus Zimmer, Benedikt Wiestler, Bjoern Menze",
+      "journal": "Zurich Open Repository and Archive (University of Zurich)",
+      "year": 2022,
+      "link": "https://doi.org/10.48550/arxiv.2205.08209"
+    },
+    {
+      "featured": false,
+      "title": "Mapping of neuroinflammation-induced hypoxia in the spinal cord using optoacoustic imaging",
+      "authors": "Marta Ramos, Pontus Kjellman, Mihail Ivilinov Todorov, Tekla Maria Kylkilahti, B. Thomas Bäckström, Ali Ertürk, Chris D. Madsen, Iben Lundgaard",
+      "journal": "Acta Neuropathologica Communications",
+      "year": 2022,
+      "link": "https://doi.org/10.1186/s40478-022-01337-4"
+    },
+    {
+      "featured": false,
+      "title": "METGAN: Generative Tumour Inpainting and Modality Synthesis in Light Sheet Microscopy",
+      "authors": "Izabela Horvath, Johannes C. Paetzold, Oliver Schoppe, Rami Al-Maskari, Ivan Ezhov, Suprosanna Shit, Hongwei Li, Ali Ertürk, Bjoern Menze",
+      "journal": "2022 IEEE/CVF Winter Conference on Applications of Computer Vision (WACV)",
+      "year": 2022,
+      "link": "https://doi.org/10.1109/wacv51458.2022.00329"
+    },
+    {
+      "featured": false,
+      "title": "Neuroimmune cardiovascular interfaces control atherosclerosis",
+      "authors": "Sarajo K. Mohanta, Li Peng, Yuanfang Li, Shu Lu, Ting Sun, Lorenzo Carnevale, Marialuisa Perrotta, Zhe Ma, Benjamín Förstera, Karen Stanic, Chuankai Zhang, Xi Zhang, Piotr Szczepaniak, Mariaelvy Bianchini, Borhan R. Saeed, Raimondo Carnevale, Desheng Hu, Ryszard Nosalski, Fabio Pallante, Michael Beer, Donato Santovito, Ali Ertürk, Thomas C. Mettenleiter, Barbara G. Klupp, Remco T. A. Megens, Sabine Steffens, Jaroslav Pelisek, Hans‐Henning Eckstein, Robert Kleemann, Livia Habenicht, Ziad Mallat, Jean‐Baptiste Michel, Jürgen Bernhagen, Martin Dichgans, Giuseppe D’Agostino, Tomasz J Guzik, Peder S. Olofsson, Changjun Yin, Christian Weber, Giuseppe Lembo, Daniela Carnevale, Andreas J. R. Habenicht",
+      "journal": "Nature",
+      "year": 2022,
+      "link": "https://doi.org/10.1038/s41586-022-04673-6"
+    },
+    {
+      "featured": false,
+      "title": "Perfusion pressure determines vascular integrity and histomorphological quality following perfusion fixation of the brain",
+      "authors": "Susanne M. Schwarzmaier, Maximilian R.O. Knarr, Senbin Hu, Ali Ertürk, Farida Hellal, Nikolaus Plesnila",
+      "journal": "Journal of Neuroscience Methods",
+      "year": 2022,
+      "link": "https://doi.org/10.1016/j.jneumeth.2022.109493"
+    },
+    {
+      "featured": false,
+      "title": "Purkinje cell vulnerability induced by diffuse traumatic brain injury is linked to disruption of long-range neuronal circuits",
+      "authors": "Ílknur Özen, Hongcheng Mai, Alessandro De Maio, Karsten Ruscher, Georgios Michalettos, Fredrik Clausen, Michael B. Gottschalk, Saema Ansar, Sertan Arkan, Ali Ertürk, Niklas Marklund",
+      "journal": "Acta Neuropathologica Communications",
+      "year": 2022,
+      "link": "https://doi.org/10.1186/s40478-022-01435-3"
+    },
+    {
+      "featured": false,
+      "title": "Scalable tissue labeling and clearing of intact human organs",
+      "authors": "Hongcheng Mai, Zhouyi Rong, Shan Zhao, Ruiyao Cai, Hanno Steinke, Ingo Bechmann, Ali Ertürk",
+      "journal": "Nature Protocols",
+      "year": 2022,
+      "link": "https://doi.org/10.1038/s41596-022-00712-8"
+    },
+    {
+      "featured": false,
+      "title": "Selective plasticity of callosal neurons in the adult contralesional cortex following murine traumatic brain injury",
+      "authors": "Laura Empl, Alexandra Chovsepian, Maryam Chahin, Wing Yin Vanessa Kan, Julie Fourneau, Valérie Van Steenbergen, Sanofer Weidinger, Maite Marcantoni, Alexander Ghanem, Peter Bradley, Karl‐Klaus Conzelmann, Ruiyao Cai, Alireza Ghasemigharagoz, Ali Ertürk, Ingrid Wagner, Mario Kreutzfeldt, Doron Merkler, Sabine Liebscher, Florence M. Bareyre",
+      "journal": "Nature Communications",
+      "year": 2022,
+      "link": "https://doi.org/10.1038/s41467-022-29992-0"
+    },
+    {
+      "featured": true,
+      "title": "Spatial proteomics in three-dimensional intact specimens",
+      "authors": "Harsharan S. Bhatia, Andreas‐David Brunner, Furkan Öztürk, Saketh Kapoor, Zhouyi Rong, Hongcheng Mai, Marvin Thielert, Mayar Ali, Rami Al-Maskari, Johannes C. Paetzold, Florian Kofler, Mihail Ivilinov Todorov, Müge Molbay, Zeynep Ilgin Kolabas, Moritz Negwer, Luciano Hoeher, Hanno Steinke, Alina Dima, Basavdatta Gupta, Doris Kaltenecker, Özüm Şehnaz Çalışkan, Daniel Brandt, Natalie Krahmer, Stephan A. Müller, Stefan F. Lichtenthaler, Farida Hellal, Ingo Bechmann, Bjoern Menze, Fabian J. Theis, Matthias Mann, Ali Ertürk",
+      "journal": "Cell",
+      "year": 2022,
+      "note": "DISCO-MS · cover",
+      "image": "/images/showcase/disco-ms-cover.jpg",
+      "link": "https://doi.org/10.1016/j.cell.2022.11.021"
+    },
+    {
+      "featured": false,
+      "title": "Tissue Clearing Approaches in Atherosclerosis",
+      "authors": "Ting Sun, Yuanfang Li, Benjamín Förstera, Karen Stanic, Shu Lu, Sabine Steffens, Changjun Yin, Ali Ertürk, Remco T. A. Megens, Christian Weber, Andreas J. R. Habenicht, Sarajo K. Mohanta",
+      "journal": "Methods in molecular biology",
+      "year": 2022,
+      "link": "https://doi.org/10.1007/978-1-0716-1924-7_45"
+    },
+    {
+      "featured": false,
+      "title": "A guidebook for DISCO tissue clearing",
+      "authors": "Müge Molbay, Zeynep Ilgin Kolabas, Mihail Ivilinov Todorov, Tzu‐Lun Ohn, Ali Ertürk",
+      "journal": "Molecular Systems Biology",
+      "year": 2021,
+      "note": "DISCO guidebook",
+      "image": "/images/showcase/light-sheet-snapshot.jpg",
+      "link": "https://doi.org/10.15252/msb.20209807"
+    },
+    {
+      "featured": false,
+      "title": "Multi-omics and 3D-imaging reveal bone heterogeneity and unique calvaria cells in neuroinflammation",
+      "authors": "Zeynep Ilgin Kolabas, Louis B. Kuemmerle, Robert Perneczky, Benjamín Förstera, Maren Büttner, Özüm Şehnaz Çalışkan, Mayar Ali, Zhouyi Rong, Hongcheng Mai, Selina Hummel, Laura M. Bartos, Gloria Biechele, Artem Zatcepin, Natalie L. Albert, Marcus Unterrainer, Johannes Gnörich, Shan Zhao, Igor Khalin, Boris‐Stephan Rauchmann, Müge Molbay, Michael Sterr, Ines Kunze, Karen Stanic, Simon Besson‐Girard, Anna Kopczak, Sabrina Katzdobler, Carla Palleis, Özgün Gökçe, Heiko Lickert, Hanno Steinke, Ingo Bechmann, Katharina Büerger, Johannes Levin, Christian Haass, Martin Dichgans, Joachim Havla, Tania Kümpfel, Martin Kerschensteiner, Mikael Simons, Nikolaus Plesnila, Natalie Krahmer, Harsharan S. Bhatia, Süheda Erener, Farida Hellal, Matthias Brendel, Fabian J. Theis, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2021,
+      "link": "https://doi.org/10.1101/2021.12.24.473988",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Obesity-associated hyperleptinemia alters the gliovascular interface of the hypothalamus to promote hypertension",
+      "authors": "Tim Gruber, Chenchen Pan, Raian E. Contreras, Tobias Wiedemann, Donald A. Morgan, Alicja A. Skowronski, Sandrine Lefort, C. Murat, Ophélia Le Thuc, Beata Legutko, Francisco Javier Ruiz‐Ojeda, María de la Fuente‐Fernández, Ángel Luis Garcı́a-Villalón, Daniel González‐Hedström, Melanie Huber, Klara Szigeti‐Buck, Timo D. Müller, Siegfried Ussar, Paul T. Pfluger, S. C. Woods, Ali Ertürk, Charles A. LeDuc, Kamal Rahmouni, Miriam Granado, Tamás L. Horváth, Matthias H. Tschöp, Cristina García‐Cáceres",
+      "journal": "Cell Metabolism",
+      "year": 2021,
+      "link": "https://doi.org/10.1016/j.cmet.2021.04.007"
+    },
+    {
+      "featured": false,
+      "title": "Proteomics of spatially identified tissues in whole organs",
+      "authors": "Harsharan S. Bhatia, Andreas‐David Brunner, Zhouyi Rong, Hongcheng Mai, Marvin Thielert, Rami Al-Maskari, Johannes C. Paetzold, Florian Kofler, Mihail Ivilinov Todorov, Mayar Ali, Müge Molbay, Zeynep Ilgin Kolabas, Doris Kaltenecker, Stephan A. Müller, Stefan F. Lichtenthaler, Bjoern Menze, Fabian J. Theis, Matthias Mann, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2021,
+      "link": "https://doi.org/10.1101/2021.11.02.466753",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Tissue clearing",
+      "authors": "Douglas S. Richardson, Webster Guan, Katsuhiko Matsumoto, Chenchen Pan, Kwanghun Chung, Ali Ertürk, Hiroki R. Ueda, Jeff W. Lichtman",
+      "journal": "Nature Reviews Methods Primers",
+      "year": 2021,
+      "link": "https://doi.org/10.1038/s43586-021-00080-9"
+    },
+    {
+      "featured": false,
+      "title": "Whole Brain Vessel Graphs: A Dataset and Benchmark for Graph Learning and Neuroscience (VesselGraph)",
+      "authors": "Johannes C. Paetzold, Julian McGinnis, Suprosanna Shit, Ivan Ezhov, Paul Büschl, Chinmay Prabhakar, Mihail Ivilinov Todorov, Anjany Sekuboyina, Georgios Kaissis, Ali Ertürk, Stephan Günnemann, Bjoern Menze",
+      "journal": "Zurich Open Repository and Archive (University of Zurich)",
+      "year": 2021,
+      "link": "https://doi.org/10.48550/arxiv.2108.13233",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "3D high resolution generative deep-learning network for fluorescence microscopy imaging",
+      "authors": "Hang Zhou, Ruiyao Cai, Tingwei Quan, Shijie Liu, Shiwei Li, Qing Huang, Ali Ertürk, Shaoqun Zeng",
+      "journal": "Optics Letters",
+      "year": 2020,
+      "link": "https://doi.org/10.1364/ol.387486"
+    },
+    {
+      "featured": false,
+      "title": "An ocular glymphatic clearance system removes β-amyloid from the rodent eye",
+      "authors": "Xiaowei Wang, Nanhong Lou, Allison Eberhardt, Yujia Yang, Peter Kusk, Qiwu Xu, Benjamín Förstera, Sisi Peng, Meng Shi, Antonio Ladrón-de-Guevara, Christine Delle, Björn Sigurðsson, Anna L. R. Xavier, Ali Ertürk, Richard T. Libby, Lu Chen, Alexander S. Thrane, Maiken Nedergaard",
+      "journal": "Science Translational Medicine",
+      "year": 2020,
+      "link": "https://doi.org/10.1126/scitranslmed.aaw3210"
+    },
+    {
+      "featured": false,
+      "title": "Aquaporin 1 and the Na+/K+/2Cl− cotransporter 1 are present in the leptomeningeal vasculature of the adult rodent central nervous system",
+      "authors": "Qianliang Li, Nadia Aalling, Benjamín Förstera, Ali Ertürk, Maiken Nedergaard, Kjeld Møllgård, Anna L. R. Xavier",
+      "journal": "Fluids and Barriers of the CNS",
+      "year": 2020,
+      "link": "https://doi.org/10.1186/s12987-020-0176-z"
+    },
+    {
+      "featured": true,
+      "title": "Cellular and Molecular Probing of Intact Human Organs",
+      "authors": "Shan Zhao, Mihail Ivilinov Todorov, Ruiyao Cai, Rami AI -Maskari, Hanno Steinke, Elisabeth Kemter, Hongcheng Mai, Zhouyi Rong, Martin Warmer, Karen Stanic, Oliver Schoppe, Johannes C. Paetzold, Benno Gesierich, Milagros N. Wong, Tobias B. Huber, Marco Duering, Oliver T. Bruns, Bjoern Menze, Jan Lipfert, Victor G. Puelles, Eckhard Wolf, Ingo Bechmann, Ali Ertürk",
+      "journal": "Cell",
+      "year": 2020,
+      "note": "SHANEL",
+      "image": "/images/showcase/transparent-human-brain.jpg",
+      "videoId": "i1-upP0kq5o",
+      "link": "https://doi.org/10.1016/j.cell.2020.01.030"
+    },
+    {
+      "featured": false,
+      "title": "Deep learning-enabled multi-organ segmentation in whole-body mouse scans",
+      "authors": "Oliver Schoppe, Chenchen Pan, Javier Coronel, Hongcheng Mai, Zhouyi Rong, Mihail Ivilinov Todorov, Annemarie Müskes, Fernando Navarro, Hongwei Li, Ali Ertürk, Bjoern Menze",
+      "journal": "Nature Communications",
+      "year": 2020,
+      "link": "https://doi.org/10.1038/s41467-020-19449-7"
+    },
+    {
+      "featured": false,
+      "title": "Machine learning analysis of whole mouse brain vasculature",
+      "authors": "Mihail Ivilinov Todorov, Johannes C. Paetzold, Oliver Schoppe, Giles Tetteh, Suprosanna Shit, Velizar Efremov, Katalin Völgyi, Marco Düring, Martin Dichgans, Marie Piraud, Bjoern Menze, Ali Ertürk",
+      "journal": "Nature Methods",
+      "year": 2020,
+      "note": "VesSAP",
+      "link": "https://doi.org/10.1038/s41592-020-0792-1"
+    },
+    {
+      "featured": false,
+      "title": "Tissue clearing and its applications in neuroscience",
+      "authors": "Hiroki R. Ueda, Ali Ertürk, Kwanghun Chung, Viviana Gradinaru, Alain Chédotal, Pavel Tomančák, Philipp Keller",
+      "journal": "Nature reviews. Neuroscience",
+      "year": 2020,
+      "link": "https://doi.org/10.1038/s41583-019-0250-1"
+    },
+    {
+      "featured": true,
+      "title": "Deep Learning Reveals Cancer Metastasis and Therapeutic Antibody Targeting in the Entire Body",
+      "authors": "Chenchen Pan, Oliver Schoppe, Arnaldo Parra‐Damas, Ruiyao Cai, Mihail Ivilinov Todorov, Gábor Gondi, Bettina von Neubeck, Nuray Böğürcü, Sascha Seidel, Katia Sleiman, Christian Veltkamp, Benjamín Förstera, Hongcheng Mai, Zhouyi Rong, Omelyan Trompak, Alireza Ghasemigharagoz, Madita Alice Reimer, Ángel M. Cuesta, Javier Coronel, Irmela Jeremias, Dieter Saur, Amparo Acker‐Palmer, Till Acker, Boyan K. Garvalov, Bjoern Menze, Reinhard Zeidler, Ali Ertürk",
+      "journal": "Cell",
+      "year": 2019,
+      "note": "DeepMACT · cover",
+      "image": "/images/showcase/deepmact-cell.jpg",
+      "videoId": "ZnkNw5a-gvs",
+      "link": "https://doi.org/10.1016/j.cell.2019.11.013"
+    },
+    {
+      "featured": false,
+      "title": "The Ocular Glymphatic Clearance System",
+      "authors": "Xiaowei Wang, Nanhong Lou, Allison Eberhardt, Peter Kusk, Qiwu Xu, Benjamín Förstera, Sisi Peng, Yujia Yang, Meng Shi, Anna L. R. Xavier, Ali Ertürk, Richard T. Libby, Lu Chen, Alexander S. Thrane, Maiken Nedergaard",
+      "journal": "bioRxiv",
+      "year": 2019,
+      "link": "https://doi.org/10.1101/2019.12.29.889873",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Transfer learning from synthetic data reduces need for labels to segment brain vasculature and neural pathways in 3d",
+      "authors": "Johannes C Paetzold, Oliver Schoppe, Rami Al-Maskari, Giles Tetteh, Velizar Efremov, Mihail I Todorov, Ruiyao Cai, Hongcheng Mai, Zhouyi Rong, Ali Ertürk, Bjoern H Menze",
+      "journal": "Journal",
+      "year": 2019,
+      "link": "https://openreview.net/forum?id=BJe02gRiY4"
+    },
+    {
+      "featured": false,
+      "title": "An inhibitory antibody targeting carbonic anhydrase XII abrogates chemoresistance and significantly reduces lung metastases in an orthotopic breast cancer model in vivo",
+      "authors": "Bettina von Neubeck, Gábor Gondi, Chiara Riganti, Chenchen Pan, Arnaldo Parra‐Damas, Hagen Scherb, Ali Ertürk, Reinhard Zeidler",
+      "journal": "International Journal of Cancer",
+      "year": 2018,
+      "link": "https://doi.org/10.1002/ijc.31607"
+    },
+    {
+      "featured": false,
+      "title": "Loss of TREM2 function increases amyloid seeding but reduces plaque-associated ApoE",
+      "authors": "Samira Parhizkar, Thomas Arzberger, Matthias Brendel, Gernot Kleinberger, Maximilian Deussing, Carola Focke, Brigitte Nuscher, Monica Xiong, Alireza Ghasemigharagoz, Natalie Katzmarski, Susanne Krasemann, Stefan F. Lichtenthaler, Stephan A. Müller, Alessio Colombo, Laura Sebastian Monasor, Sabina Tahirovic, Jochen Herms, Michael Willem, Nadine Pettkus, Oleg Butovsky, Peter Bartenstein, Dieter Edbauer, Axel Rominger, Ali Ertürk, Stefan A. Grathwohl, Jonas J. Neher, David M. Holtzman, Melanie Meyer-Luehmann, Christian Haass",
+      "journal": "Nature Neuroscience",
+      "year": 2018,
+      "link": "https://doi.org/10.1038/s41593-018-0296-9"
+    },
+    {
+      "featured": false,
+      "title": "Panoptic imaging of transparent mice reveals whole-body neuronal projections and skull–meninges connections",
+      "authors": "Ruiyao Cai, Chenchen Pan, Alireza Ghasemigharagoz, Mihail Ivilinov Todorov, Benjamín Förstera, Shan Zhao, Harsharan S. Bhatia, Arnaldo Parra‐Damas, Leander Mrowka, Delphine Theodorou, Markus Rempfler, Anna L. R. Xavier, Benjamin T. Kress, Corinne Benakis, Hanno Steinke, Sabine Liebscher, Ingo Bechmann, Arthur Liesz, Bjoern Menze, Martin Kerschensteiner, Maiken Nedergaard, Ali Ertürk",
+      "journal": "Nature Neuroscience",
+      "year": 2018,
+      "note": "vDISCO · cover",
+      "link": "https://doi.org/10.1038/s41593-018-0301-3"
+    },
+    {
+      "featured": false,
+      "title": "Panoptic vDISCO imaging reveals neuronal connectivity, remote trauma effects and meningeal vessels in intact transparent mice",
+      "authors": "Ruiyao Cai, Chenchen Pan, Alireza Ghasemigharagoz, Mihail Ivilinov Todorov, Benjamin Foerstera, Shan Zhao, Harsharan S. Bhatia, Leander Mrowka, Delphine Theodorou, Markus Rempfler, Anna L. R. Xavier, Benjamin T. Kress, Corinne Benakis, Arthur Liesz, Bjoern Menze, Martin Kerschensteiner, Maiken Nedergaard, Ali Ertürk",
+      "journal": "bioRxiv",
+      "year": 2018,
+      "link": "https://doi.org/10.1101/374785",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Whole-Brain Analysis of Cells and Circuits by Tissue Clearing and Light-Sheet Microscopy",
+      "authors": "Tomoyuki Mano, Alexandre Albanese, Hans‐Ulrich Dodt, Ali Ertürk, Viviana Gradinaru, Jennifer B. Treweek, Atsushi Miyawaki, Kwanghun Chung, Hiroki R. Ueda",
+      "journal": "Journal of Neuroscience",
+      "year": 2018,
+      "link": "https://doi.org/10.1523/jneurosci.1677-18.2018"
+    },
+    {
+      "featured": false,
+      "title": "Seeing whole-tumour heterogeneity",
+      "authors": "Boyan K. Garvalov, Ali Ertürk",
+      "journal": "Nature Biomedical Engineering",
+      "year": 2017,
+      "link": "https://doi.org/10.1038/s41551-017-0150-5"
+    },
+    {
+      "featured": false,
+      "title": "The choroid plexus is a key cerebral invasion route for T cells after stroke",
+      "authors": "Gemma Llovera, Corinne Benakis, Gaby Enzmann, Ruiyao Cai, Thomas Arzberger, Alireza Ghasemigharagoz, Xiang Mao, Rainer Malik, Ivana Lazarević, Sabine Liebscher, Ali Ertürk, Lilja Meissner, Denis Vivien, Christof Haffner, Nikolaus Plesnila, Joan Montaner, Britta Engelhardt, Arthur Liesz",
+      "journal": "Acta Neuropathologica",
+      "year": 2017,
+      "link": "https://doi.org/10.1007/s00401-017-1758-y"
+    },
+    {
+      "featured": false,
+      "title": "Interfering with the Chronic Immune Response Rescues Chronic Degeneration After Traumatic Brain Injury",
+      "authors": "Ali Ertürk, Susanne Mentz, Erik E. Stout, Maj Hedehus, Sara L. Domínguez, Lisa Neumaier, Franziska Krammer, Gemma Llovera, Karpagam Srinivasan, David V. Hansen, Arthur Liesz, Kimberly Scearce‐Levie, Morgan Sheng",
+      "journal": "Journal of Neuroscience",
+      "year": 2016,
+      "link": "https://doi.org/10.1523/jneurosci.1898-15.2016"
+    },
+    {
+      "featured": false,
+      "title": "Shrinkage-mediated imaging of entire organs and organisms using uDISCO",
+      "authors": "Chenchen Pan, Ruiyao Cai, Francesca Paola Quacquarelli, Alireza Ghasemigharagoz, Athanasios Lourbopoulos, Paweł Matryba, Nikolaus Plesnila, Martin Dichgans, Farida Hellal, Ali Ertürk",
+      "journal": "Nature Methods",
+      "year": 2016,
+      "note": "uDISCO · cover",
+      "image": "/images/showcase/whole-body-disco.jpg",
+      "link": "https://doi.org/10.1038/nmeth.3964"
+    },
+    {
+      "featured": false,
+      "title": "Whole organ and organism tissue clearing by uDISCO",
+      "authors": "Ali Ertürk, Chenchen Pan, Ruiyao Cai, Francesca Paola Quacquarelli, Alireza Gasemigharagoz, Ali Ertürk",
+      "journal": "Protocol Exchange",
+      "year": 2016,
+      "link": "https://doi.org/10.1038/protex.2016.055",
+      "type": "preprint"
+    },
+    {
+      "featured": false,
+      "title": "Microglia in action: how aging and injury can change the brain’s guardians",
+      "authors": "Athanasios Lourbopoulos, Ali Ertürk, Farida Hellal",
+      "journal": "Frontiers in Cellular Neuroscience",
+      "year": 2015,
+      "link": "https://doi.org/10.3389/fncel.2015.00054/full"
+    }
+  ],
+  "alumni": [
+    {
+      "name": "Tzu-Lun Ohn",
+      "role": "Postdoc",
+      "startYear": 2020,
+      "endYear": 2025
+    },
+    {
+      "name": "Peng Wei",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Kubilay Doğan Kılıç",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Safiah Olabi",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Alison Wright",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Lamia'a Bahnassawy",
+      "role": "Postdoc"
+    },
+    {
+      "name": "F. Paola Quacquarelli",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Rupinder Kaur",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Karen Stanic",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Benjamin Förstera",
+      "role": "Postdoc"
+    },
+    {
+      "name": "A. Javier Parra Damas",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Moritz Negwer",
+      "role": "Postdoc"
+    },
+    {
+      "name": "Mayar Ali",
+      "role": "PhD Student",
+      "startYear": 2020,
+      "endYear": 2025,
+      "linkedin": "https://www.linkedin.com/in/mayarali/"
+    },
+    {
+      "name": "Müge Molbay",
+      "role": "PhD Student",
+      "startYear": 2019,
+      "endYear": 2025,
+      "linkedin": "https://www.linkedin.com/in/m%C3%BCge-molbay-838423168/"
+    },
+    {
+      "name": "Hongcheng Mai",
+      "role": "PhD Student",
+      "startYear": 2018,
+      "endYear": 2023,
+      "linkedin": "https://www.linkedin.com/in/hongcheng-mai-1a73b2207/"
+    },
+    {
+      "name": "Zeynep Ilgın Kolabaş",
+      "role": "PhD Student",
+      "startYear": 2018,
+      "endYear": 2023,
+      "linkedin": "https://www.linkedin.com/in/zeynepilginkolabas/"
+    },
+    {
+      "name": "Johannes Paetzold",
+      "role": "PhD Student",
+      "startYear": 2017,
+      "endYear": 2023,
+      "linkedin": "https://www.linkedin.com/in/johannes-c-paetzold-284685120/"
+    },
+    {
+      "name": "Shan Zhao",
+      "role": "PhD Student",
+      "startYear": 2018,
+      "endYear": 2023,
+      "linkedin": "https://www.linkedin.com/in/shan-zhao-33aa0024/"
+    },
+    {
+      "name": "Chenchen Pan",
+      "role": "PhD Student",
+      "startYear": 2015,
+      "endYear": 2019,
+      "linkedin": "https://www.linkedin.com/in/chenchen-pan-442942181/"
+    },
+    {
+      "name": "Oliver Schoppe",
+      "role": "PhD Student",
+      "startYear": 2016,
+      "endYear": 2020
+    },
+    {
+      "name": "Karoline Kadletz",
+      "role": "PhD Student"
+    },
+    {
+      "name": "Izabela Horvath",
+      "role": "PhD Student"
+    },
+    {
+      "name": "Abid Abrar",
+      "role": "PhD Student"
+    },
+    {
+      "name": "Furkan Öztürk",
+      "role": "PhD Student"
+    },
+    {
+      "name": "Marika Ruiyao Cai",
+      "role": "PhD Student"
+    },
+    {
+      "name": "Miro Kolenic",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Serhat Kalkan",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Madita Reimer",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Christoph Dehner",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Leander Mrowka",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Louiza Ignatiou",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Basabdatta Gupta",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Selin Ulukaya",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Paul Paetzold",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Sen Yang",
+      "role": "Master's Student"
+    },
+    {
+      "name": "Şebnem Çam",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Jakub Grzejdak",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Inés H. García-Plaza",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Simge Duman",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Carolina Cigankova",
+      "role": "Undergraduate Student"
+    },
+    {
+      "name": "Ana Toman Fabjan",
+      "role": "Research Associate"
+    },
+    {
+      "name": "Karen Biniossek",
+      "role": "Research Associate"
+    },
+    {
+      "name": "Suheda Erener",
+      "role": "Research Associate"
+    },
+    {
+      "name": "Leone Njeramba",
+      "role": "Research Associate"
+    }
+  ],
+  "alumniIntro": "The following people spent time in the Ertürk Lab at iBIO, Helmholtz Munich."
+}
