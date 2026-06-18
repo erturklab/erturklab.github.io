@@ -16,36 +16,43 @@ type NavDropdownItem = {
   isActive: (pathname: string) => boolean;
 };
 
-const technologyResearchLinks: NavDropdownItem[] = [
+type NavDropdownItemWithAnchor = NavDropdownItem & { anchorHref?: string };
+
+const technologyResearchLinks: NavDropdownItemWithAnchor[] = [
   {
     href: "/research",
+    anchorHref: "/#technology",
     label: "Overview",
     description: "Research pillars & mission",
     isActive: (pathname) => pathname === "/research",
   },
   {
     href: "/research/projects",
+    anchorHref: "/#technology",
     label: "Projects",
     description: "Lab platforms & technologies",
     isActive: (pathname) => pathname.startsWith("/research/projects"),
   },
   {
     href: "/publications",
+    anchorHref: "/#publications",
     label: "Publications",
     description: "Papers & preprints",
     isActive: (pathname) => pathname === "/publications",
   },
 ];
 
-const instituteLinks: NavDropdownItem[] = [
+const instituteLinks: NavDropdownItemWithAnchor[] = [
   {
     href: "/team",
+    anchorHref: "/#team",
     label: "Team",
     description: "People in the lab",
     isActive: (pathname) => pathname === "/team" || pathname.startsWith("/team/"),
   },
   {
     href: "/jobs",
+    anchorHref: "/#jobs",
     label: "Jobs",
     description: "Open positions & careers",
     isActive: (pathname) => pathname === "/jobs" || pathname.startsWith("/jobs/"),
@@ -53,6 +60,7 @@ const instituteLinks: NavDropdownItem[] = [
 ];
 
 const contactHref = "/contact";
+const contactAnchorHref = "/#contact";
 
 function isTechnologyResearchActive(pathname: string) {
   return pathname === "/research" || pathname.startsWith("/research/") || pathname === "/publications";
@@ -105,13 +113,15 @@ function NavDropdown({
   items,
   active,
   pathname,
+  isHome,
   onNavigate,
 }: {
   label: string;
   mobileLabel?: string;
-  items: NavDropdownItem[];
+  items: NavDropdownItemWithAnchor[];
   active: boolean;
   pathname: string;
+  isHome: boolean;
   onNavigate?: () => void;
 }) {
   const [open, setOpen] = useState(false);
@@ -144,10 +154,11 @@ function NavDropdown({
           <div className="min-w-[15rem] overflow-hidden rounded-xl border border-[var(--border)] bg-[var(--card)] p-1.5 shadow-xl shadow-black/20">
             {items.map((item) => {
               const itemActive = item.isActive(pathname);
+              const resolvedHref = isHome && item.anchorHref ? item.anchorHref : item.href;
               return (
                 <Link
                   key={`${item.href}-${item.label}`}
-                  href={item.href}
+                  href={resolvedHref}
                   onClick={() => {
                     setOpen(false);
                     onNavigate?.();
@@ -179,13 +190,15 @@ function MobileNavSection({
   open,
   onToggle,
   active,
+  isHome,
   onNavigate,
 }: {
   title: string;
-  items: NavDropdownItem[];
+  items: NavDropdownItemWithAnchor[];
   open: boolean;
   onToggle: () => void;
   active: boolean;
+  isHome: boolean;
   onNavigate: () => void;
 }) {
   return (
@@ -205,19 +218,22 @@ function MobileNavSection({
       </button>
       {open && (
         <div className="ml-4 mt-1 space-y-0.5 border-l border-[var(--border)] pl-3">
-          {items.map((item) => (
-            <Link
-              key={`${item.href}-${item.label}`}
-              href={item.href}
-              onClick={onNavigate}
-              className="block rounded-lg px-3 py-2.5 text-[var(--foreground)]/75 hover:bg-[var(--secondary)] hover:text-[var(--foreground)]"
-            >
-              <span className="block text-[15px] font-medium">{item.label}</span>
-              {item.description && (
-                <span className="mt-0.5 block text-[11px] text-[var(--muted-foreground)]">{item.description}</span>
-              )}
-            </Link>
-          ))}
+          {items.map((item) => {
+            const resolvedHref = isHome && item.anchorHref ? item.anchorHref : item.href;
+            return (
+              <Link
+                key={`${item.href}-${item.label}`}
+                href={resolvedHref}
+                onClick={onNavigate}
+                className="block rounded-lg px-3 py-2.5 text-[var(--foreground)]/75 hover:bg-[var(--secondary)] hover:text-[var(--foreground)]"
+              >
+                <span className="block text-[15px] font-medium">{item.label}</span>
+                {item.description && (
+                  <span className="mt-0.5 block text-[11px] text-[var(--muted-foreground)]">{item.description}</span>
+                )}
+              </Link>
+            );
+          })}
         </div>
       )}
     </>
@@ -256,15 +272,17 @@ export function SiteHeader() {
             items={technologyResearchLinks}
             active={isTechnologyResearchActive(pathname)}
             pathname={pathname}
+            isHome={isHome}
           />
           <NavDropdown
             label="Institute"
             items={instituteLinks}
             active={isInstituteActive(pathname)}
             pathname={pathname}
+            isHome={isHome}
           />
           <Link
-            href={contactHref}
+            href={isHome ? contactAnchorHref : contactHref}
             className={cn(
               "rounded-lg px-2.5 py-2 text-[13px] font-medium transition-colors",
               pathname === contactHref || pathname.startsWith(`${contactHref}/`)
@@ -295,6 +313,7 @@ export function SiteHeader() {
             open={techMobileOpen}
             onToggle={() => setTechMobileOpen(!techMobileOpen)}
             active={isTechnologyResearchActive(pathname)}
+            isHome={isHome}
             onNavigate={closeMobile}
           />
           <MobileNavSection
@@ -303,10 +322,11 @@ export function SiteHeader() {
             open={instituteMobileOpen}
             onToggle={() => setInstituteMobileOpen(!instituteMobileOpen)}
             active={isInstituteActive(pathname)}
+            isHome={isHome}
             onNavigate={closeMobile}
           />
           <Link
-            href={contactHref}
+            href={isHome ? contactAnchorHref : contactHref}
             onClick={closeMobile}
             className="flex rounded-lg px-3 py-3 text-base font-medium text-[var(--foreground)]/80 hover:bg-[var(--secondary)] hover:text-[var(--foreground)]"
           >
