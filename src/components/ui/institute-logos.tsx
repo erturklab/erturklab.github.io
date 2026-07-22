@@ -16,7 +16,7 @@ const partners: Array<{
     name: "LMU Munich",
     src: "/logos/lmu-official.svg",
     href: "https://www.lmu.de/en/",
-    height: 32,
+    height: 44,
   },
 ];
 
