@@ -34,7 +34,7 @@
       },
       {
         "period": "2003",
-        "description": "B.Sc., Bilkent University, Ankara"
+        "description": "B.Sc., Bilkent University, Ankara, Turkey"
       }
     ],
     "photo": "/images/team/ali-erturk.jpg",
@@ -92,7 +92,12 @@
     "photo": "/images/team/markus-erturk.jpg",
     "photoPosition": "center 35%",
     "links": {
-      "bluesky": "https://bsky.app/profile/markuselsner.bsky.social"
+      "email": "markus.elsner@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/markus-elsner-16083011/",
+      "googleScholar": "https://scholar.google.com/citations?hl=en&user=2wqbC3EAAAAJ&view_op=list_works&sortby=pubdate",
+      "orcid": "https://orcid.org/0000-0001-7227-5212",
+      "bluesky": "https://bsky.app/profile/markuselsner.bsky.social",
+      "phone": "+49 89 3187 49118"
     }
   },
   {
@@ -120,7 +125,8 @@
     "publicationAuthorNames": [],
     "bio": "Translates innovative biotechnologies into real-world applications at iBIO.",
     "biography": "I obtained my PhD in Biochemistry from the University of Regensburg, where I studied how snoRNAs influence chromatin accessibility and developed a strong interest in biophysics. Alongside a short postdoc, I completed a business degree (Betriebswirt IWW), which helped bridge my scientific and entrepreneurial interests.\n\nI was part of the founding team of 2bind GmbH, where I served as CEO for 12 years, driving the company's growth at the interface of biophysics and drug discovery. I have now joined iBIO as Head of Operations in Biotechnology, focusing on translating innovative technologies into real-world applications.\n\nOutside of work, I enjoy escape rooms, cooking, spending time with friends, and challenging myself on the rowing machine.",
-    "photo": "/images/team/thomas-schubert.jpg"
+    "photo": "/images/team/thomas-schubert.jpg",
+    "title": "Dr."
   },
   {
     "slug": "harsharan-bhatia",
@@ -161,22 +167,6 @@
     "photo": "/images/team/christian-klein.jpg"
   },
   {
-    "slug": "david-paul-minde",
-    "title": "Dr.",
-    "name": "David-Paul Minde",
-    "role": "Staff Scientist",
-    "section": "Staff Scientists",
-    "profileTier": "page",
-    "publicationAuthorNames": [
-      "David-Paul Minde",
-      "David‐Paul Minde"
-    ],
-    "bio": "Bridges trillion-scale cell imaging with single-cell proteomics.",
-    "biography": "I am a heavily protein-biased 3D biochemist with a recent love for AI. I studied molecular biotechnology at Technical University Munich and earned my Ph.D. at University of Utrecht on cancer protein folding. I continued in Amsterdam with Sander Tans monitoring single molecular chaperones in action and learned proteomics in Cambridge with Kathryn Lilley.\n\nMy research expanded to membrane proteomics and rationally improving industrial bacteria as part of the DETOX consortium. I helped establish a state-of-the-art proteomics lab at Oxford Biomedica, focusing on viral vector-based cell and gene therapy, vector and cell line proteomics, and AI-accelerated modelling.\n\nI recently joined the Ertürk Lab to build new bridges between trillion-scale cell imaging and democratised implementations of the latest single-cell proteomics methods.",
-    "researchInterests": "Single-cell proteomics, trillion-scale 3D imaging, membrane proteomics, and AI-accelerated protein modelling.",
-    "photo": "/images/team/david.jpg"
-  },
-  {
     "slug": "philip-ruthig",
     "title": "Dr.",
     "name": "Philip Ruthig",
@@ -184,10 +174,19 @@
     "section": "Staff Scientists",
     "profileTier": "page",
     "publicationAuthorNames": [],
-    "bio": "DISCO clearing, light-sheet microscopy, and large-scale datasets.",
-    "biography": "My name is Philip, and I studied Neuroscience and Molecular Biology in Heidelberg, where I became fascinated with brain function and structure. I moved to Leipzig University for my PhD and postdoc to work on auditory lateralization and human white matter structure.\n\nDuring that time, I was introduced to DISCO clearing, light-sheet microscopy, and learned how to handle and analyze huge datasets efficiently — which is also what I do as a staff scientist in the Ertürk Lab.\n\nOther than science, I have a passion for music concerts and love outdoor sports like rope climbing and kitesurfing.",
+    "bio": "Neuroscientist, data scientist, and microscopist.",
+    "biography": "My name is Philip, and I studied Neuroscience and Molecular Biology in the beautiful city of Heidelberg, where I became fascinated with brain function and structure. Therefore, I moved to Leipzig University for my PhD and PostDoc to work on auditory lateralization and human white matter structure. During that time, I was introduced to DISCO clearing, light sheet microscopy, and learned how to handle and analyze huge datasets efficiently – which is also what I do as a staff scientist here.\n\nOther than science, I have a passion for music concerts and love to do outdoor sports like rope climbing and kitesurfing.",
     "researchInterests": "DISCO tissue clearing, light-sheet microscopy, white matter structure, and terabyte-scale imaging data analysis.",
-    "photo": "/images/team/dsc-7550.jpg"
+    "photo": "/images/team/dsc-7550.jpg",
+    "links": {
+      "email": "philip.ruthig@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/philip-ruthig/",
+      "github": "https://github.com/PhilipRuthig",
+      "googleScholar": "https://scholar.google.com/citations?user=Y4848KEAAAAJ&hl=de",
+      "orcid": "https://orcid.org/0000-0001-8772-0294",
+      "twitter": "https://x.com/PhilipRuthig",
+      "bluesky": "https://bsky.app/profile/philipruthig.bsky.social"
+    }
   },
   {
     "slug": "doris-kaltenecker",
@@ -199,13 +198,17 @@
     "publicationAuthorNames": [
       "Doris Kaltenecker"
     ],
-    "bio": "Whole-body imaging and deep learning.",
-    "biography": "I am from Vienna. For my BSc and MSc I studied Molecular Biotechnology at the University of Applied Sciences. Afterwards, I did my PhD at the Medical University of Vienna at the Ludwig Boltzmann Institute for Cancer Research, focusing on the role of JAK-STAT signaling in adipose tissue and whole-body energy metabolism.\n\nI moved to Munich to pursue a postdoc at the Institute for Diabetes and Cancer (Helmholtz Munich), working on a co-project with the Ertürk Lab on whole-body imaging and deep learning, including MouseMapper and DELiVR.\n\nApart from science, I really enjoy going to concerts, travelling, and watching good movies.",
+    "bio": "Molecular biologist studying systemic metabolic diseases.",
+    "biography": "I studied molecular biotechnology in Vienna and completed my Ph.D. at the Medical University of Vienna, investigating how JAK-STAT signaling regulates adipose tissue and liver metabolism.\n\nMy work focuses on cancer-associated weight loss and obesity, tissue clearing, light-sheet microscopy, and AI-based image analysis to study disease across organs and the whole body.\n\nOutside the lab, I enjoy traveling, exploring nature, practicing pilates and chasing sunsets wherever I go.",
     "researchInterests": "Whole-body imaging, deep learning for organ mapping, MouseMapper, and metabolic biology.",
     "photo": "/images/team/doris.png",
     "links": {
       "email": "doris.kaltenecker@helmholtz-munich.de",
-      "googleScholar": "https://scholar.google.com/citations?user=PUvyZLUAAAAJ"
+      "linkedin": "https://www.linkedin.com/in/doris-kaltenecker-3569b5134/",
+      "googleScholar": "https://scholar.google.com/citations?user=PUvyZLUAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0000-0002-4110-1006",
+      "twitter": "https://x.com/Dorie00",
+      "bluesky": "https://bsky.app/profile/dorie00.bsky.social"
     }
   },
   {
@@ -240,14 +243,18 @@
     "researchInterests": "Brain vasculature, VesSAP, electrophysiology, and vascular networks in health and disease.",
     "photo": "/images/team/todorov.jpg",
     "links": {
-      "googleScholar": "https://scholar.google.com/citations?user=CAR3A2MAAAAJ"
+      "email": "mihail.todorov@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/mihail-todorov-17baa238b",
+      "googleScholar": "https://scholar.google.de/citations?hl=de&user=CAR3A2MAAAAJ",
+      "twitter": "https://x.com/MihailMuc"
     }
   },
   {
     "slug": "louis-kuemmerle",
+    "title": "Dr.",
     "name": "Louis Kümmerle",
-    "role": "Ph.D. Candidate",
-    "section": "PhD Students",
+    "role": "Postdoc",
+    "section": "Postdocs",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Louis B. Kuemmerle"
@@ -284,7 +291,11 @@
     "bio": "Accelerating tissue clearing for large specimens.",
     "biography": "I'm from Xinjiang, China. I studied bioengineering at Hubei University of Technology, then completed my master's in biological and pharmaceutical engineering at Northwestern Polytechnical University, focusing on polymer-based delivery systems for efficient RNA delivery.\n\nIn April 2024, I started my PhD studies at LMU and joined the Ertürk Lab. My work explores different conditions to accelerate the process of tissue clearing.\n\nIn my free time, I like hiking, swimming, and traveling.",
     "researchInterests": "Tissue clearing optimization, polymer delivery systems, and large-specimen imaging.",
-    "photo": "/images/team/img-3001.jpg"
+    "photo": "/images/team/img-3001.jpg",
+    "links": {
+      "email": "Jie.zhang@campus.lmu.de",
+      "linkedin": "https://www.linkedin.com/in/jie-zhang-6839a6332"
+    }
   },
   {
     "slug": "eva-kusters",
@@ -293,10 +304,42 @@
     "section": "PhD Students",
     "profileTier": "page",
     "publicationAuthorNames": [],
-    "bio": "Whole-body cancer metastasis imaging and treatment resistance.",
-    "biography": "I studied Biology at the University of Göttingen and completed a Master's in Molecular and Translational Neuroscience at Ulm University. After an internship at Boehringer Ingelheim, I continued my Master's thesis there on spatial proteomics in the mouse brain for psychiatric disorders.\n\nI joined the Ertürk Lab in September 2024 to pursue a PhD focused on cancer metastasis throughout the entire mouse body — uncovering treatment resistance mechanisms, regional variations, and interactions between metastases and the nervous system.\n\nIn my spare time, I enjoy hiking, cooking, photography, and going to concerts.",
-    "researchInterests": "Whole-body cancer metastasis, treatment resistance, spatial proteomics, and nervous system interactions.",
-    "photo": "/images/team/profile-1.jpg"
+    "bio": "Ph.D. candidate studying cancer across the whole mouse body with tissue clearing and spatial omics.",
+    "biography": "I studied biology for my bachelor's degree in Göttingen before moving to Ulm for my master's, where I specialized in Molecular and Translational Neuroscience. During this time I became interested in advanced spatial sequencing techniques and how they could be used to study biology at high resolution. This interest in spatial methods led me to join the lab, where I could dive deeper into tissue clearing.\n\nAs a PhD Candidate in the lab, my work now centers on studying cancer across the whole mouse body using tissue clearing, with the aim of uncovering interactions that are easily missed with conventional, 2D approaches. A particular focus of mine is understanding how peripheral nerves communicate with cancer cells — a question that benefits directly from being able to look at intact tissue in three dimensions.\n\nAlongside imaging, I'm working to bring new omics techniques into the lab's workflow, so that what we observe in 3D can be analyzed in greater molecular depth. This sits at the intersection of tissue clearing, spatial omics, and pathology — and I enjoy the collaborative, interdisciplinary nature of the work, drawing on expertise from across the lab and beyond.\n\nOutside of work, I like spending time outdoors — hiking and biking — as well as time with my partner and our dog.",
+    "researchInterests": "Whole-body tissue clearing, neuroscience, spatial omics, proteomics, cancer models, and pathological stainings.",
+    "photo": "/images/team/profile-1.jpg",
+    "links": {
+      "email": "eva.kuesters@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/eva-k%C3%BCsters-62b514272/?locale=en"
+    },
+    "education": [
+      {
+        "period": "2021–2023",
+        "description": "M.Sc. Molecular and Translational Neuroscience, Ulm University, Ulm, Germany"
+      },
+      {
+        "period": "2017–2021",
+        "description": "B.Sc. Biology, Georg-August-University Göttingen, Göttingen, Germany"
+      }
+    ],
+    "career": [
+      {
+        "period": "09/2024–present",
+        "description": "Ph.D. Candidate, Helmholtz Munich, Ertürk Lab, Graduate School of Neuroscience LMU, Munich, Germany"
+      },
+      {
+        "period": "2022–2023",
+        "description": "Master's thesis / Intern, Boehringer Ingelheim, Biberach, Germany — spatial transcriptomic brain atlas"
+      },
+      {
+        "period": "2022",
+        "description": "Intern, Ulm University, Department of Neurology (AG Roselli), Ulm, Germany"
+      },
+      {
+        "period": "2022",
+        "description": "Intern, Center of Clinical Studies, Ulm University, Ulm, Germany — post-hoc analyses of GERP-ALS trial"
+      }
+    ]
   },
   {
     "slug": "qi-liu",
@@ -308,7 +351,14 @@
     "bio": "Foundation models and machine learning for biomedical data.",
     "biography": "I am Qi Liu (刘奇), born and raised in Hubei Province, China. In 2018, I received my Bachelor's in Electronic Information Science and Technology from China University of Mining and Technology. In 2021, I obtained my Master's in Control Engineering from Tsinghua University, focusing on machine learning and bioinformatics.\n\nAfter three years in industry at the Global Health Drug Discovery Institute in Beijing, I started my Ph.D. at LMU in December 2024 and joined the Ertürk Lab. My work is on machine learning, foundation models, and biomedical data analysis.\n\nIn my spare time, I enjoy playing badminton, cooking, and photography.",
     "researchInterests": "Foundation models, machine learning, bioinformatics, and biomedical imaging data analysis.",
-    "photo": "/images/team/img-20250220.jpg"
+    "photo": "/images/team/img-20250220.jpg",
+    "links": {
+      "email": "liu.qi@campus.lmu.de",
+      "linkedin": "https://www.linkedin.com/in/qi-liu-2988b4368/",
+      "github": "https://github.com/liuqpro",
+      "googleScholar": "https://scholar.google.com/citations?user=F7ZwdwgAAAAJ",
+      "personalWebsite": "https://liuqdev.github.io/en/"
+    }
   },
   {
     "slug": "laurent-simons",
@@ -328,22 +378,35 @@
   {
     "slug": "luciano-hoeher",
     "name": "Luciano Höher",
-    "role": "Master Student",
-    "section": "Master Students",
+    "role": "Virtual Reality Expert",
+    "section": "Staff Scientists",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Luciano Hoeher",
       "Luciano Höher"
     ],
-    "bio": "Tissue clearing and imaging at iBIO.",
-    "biography": "Hi, I'm Luciano Höher. I'm from Munich and am finishing my bachelor's degree in biology at LMU. I looked for an internship before choosing my Master's programme and got a place at iBIO at Helmholtz Munich. I'm glad I can work here with nice people on their innovative projects.\n\nBesides science, I enjoy playing the guitar, video games with friends, and reading good books.",
-    "photo": "/images/team/luciano.jpg"
+    "bio": "Biologist specialized in 3D/VR data visualization and analysis.",
+    "biography": "I studied biology for my bachelor at LMU Munich and joined as a student assistant. I'm self-taught in virtual reality visualization and analysis during my time at the Ertürk Lab. Starting my master program in life science in 2026.\n\nMy responsibilities in the lab are visualization, analysis and creation of ground truth data for our 3D data sets in virtual reality. I'm involved in most imaging projects and train/supervise students for our VR work.",
+    "researchInterests": "Virtual Reality, biomedical 3D imaging data visualization and analysis, neuroscience, machine learning / AI.",
+    "photo": "/images/team/luciano.jpg",
+    "links": {
+      "email": "lucianojan.hoeher@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/luciano-hoeher-223b1041b",
+      "orcid": "https://orcid.org/0009-0008-5346-1368",
+      "twitter": "https://x.com/Lu_h99"
+    },
+    "education": [
+      {
+        "period": "2017–2021",
+        "description": "B.Sc. Biology, LMU Munich, Munich, Germany"
+      }
+    ]
   },
   {
     "slug": "zairong-cai",
     "name": "Zairong Cai",
-    "role": "Master Student",
-    "section": "Master Students",
+    "role": "Ph.D. Candidate",
+    "section": "PhD Students",
     "profileTier": "page",
     "publicationAuthorNames": [],
     "bio": "Master's thesis in the Nanotech Team.",
@@ -353,8 +416,8 @@
   {
     "slug": "marin-bralo",
     "name": "Marin Bralo",
-    "role": "Technical Assistant",
-    "section": "Operations & Administration",
+    "role": "Staff Scientist",
+    "section": "Staff Scientists",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Marin Bralo"
@@ -366,8 +429,8 @@
   {
     "slug": "denise-jeridi",
     "name": "Denise Jeridi",
-    "role": "Lab Technician",
-    "section": "Operations & Administration",
+    "role": "Technical Assistant",
+    "section": "Technical Assistants",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Denise Jeridi"
@@ -377,15 +440,48 @@
     "photo": "/images/team/denise.jpg"
   },
   {
+    "slug": "angelo-de-sousa-carrapeiro",
+    "name": "Angelo De Sousa Carrapeiro",
+    "role": "Technical Assistant",
+    "section": "Technical Assistants",
+    "profileTier": "card",
+    "publicationAuthorNames": [],
+    "bio": "Technical Assistant at iBIO, Helmholtz Munich."
+  },
+  {
+    "slug": "elaine-niemann",
+    "name": "Elaine Niemann",
+    "role": "Technical Assistant",
+    "section": "Technical Assistants",
+    "profileTier": "card",
+    "publicationAuthorNames": [],
+    "bio": "Technical Assistant at iBIO, Helmholtz Munich.",
+    "links": {
+      "email": "elaine.niemann@helmholtz-munich.de"
+    }
+  },
+  {
+    "slug": "sophie-migotsch",
+    "name": "Sophie Migotsch",
+    "role": "Technical Assistant",
+    "section": "Technical Assistants",
+    "profileTier": "card",
+    "publicationAuthorNames": [],
+    "bio": "Technical Assistant at iBIO, Helmholtz Munich."
+  },
+  {
     "slug": "xiaoshan-hu",
     "name": "Xiaoshan Hu",
-    "role": "Team Assistant",
+    "role": "Administrative Coordinator",
     "section": "Operations & Administration",
     "profileTier": "page",
     "publicationAuthorNames": [],
     "bio": "Team coordination and lab administration.",
     "biography": "I am from Mainland China. Before settling in Munich, I worked as a civil engineer in a construction design company for more than ten years in Beijing after obtaining my Bachelor's degree. In February 2022 I joined the Ertürk Lab as team assistant and I am fascinated by the group's research in imaging and molecular analysis.\n\nIn my free time I enjoy metal music and traveling, and I am also interested in architecture and interior design.",
-    "photo": "/images/team/xiaoshan-hu.jpg"
+    "photo": "/images/team/xiaoshan-hu.jpg",
+    "links": {
+      "email": "xiaoshan.hu@helmholtz-munich.de"
+    }
   },
   {
     "slug": "stefanie-reitinger",
@@ -405,8 +501,27 @@
     "section": "Scientist",
     "profileTier": "page",
     "publicationAuthorNames": [],
-    "bio": "AI Scientist at iBIO.",
-    "biography": "Gözde Ünver joined the Ertürk Lab in 2026 as an AI Scientist."
+    "bio": "AI Scientist at iBIO. Working on 3D virtual H&E generation from 3D light-sheet microscopy images.",
+    "biography": "I joined the Ertürk Lab in March 2026 as an AI Scientist. My work focuses on 3D virtual H&E generation from 3D light-sheet microscopy images.\n\nI completed my M.Sc. in Informatics at TUM and my B.Sc. in Computer Engineering at Boğaziçi University.",
+    "links": {
+      "email": "goezde.uenver@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/g%C3%B6zde-%C3%BCnver-b45108162/",
+      "github": "https://github.com/GozdeUnver",
+      "googleScholar": "https://scholar.google.com/citations?user=uyfiJQQAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0009-0000-5219-8926"
+    },
+    "researchInterests": "3D virtual H&E generation from light-sheet microscopy images, machine learning, and biomedical imaging.",
+    "education": [
+      {
+        "period": "2022–2025",
+        "description": "M.Sc. Informatics, Technical University of Munich (TUM), Munich, Germany"
+      },
+      {
+        "period": "2018–2022",
+        "description": "B.Sc. Computer Engineering, Boğaziçi University, Istanbul, Turkey"
+      }
+    ],
+    "photo": "/images/team/gozde-unver.jpg"
   },
   {
     "slug": "ahmet-sarigun",
@@ -414,10 +529,47 @@
     "role": "AI Scientist",
     "section": "Scientist",
     "profileTier": "page",
-    "publicationAuthorNames": [],
-    "bio": "Machine learning and AI for imaging and biological data analysis.",
-    "biography": "I joined the Ertürk Lab in May 2026 as an AI Scientist, working on machine learning methods for imaging and biological data analysis.",
-    "researchInterests": "Machine learning, biomedical imaging, and foundation models.",
+    "publicationAuthorNames": [
+      "A Sarıgün",
+      "A Sarigun",
+      "Ahmet Sarıgün",
+      "Ahmet Sarigun"
+    ],
+    "bio": "AI Scientist working on Agentic AI for science at iBIO, Munich, Germany.",
+    "biography": "I am an AI Scientist at Helmholtz Munich, Institute for Intelligent Biotechnologies (iBIO), Munich, Germany. I joined the Ertürk Lab in May 2026, where my work focuses on Agentic AI for science — building systems that can plan, reason, and act across scientific workflows.\n\nBefore Munich, I worked as a Scientist at the Max Delbrück Center (MDC-BIMSB) in Berlin, Germany on structure-based drug design and bioinformatics. I studied Chemistry at METU in Ankara, Turkey, with research in graph representation learning, deep learning for single-cell and spatial transcriptomics, and de novo drug design.\n\nOutside work, I enjoy running and cycling, and occasionally make educational animations in quantum chemistry with Manim.",
+    "researchInterests": "Agentic AI for science, machine learning for biology and chemistry, structure-based drug design, graph neural networks, and multi-omics data integration.",
+    "education": [
+      {
+        "period": "2023",
+        "description": "B.Sc. Chemistry, Middle East Technical University (METU), Ankara, Turkey"
+      }
+    ],
+    "career": [
+      {
+        "period": "05/2026–present",
+        "description": "AI Scientist — Agentic AI, Helmholtz Munich, Institute for Intelligent Biotechnologies (Ertürk Lab), Munich, Germany"
+      },
+      {
+        "period": "01/2024–04/2026",
+        "description": "Scientist — Structure-Based Drug Design, Max Delbrück Center (MDC-BIMSB), Bioinformatics & Omics Data Science Platform, Berlin, Germany"
+      },
+      {
+        "period": "02/2023–06/2023",
+        "description": "Research Project — Graph Representation Learning for Chemistry (supervised by Antoine Marion), METU, Ankara, Turkey"
+      },
+      {
+        "period": "07/2022–09/2022",
+        "description": "Summer Intern — Deep Learning for Single-Cell and Spatial Transcriptomics (supervised by Ahmet Rifaioğlu and Jovan Tanevski), Heidelberg University Hospital, Institute for Computational Biomedicine, Heidelberg, Germany"
+      },
+      {
+        "period": "09/2021–11/2022",
+        "description": "Research Intern — de novo Drug Design using Adversarial Machine Learning (supervised by Tunca Doğan), Hacettepe University Biological Data Science Laboratory, Ankara, Turkey"
+      },
+      {
+        "period": "03/2021–06/2023",
+        "description": "Research Project — Graph Representation Learning (supervised by Ahmet Rifaioğlu, 2021–2023, and Dominique Beaini, 2021–2022), Remote"
+      }
+    ],
     "links": {
       "email": "ahmet.sariguen@helmholtz-munich.de",
       "linkedin": "https://www.linkedin.com/in/ahmetsar%C4%B1g%C3%BCn/",
@@ -427,6 +579,117 @@
       "personalWebsite": "https://asarigun.github.io/",
       "twitter": "https://x.com/a_sarig_",
       "bluesky": "https://bsky.app/profile/asarigun.bsky.social"
+    },
+    "photo": "/images/team/ahmet-sarigun.png"
+  },
+  {
+    "slug": "sena-turhan",
+    "name": "Sena Turhan",
+    "role": "Ph.D. Candidate",
+    "section": "PhD Students",
+    "profileTier": "page",
+    "publicationAuthorNames": [],
+    "bio": "Molecular biologist interested in neuroimmunology.",
+    "biography": "I joined the Ertürk Lab in August 2026 as a Ph.D. Candidate in the Graduate School of Systemic Neurosciences.\n\nI studied Molecular Biology, Genetics and Bioengineering at Sabancı University, then completed an M.Sc. in Molecular and Cellular Biology at LMU Munich. During my master's thesis I worked as a Research Assistant at iBIO, Helmholtz Munich, and I completed additional research internships in Nuclear Medicine at LMU Hospital and in Large Molecule Research at Roche.\n\nMy research interests are at the intersection of neuroscience and immunology.",
+    "researchInterests": "Neuroscience, immunology.",
+    "education": [
+      {
+        "period": "2022–2026",
+        "description": "M.Sc. Molecular and Cellular Biology, LMU Munich, Munich, Germany"
+      },
+      {
+        "period": "2017–2021",
+        "description": "B.Sc. Molecular Biology, Genetics and Bioengineering, Sabancı University, Istanbul, Turkey"
+      }
+    ],
+    "career": [
+      {
+        "period": "08/2026–present",
+        "description": "Ph.D. Candidate, Graduate School of Systemic Neurosciences, Helmholtz Munich — Ertürk Lab, Munich, Germany"
+      },
+      {
+        "period": "10/2025–03/2026",
+        "description": "Research Intern, Large Molecule Research, Roche"
+      },
+      {
+        "period": "04/2025–07/2025",
+        "description": "Research Intern, Nuclear Medicine, LMU Hospital, Munich, Germany"
+      },
+      {
+        "period": "04/2024–09/2025",
+        "description": "Master Thesis & Research Assistant, iBIO at Helmholtz Munich, Munich, Germany"
+      }
+    ],
+    "links": {
+      "email": "sena-guel.turhan@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/sena-gul-turhan",
+      "bluesky": "https://bsky.app/profile/senagulturhan.bsky.social"
+    },
+    "photo": "/images/team/sena-turhan.webp"
+  },
+  {
+    "slug": "kuan-ting-pan",
+    "title": "Dr.",
+    "name": "Kuan-Ting Pan",
+    "role": "Staff Scientist",
+    "section": "Staff Scientists",
+    "profileTier": "page",
+    "publicationAuthorNames": [],
+    "bio": "Mass spectrometry, proteomics, and AI.",
+    "biography": "I'm a mass spectrometry and proteomics enthusiast, moving between academic research and industry, and between fundamental method development and translating ideas into things people can actually use. At the institute, I'm responsible for proteomics operations and development.\n\nThese days I'm especially curious about how AI is moving into this space and quietly changing the whole field — from how data gets generated to what we can actually learn from it. It's great to be working at that intersection.",
+    "researchInterests": "Mass spectrometry, proteomics, and AI.",
+    "links": {
+      "email": "kuan-ting.pan@helmholtz-munich.de",
+      "orcid": "https://orcid.org/0000-0001-6974-5324"
+    }
+  },
+  {
+    "slug": "danielle-beckman",
+    "title": "Dr.",
+    "name": "Danielle Beckman",
+    "role": "Postdoc",
+    "section": "Postdocs",
+    "profileTier": "page",
+    "publicationAuthorNames": [],
+    "bio": "Neuroscientist interested in virology & microscopy.",
+    "biography": "I am a neuroscientist born and raised in Rio, Brazil. I completed technical training in Biotechnology, earned a bachelor's degree in Pharmacy, a master's degree in Biophysics, and a PhD in Biological Chemistry. Following my doctoral training, I moved to the United States to work at the California National Primate Center. In 2026, I joined the Ertürk Lab in Munich.\n\nMy research initially focused on applying high-resolution microscopy to better understand the neurodegenerative processes associated with Alzheimer's disease. Over time, my interests expanded to investigating the neurological consequences of viral infections, including those caused by the Zika virus, HIV, and, more recently, SARS-CoV-2. A major goal of my work is to contribute to the development of novel therapies and the identification of biomarkers for post-acute infection syndromes such as Long Covid.\n\nOutside the laboratory, I enjoy going to movie theaters, strength training, reading science fiction, and spending time with my two cats.",
+    "researchInterests": "Neuroscience, high-resolution microscopy, viral neurological consequences, Alzheimer's disease, and post-acute infection syndromes.",
+    "links": {
+      "email": "danielle.beckman@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/danielle-beckman/",
+      "googleScholar": "https://scholar.google.com/citations?user=7XWBpgwAAAAJ&hl=en&oi=ao",
+      "orcid": "https://orcid.org/0000-0002-9584-4411",
+      "personalWebsite": "https://www.daniellebeckman.com/",
+      "twitter": "https://x.com/DaniBeckman",
+      "bluesky": "https://bsky.app/profile/daniellebeckman.bsky.social"
+    },
+    "photo": "/images/team/danielle-beckman.webp"
+  },
+  {
+    "slug": "emirhan-yagmur",
+    "name": "Emirhan Yagmur",
+    "role": "Ph.D. Candidate",
+    "section": "PhD Students",
+    "profileTier": "page",
+    "publicationAuthorNames": [],
+    "bio": "Ph.D. candidate developing ML frameworks for de novo peptide and protein design.",
+    "biography": "I studied Molecular Biotechnology at TUM, completing my B.Sc. and my M.Sc. with specializations in bioinformatics, machine learning, protein design, genetic engineering, and neuroscience.\n\nI am now a Ph.D. candidate in the Ertürk Lab, where I develop machine learning frameworks for de novo peptide and protein design aimed at cell-specific delivery.\n\nOutside work, I enjoy reading, traveling, and sports.",
+    "researchInterests": "Machine learning, protein design, cell-specific delivery, and bioinformatics.",
+    "education": [
+      {
+        "period": "2023–2026",
+        "description": "M.Sc. Molecular Biotechnology, Technical University of Munich (TUM), Munich, Germany"
+      },
+      {
+        "period": "2019–2023",
+        "description": "B.Sc. Molecular Biotechnology, Technical University of Munich (TUM), Munich, Germany"
+      }
+    ],
+    "links": {
+      "email": "emirhan.yagmur@helmholtz-munich.de",
+      "linkedin": "https://www.linkedin.com/in/emirhan-ya%C4%9Fmur-139554196/",
+      "googleScholar": "https://scholar.google.com/citations?user=DHT-brkAAAAJ&hl=en",
+      "orcid": "https://orcid.org/0009-0000-3540-4775"
     }
   }
 ]

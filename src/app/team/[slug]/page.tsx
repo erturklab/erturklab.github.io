@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { notFound } from "next/navigation";
 import { TeamProfile } from "@/components/ui/team-profile";
+import { AltmetricInit } from "@/components/ui/altmetric-badge";
 import { formatFullName, getPageTeamMembers, getTeamMember } from "@/lib/team";
 
 export function generateStaticParams() {
@@ -29,5 +31,14 @@ export default async function TeamMemberPage({ params }: { params: Promise<{ slu
     notFound();
   }
 
-  return <TeamProfile member={member} />;
+  return (
+    <>
+      <Script
+        src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+        strategy="afterInteractive"
+      />
+      <AltmetricInit />
+      <TeamProfile member={member} />
+    </>
+  );
 }

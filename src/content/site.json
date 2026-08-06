@@ -22,6 +22,8 @@
       "From unbiased whole-body imaging to molecular analysis at single-cell resolution — we tackle major bottlenecks in understanding health and disease."
     ],
     "social": {
+      "linkedin": "https://www.linkedin.com/in/ali-maximilian-ert%C3%BCrk-b48a374/",
+      "bluesky": "https://bsky.app/profile/erturklab.bsky.social",
       "github": "https://github.com/erturklab",
       "twitter": "https://twitter.com/erturklab",
       "instagram": "https://instagram.com/erturklab"
@@ -261,7 +263,7 @@
       "authors": "Doris Kaltenecker, Izabela Horvath, Rami Al-Maskari, Ying Chen, Zeynep Ilgin Kolabas, Luciano Hoeher, Mihail Todorov, David-Paul Minde, Saketh Kapoor, Sena Gül Turhan, Louis B. Kuemmerle, Hanno Steinke, Tim Wohlgemuth, Mayar Ali, Florian Kofler, Pauline Morigny, Julia Geppert, Denise Jeridi, Bastian Wittmann, Jie Luo, Suprosanna Shit, Carolina Cigankova, Victor Miro Kolenic, Nilsu Gür, Eren Aydeniz, Alara Yücecan, Melissa Ertürk, Laurent H. A. Simons, Chenchen Pan, Marie Piraud, Daniel Rueckert, Maria Rohm, Farida Hellal, Markus Elsner, Harsharan Singh Bhatia, Ingo Bechmann, Bjoern H. Menze, Stephan Herzig, Johannes Christian Paetzold, Mauricio Berriel Diaz, Ali Ertürk",
       "journal": "Nature",
       "year": 2026,
-      "note": "MouseMapper",
+      "note": "MouseMapper · top 1%",
       "link": "https://doi.org/10.1038/s41586-026-10535-2"
     },
     {
@@ -434,7 +436,7 @@
       "authors": "Jie Luo, Müge Molbay, Ying Chen, Izabela Horvath, Karoline Kadletz, Benjamin Kick, Shan Zhao, Rami Al-Maskari, Inderjeet Singh, Mayar Ali, Harsharan S. Bhatia, David‐Paul Minde, Moritz Negwer, Luciano Hoeher, Gian Marco Calandra, Bernhard Groschup, Jinpeng Su, Ceren Kımna, Zhouyi Rong, Nikolas F. B. Galensowske, Mihail Ivilinov Todorov, Denise Jeridi, Tzu‐Lun Ohn, Stefan Roth, Alba Simats, Vikramjeet Singh, Igor Khalin, Chenchen Pan, Bernardo A. Arús, Oliver T. Bruns, Reinhard Zeidler, Arthur Liesz, Ulrike Protzer, Nikolaus Plesnila, Siegfried Ussar, Farida Hellal, Johannes C. Paetzold, Markus Elsner, Hendrik Dietz, Ali Ertürk",
       "journal": "Nature Biotechnology",
       "year": 2025,
-      "note": "SCP-Nano",
+      "note": "SCP-Nano · #1 by access in NBT",
       "image": "/images/showcase/whole-body-disco.jpg",
       "link": "https://doi.org/10.1038/s41587-024-02528-1"
     },
@@ -480,12 +482,12 @@
       "link": "https://doi.org/10.1016/j.freeradbiomed.2024.04.205"
     },
     {
-      "featured": false,
+      "featured": true,
       "title": "Deep 3D histology powered by tissue clearing, omics and AI",
       "authors": "Ali Ertürk",
       "journal": "Nature Methods",
       "year": 2024,
-      "note": "Perspective",
+      "note": "Perspective · Nature Methods",
       "image": "/images/showcase/transparent-human-brain.jpg",
       "link": "https://doi.org/10.1038/s41592-024-02327-1"
     },
@@ -507,12 +509,14 @@
       "link": "https://doi.org/10.1038/s42003-024-07313-z"
     },
     {
-      "featured": false,
+      "featured": true,
+      "image": "/images/showcase/transparent-human-brain.jpg",
       "title": "Persistence of spike protein at the skull-meninges-brain axis may contribute to the neurological sequelae of COVID-19",
       "authors": "Zhouyi Rong, Hongcheng Mai, Gregor Ebert, Saketh Kapoor, Victor G. Puelles, Jan Czogalla, Senbin Hu, Jinpeng Su, Danilo Prtvar, Inderjeet Singh, Julia Schädler, Claire Delbridge, Hanno Steinke, H. Frenzel, Katja Schmidt, C. Braun, Gina Bruch, Viktoria Ruf, Mayar Ali, Kurt‐Wolfram Sühs, Mojtaba Nemati, Franziska Hopfner, Selin Ulukaya, Denise Jeridi, Daniele Mistretta, Özüm Şehnaz Çalışkan, Jochen M. Wettengel, Fatma Cherif, Zeynep Ilgin Kolabas, Müge Molbay, Izabela Horvath, Shan Zhao, Natalie Krahmer, Ali Önder Yildirim, Siegfried Ussar, Jochen Herms, Tobias B. Huber, Sabina Tahirović, Susanne M. Schwarzmaier, Nikolaus Plesnila, Günter U. Höglinger, Benjamin Ondruschka, Ingo Bechmann, Ulrike Protzer, Markus Elsner, Harsharan S. Bhatia, Farida Hellal, Ali Serol Ertürk",
       "journal": "Cell Host & Microbe",
       "year": 2024,
-      "link": "https://doi.org/10.1016/j.chom.2024.11.007"
+      "link": "https://doi.org/10.1016/j.chom.2024.11.007",
+      "note": "3rd in 360K papers"
     },
     {
       "featured": false,
@@ -539,12 +543,12 @@
       "link": "https://doi.org/10.1158/1078-0432.ccr-24-1563"
     },
     {
-      "featured": false,
+      "featured": true,
       "title": "Virtual reality-empowered deep-learning analysis of brain cells",
       "authors": "Doris Kaltenecker, Rami Al-Maskari, Moritz Negwer, Luciano Hoeher, Florian Kofler, Shan Zhao, Mihail Ivilinov Todorov, Zhouyi Rong, Johannes C. Paetzold, Benedikt Wiestler, Marie Piraud, Daniel Rueckert, Julia Geppert, Pauline Morigny, Maria Rohm, Bjoern Menze, Stephan Herzig, Mauricio Berriel Díaz, Ali Ertürk",
       "journal": "Nature Methods",
       "year": 2024,
-      "note": "DELiVR · Nature Methods cover",
+      "note": "DELiVR · cover",
       "image": "/images/showcase/brain-vasculature.jpg",
       "link": "https://doi.org/10.1038/s41592-024-02245-2"
     },
@@ -557,12 +561,14 @@
       "link": "https://doi.org/10.1126/sciadv.adi8986"
     },
     {
-      "featured": false,
+      "featured": true,
+      "image": "/images/showcase/whole-body-disco.jpg",
       "title": "Distinct molecular profiles of skull bone marrow in health and neurological disorders",
       "authors": "Zeynep Ilgin Kolabas, Louis B. Kuemmerle, Robert Perneczky, Benjamín Förstera, Selin Ulukaya, Mayar Ali, Saketh Kapoor, Laura M. Bartos, Maren Büttner, Özüm Şehnaz Çalışkan, Zhouyi Rong, Hongcheng Mai, Luciano Höher, Denise Jeridi, Müge Molbay, Igor Khalin, Ioannis K. Deligiannis, Moritz Negwer, Kenny Roberts, Alba Simats, Olga Carofiglio, Mihail Ivilinov Todorov, Izabela Horvath, Furkan Öztürk, Selina Hummel, Gloria Biechele, Artem Zatcepin, Marcus Unterrainer, Johannes Gnörich, Jay Roodselaar, Joshua Shrouder, Pardis Khosravani, Benjamin Tast, Lisa Richter, Laura Díaz-Marugán, Doris Kaltenecker, Laurin Lux, Ying Chen, Shan Zhao, Boris‐Stephan Rauchmann, Michael Sterr, Ines Kunze, Karen Stanic, Vanessa W. Y. Kan, Simon Besson‐Girard, Sabrina Katzdobler, Carla Palleis, Julia Schädler, Johannes C. Paetzold, Sabine Liebscher, Anja E. Hauser, Özgün Gökçe, Heiko Lickert, Hanno Steinke, Corinne Benakis, C. Braun, Celia Pilar Martinez‐Jimenez, Katharina Büerger, Nathalie L. Albert, Günter U. Höglinger, Johannes Levin, Christian Haass, Anna Kopczak, Martin Dichgans, Joachim Havla, Tania Kümpfel, Martin Kerschensteiner, Martina Schifferer, Mikael Simons, Arthur Liesz, Natalie Krahmer, Omer Ali Bayraktar, Nicolai Franzmeier, Nikolaus Plesnila, Süheda Erener, Victor G. Puelles, Claire Delbridge, Harsharan S. Bhatia, Farida Hellal, Markus Elsner, Ingo Bechmann, Benjamin Ondruschka, Matthias Brendel, Fabian J. Theis, Ali Ertürk",
       "journal": "Cell",
       "year": 2023,
-      "link": "https://doi.org/10.1016/j.cell.2023.07.009"
+      "link": "https://doi.org/10.1016/j.cell.2023.07.009",
+      "note": "Skull–meninges–brain axis"
     },
     {
       "featured": false,
@@ -622,7 +628,7 @@
       "authors": "Hongcheng Mai, Jie Luo, Luciano Hoeher, Rami Al-Maskari, Izabela Horvath, Ying Chen, Florian Kofler, Marie Piraud, Johannes C. Paetzold, Jennifer Modamio, Mihail Ivilinov Todorov, Markus Elsner, Farida Hellal, Ali Ertürk",
       "journal": "Nature Biotechnology",
       "year": 2023,
-      "note": "wildDISCO · cover",
+      "note": "wildDISCO · cover · bioRxiv top 0.05%",
       "image": "/images/showcase/whole-body-disco.jpg",
       "videoId": "w57BU40-BCo",
       "link": "https://doi.org/10.1038/s41587-023-01846-0"
@@ -808,7 +814,7 @@
       "authors": "Shan Zhao, Mihail Ivilinov Todorov, Ruiyao Cai, Rami AI -Maskari, Hanno Steinke, Elisabeth Kemter, Hongcheng Mai, Zhouyi Rong, Martin Warmer, Karen Stanic, Oliver Schoppe, Johannes C. Paetzold, Benno Gesierich, Milagros N. Wong, Tobias B. Huber, Marco Duering, Oliver T. Bruns, Bjoern Menze, Jan Lipfert, Victor G. Puelles, Eckhard Wolf, Ingo Bechmann, Ali Ertürk",
       "journal": "Cell",
       "year": 2020,
-      "note": "SHANEL",
+      "note": "SHANEL · video",
       "image": "/images/showcase/transparent-human-brain.jpg",
       "videoId": "i1-upP0kq5o",
       "link": "https://doi.org/10.1016/j.cell.2020.01.030"
@@ -822,7 +828,7 @@
       "link": "https://doi.org/10.1038/s41467-020-19449-7"
     },
     {
-      "featured": false,
+      "featured": true,
       "title": "Machine learning analysis of whole mouse brain vasculature",
       "authors": "Mihail Ivilinov Todorov, Johannes C. Paetzold, Oliver Schoppe, Giles Tetteh, Suprosanna Shit, Velizar Efremov, Katalin Völgyi, Marco Düring, Martin Dichgans, Marie Piraud, Bjoern Menze, Ali Ertürk",
       "journal": "Nature Methods",
@@ -844,7 +850,7 @@
       "authors": "Chenchen Pan, Oliver Schoppe, Arnaldo Parra‐Damas, Ruiyao Cai, Mihail Ivilinov Todorov, Gábor Gondi, Bettina von Neubeck, Nuray Böğürcü, Sascha Seidel, Katia Sleiman, Christian Veltkamp, Benjamín Förstera, Hongcheng Mai, Zhouyi Rong, Omelyan Trompak, Alireza Ghasemigharagoz, Madita Alice Reimer, Ángel M. Cuesta, Javier Coronel, Irmela Jeremias, Dieter Saur, Amparo Acker‐Palmer, Till Acker, Boyan K. Garvalov, Bjoern Menze, Reinhard Zeidler, Ali Ertürk",
       "journal": "Cell",
       "year": 2019,
-      "note": "DeepMACT · cover",
+      "note": "DeepMACT · cover · video",
       "image": "/images/showcase/deepmact-cell.jpg",
       "videoId": "ZnkNw5a-gvs",
       "link": "https://doi.org/10.1016/j.cell.2019.11.013"
@@ -883,11 +889,11 @@
       "link": "https://doi.org/10.1038/s41593-018-0296-9"
     },
     {
-      "featured": false,
+      "featured": true,
       "title": "Panoptic imaging of transparent mice reveals whole-body neuronal projections and skull–meninges connections",
       "authors": "Ruiyao Cai, Chenchen Pan, Alireza Ghasemigharagoz, Mihail Ivilinov Todorov, Benjamín Förstera, Shan Zhao, Harsharan S. Bhatia, Arnaldo Parra‐Damas, Leander Mrowka, Delphine Theodorou, Markus Rempfler, Anna L. R. Xavier, Benjamin T. Kress, Corinne Benakis, Hanno Steinke, Sabine Liebscher, Ingo Bechmann, Arthur Liesz, Bjoern Menze, Martin Kerschensteiner, Maiken Nedergaard, Ali Ertürk",
       "journal": "Nature Neuroscience",
-      "year": 2018,
+      "year": 2019,
       "note": "vDISCO · cover",
       "link": "https://doi.org/10.1038/s41593-018-0301-3"
     },
@@ -933,7 +939,7 @@
       "link": "https://doi.org/10.1523/jneurosci.1898-15.2016"
     },
     {
-      "featured": false,
+      "featured": true,
       "title": "Shrinkage-mediated imaging of entire organs and organisms using uDISCO",
       "authors": "Chenchen Pan, Ruiyao Cai, Francesca Paola Quacquarelli, Alireza Ghasemigharagoz, Athanasios Lourbopoulos, Paweł Matryba, Nikolaus Plesnila, Martin Dichgans, Farida Hellal, Ali Ertürk",
       "journal": "Nature Methods",
@@ -962,95 +968,139 @@
   ],
   "alumni": [
     {
-      "name": "Tzu-Lun Ohn",
-      "role": "Postdoc",
-      "startYear": 2020,
-      "endYear": 2025
-    },
-    {
-      "name": "Peng Wei",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Kubilay Doğan Kılıç",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Safiah Olabi",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Alison Wright",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Lamia'a Bahnassawy",
-      "role": "Postdoc"
-    },
-    {
-      "name": "F. Paola Quacquarelli",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Rupinder Kaur",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Karen Stanic",
-      "role": "Postdoc"
-    },
-    {
-      "name": "Benjamin Förstera",
-      "role": "Postdoc"
-    },
-    {
-      "name": "A. Javier Parra Damas",
-      "role": "Postdoc"
+      "name": "David-Paul Minde",
+      "title": "Dr.",
+      "role": "Staff Scientist",
+      "startYear": 2024,
+      "startMonth": 1,
+      "endYear": 2026,
+      "endMonth": 6
     },
     {
       "name": "Moritz Negwer",
-      "role": "Postdoc"
+      "role": "Staff Scientist",
+      "startYear": 2021,
+      "startMonth": 9,
+      "endYear": 2024,
+      "endMonth": 2
+    },
+    {
+      "name": "Tzu-Lun Ohn",
+      "role": "Postdoc",
+      "startYear": 2020,
+      "title": "Dr."
+    },
+    {
+      "name": "Peng Wei",
+      "title": "Dr.",
+      "role": "Postdoc",
+      "startYear": 2023,
+      "startMonth": 7,
+      "endYear": 2025,
+      "endMonth": 6
+    },
+    {
+      "name": "Kubilay Doğan Kılıç",
+      "title": "Dr.",
+      "role": "Guest Researcher",
+      "startYear": 2024,
+      "startMonth": 1,
+      "endYear": 2025,
+      "endMonth": 1
+    },
+    {
+      "name": "Safiah Olabi",
+      "role": "Postdoc",
+      "startYear": 2022,
+      "startMonth": 1,
+      "endYear": 2024,
+      "endMonth": 1,
+      "title": "Dr."
+    },
+    {
+      "name": "Alison Wright",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "Lamia'a Bahnassawy",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "F. Paola Quacquarelli",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "Rupinder Kaur",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "Karen Stanic",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "Benjamin Förstera",
+      "role": "Postdoc",
+      "title": "Dr."
+    },
+    {
+      "name": "A. Javier Parra Damas",
+      "role": "Postdoc",
+      "title": "Dr."
     },
     {
       "name": "Mayar Ali",
       "role": "PhD Student",
-      "startYear": 2020,
+      "startYear": 2021,
+      "startMonth": 3,
       "endYear": 2025,
+      "endMonth": 5,
       "linkedin": "https://www.linkedin.com/in/mayarali/"
     },
     {
       "name": "Müge Molbay",
       "role": "PhD Student",
       "startYear": 2019,
-      "endYear": 2025,
+      "startMonth": 12,
+      "endYear": 2023,
       "linkedin": "https://www.linkedin.com/in/m%C3%BCge-molbay-838423168/"
     },
     {
       "name": "Hongcheng Mai",
       "role": "PhD Student",
       "startYear": 2018,
+      "startMonth": 10,
       "endYear": 2023,
+      "endMonth": 11,
       "linkedin": "https://www.linkedin.com/in/hongcheng-mai-1a73b2207/"
     },
     {
       "name": "Zeynep Ilgın Kolabaş",
       "role": "PhD Student",
-      "startYear": 2018,
-      "endYear": 2023,
+      "startYear": 2020,
+      "startMonth": 1,
+      "endYear": 2025,
+      "endMonth": 6,
       "linkedin": "https://www.linkedin.com/in/zeynepilginkolabas/"
     },
     {
       "name": "Johannes Paetzold",
       "role": "PhD Student",
-      "startYear": 2017,
-      "endYear": 2023,
+      "startYear": 2021,
+      "startMonth": 6,
+      "endYear": 2025,
+      "endMonth": 1,
       "linkedin": "https://www.linkedin.com/in/johannes-c-paetzold-284685120/"
     },
     {
       "name": "Shan Zhao",
       "role": "PhD Student",
       "startYear": 2018,
-      "endYear": 2023,
+      "endYear": 2021,
       "linkedin": "https://www.linkedin.com/in/shan-zhao-33aa0024/"
     },
     {
@@ -1068,31 +1118,87 @@
     },
     {
       "name": "Karoline Kadletz",
-      "role": "PhD Student"
+      "role": "PhD Student",
+      "startYear": 2021,
+      "startMonth": 2,
+      "endYear": 2025,
+      "endMonth": 8
     },
     {
       "name": "Izabela Horvath",
-      "role": "PhD Student"
+      "role": "PhD Student",
+      "startYear": 2020,
+      "startMonth": 5,
+      "endYear": 2025,
+      "endMonth": 6
     },
     {
       "name": "Abid Abrar",
-      "role": "PhD Student"
+      "role": "PhD Student",
+      "startYear": 2023,
+      "startMonth": 7,
+      "endYear": 2025,
+      "endMonth": 4
     },
     {
       "name": "Furkan Öztürk",
-      "role": "PhD Student"
+      "role": "PhD Student",
+      "startYear": 2020,
+      "startMonth": 1,
+      "endYear": 2024,
+      "endMonth": 1
     },
     {
       "name": "Marika Ruiyao Cai",
       "role": "PhD Student"
     },
     {
+      "name": "Paul Paetzold",
+      "role": "Master's Student",
+      "startYear": 2023,
+      "startMonth": 6,
+      "endYear": 2025,
+      "endMonth": 2
+    },
+    {
       "name": "Miro Kolenic",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "startYear": 2023,
+      "startMonth": 10,
+      "endYear": 2024,
+      "endMonth": 9
     },
     {
       "name": "Serhat Kalkan",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "startYear": 2023,
+      "startMonth": 12,
+      "endYear": 2024,
+      "endMonth": 9
+    },
+    {
+      "name": "Sen Yang",
+      "role": "Master's Student",
+      "startYear": 2024,
+      "startMonth": 4,
+      "endYear": 2024,
+      "endMonth": 12
+    },
+    {
+      "name": "Selin Ulukaya",
+      "role": "Master's Student",
+      "startYear": 2022,
+      "startMonth": 2,
+      "endYear": 2023,
+      "endMonth": 6
+    },
+    {
+      "name": "Basabdatta Gupta",
+      "role": "Master's Student",
+      "startYear": 2021,
+      "startMonth": 4,
+      "endYear": 2022,
+      "endMonth": 5
     },
     {
       "name": "Madita Reimer",
@@ -1111,28 +1217,28 @@
       "role": "Master's Student"
     },
     {
-      "name": "Basabdatta Gupta",
-      "role": "Master's Student"
-    },
-    {
-      "name": "Selin Ulukaya",
-      "role": "Master's Student"
-    },
-    {
-      "name": "Paul Paetzold",
-      "role": "Master's Student"
-    },
-    {
-      "name": "Sen Yang",
-      "role": "Master's Student"
+      "name": "Carolina Cigankova",
+      "role": "Undergraduate Student",
+      "startYear": 2024,
+      "startMonth": 10,
+      "endYear": 2025,
+      "endMonth": 8
     },
     {
       "name": "Şebnem Çam",
-      "role": "Undergraduate Student"
+      "role": "Undergraduate Student",
+      "startYear": 2024,
+      "startMonth": 5,
+      "endYear": 2024,
+      "endMonth": 7
     },
     {
       "name": "Jakub Grzejdak",
-      "role": "Undergraduate Student"
+      "role": "Undergraduate Student",
+      "startYear": 2024,
+      "startMonth": 5,
+      "endYear": 2024,
+      "endMonth": 7
     },
     {
       "name": "Inés H. García-Plaza",
@@ -1143,19 +1249,22 @@
       "role": "Undergraduate Student"
     },
     {
-      "name": "Carolina Cigankova",
-      "role": "Undergraduate Student"
-    },
-    {
       "name": "Ana Toman Fabjan",
-      "role": "Research Associate"
+      "role": "Administration",
+      "startYear": 2019,
+      "startMonth": 12,
+      "endYear": 2021
     },
     {
       "name": "Karen Biniossek",
-      "role": "Research Associate"
+      "role": "Administration",
+      "startYear": 2019,
+      "startMonth": 6,
+      "endYear": 2021
     },
     {
       "name": "Suheda Erener",
+      "title": "Dr.",
       "role": "Research Associate"
     },
     {

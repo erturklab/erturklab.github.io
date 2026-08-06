@@ -1,9 +1,11 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { ArrowRight, Mail, MapPin, ExternalLink } from "lucide-react";
 import site from "@/content/site.json";
 import { SectionLabel } from "@/components/ui/section-label";
 import { PublicationCard } from "@/components/ui/publication-card";
+import { AltmetricInit } from "@/components/ui/altmetric-badge";
 import { TechnologyCarousel } from "@/components/ui/technology-carousel";
 import { HeroImmersive } from "@/components/ui/hero-immersive";
 import { MissionCopy } from "@/components/ui/highlight-text";
@@ -22,6 +24,11 @@ const projects = getProjects();
 export default function HomePage() {
   return (
     <>
+      <Script
+        src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+        strategy="afterInteractive"
+      />
+      <AltmetricInit />
       <HeroImmersive
         institute={`${site.lab.institute} · Helmholtz Munich`}
         tagline="Mapping biology"
@@ -88,7 +95,7 @@ export default function HomePage() {
               Explore all publications →
             </Link>
           </div>
-          <div className="mt-12 grid items-start gap-6 lg:grid-cols-3">
+          <div className="mt-12 grid items-stretch gap-6 lg:grid-cols-3">
             {featuredPublications.slice(0, 3).map(({ featured: _h, ...pub }) => (
               <PublicationCard key={getPublicationKey(pub)} {...pub} />
             ))}

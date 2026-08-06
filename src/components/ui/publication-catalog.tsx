@@ -1,11 +1,17 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import type { Publication } from "@/lib/publications";
 import { getPublicationKey } from "@/lib/publications";
 import { PublicationCard } from "./publication-card";
 import { PublicationList } from "./publication-list";
 import { cn } from "@/lib/utils";
+
+declare global {
+  interface Window {
+    _altmetric_embed_init?: () => void;
+  }
+}
 
 type CatalogTab = "featured" | "publications" | "preprints";
 
@@ -42,6 +48,19 @@ export function PublicationCatalog({
 
   const tabs = hideEmptyTabs ? allTabs.filter((t) => t.count > 0) : allTabs;
 
+  // Re-trigger Altmetric badge processing after mount (handles initial load).
+  useEffect(() => {
+    function tryInit() {
+      if (typeof window._altmetric_embed_init === "function") {
+        window._altmetric_embed_init();
+      }
+    }
+    // Give React time to paint, then run; also retry once the script may have loaded late.
+    const t1 = setTimeout(tryInit, 200);
+    const t2 = setTimeout(tryInit, 1500);
+    return () => { clearTimeout(t1); clearTimeout(t2); };
+  }, []);
+
   const [tab, setTab] = useState<CatalogTab>(() => {
     const visible = hideEmptyTabs ? tabs : allTabs;
     const featuredCount = visible.find((t) => t.id === "featured")?.count ?? featured.length;
@@ -61,7 +80,15 @@ export function PublicationCatalog({
           <button
             key={id}
             type="button"
-            onClick={() => setTab(id)}
+            onClick={() => {
+              setTab(id);
+              // Wait for React to render the new tab content, then re-init badges.
+              setTimeout(() => {
+                if (typeof window._altmetric_embed_init === "function") {
+                  window._altmetric_embed_init();
+                }
+              }, 300);
+            }}
             className={cn(
               "rounded-full px-4 py-2 text-sm font-medium transition-colors",
               tab === id
@@ -87,7 +114,7 @@ export function PublicationCatalog({
       <div className="mt-8">
         {tab === "featured" && (
           featured.length > 0 ? (
-            <div className="grid items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="grid items-stretch gap-6 sm:grid-cols-2 lg:grid-cols-3">
               {featured.map(({ featured: _h, type: _t, ...pub }) => (
                 <PublicationCard key={getPublicationKey(pub)} {...pub} />
               ))}

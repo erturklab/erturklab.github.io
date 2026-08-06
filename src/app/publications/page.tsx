@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { PageHero } from "@/components/ui/page-hero";
 
 export const metadata: Metadata = { title: "Publications" };
 import { PublicationCatalog } from "@/components/ui/publication-catalog";
+import { AltmetricInit } from "@/components/ui/altmetric-badge";
 import {
   getCatalogPublications,
   getFeaturedPublications,
@@ -20,6 +22,11 @@ export default function PublicationsPage() {
 
   return (
     <>
+      <Script
+        src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+        strategy="afterInteractive"
+      />
+      <AltmetricInit />
       <PageHero
         label="Technology & Research · Publications"
         title="Publications"

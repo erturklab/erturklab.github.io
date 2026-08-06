@@ -2,9 +2,12 @@ import { cn } from "@/lib/utils";
 
 export interface AlumniEntry {
   name: string;
+  title?: string;
   role: string;
   startYear?: number;
+  startMonth?: number;
   endYear?: number;
+  endMonth?: number;
   linkedin?: string;
 }
 
@@ -16,21 +19,26 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
-/** Strip honorifics such as Dr. from display names. */
-export function formatAlumniName(name: string): string {
-  return name.replace(/^Dr\.?\s+/i, "").trim();
+/** Format display name — prepend Dr. title if present. */
+export function formatAlumniName(entry: AlumniEntry): string {
+  const base = entry.name.replace(/^Dr\.?\s+/i, "").trim();
+  return entry.title === "Dr." ? `Dr. ${base}` : base;
+}
+
+const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+
+function fmtPeriod(month?: number, year?: number): string | null {
+  if (year && month) return `${MONTHS[month - 1]} ${year}`;
+  if (year) return `${year}`;
+  return null;
 }
 
 function formatDuration(entry: AlumniEntry) {
-  if (entry.startYear && entry.endYear) {
-    return `${entry.startYear}–${entry.endYear}`;
-  }
-  if (entry.endYear) {
-    return `Until ${entry.endYear}`;
-  }
-  if (entry.startYear) {
-    return `From ${entry.startYear}`;
-  }
+  const start = fmtPeriod(entry.startMonth, entry.startYear);
+  const end = fmtPeriod(entry.endMonth, entry.endYear);
+  if (start && end) return `${start} - ${end}`;
+  if (end) return `Until ${end}`;
+  if (start) return `From ${start}`;
   return null;
 }
 
@@ -39,6 +47,9 @@ export function AlumniList({ entries, intro }: { entries: AlumniEntry[]; intro?:
     const yearA = a.endYear ?? a.startYear ?? 0;
     const yearB = b.endYear ?? b.startYear ?? 0;
     if (yearB !== yearA) return yearB - yearA;
+    const monthA = (a.endYear ? a.endMonth : a.startMonth) ?? 0;
+    const monthB = (b.endYear ? b.endMonth : b.startMonth) ?? 0;
+    if (monthB !== monthA) return monthB - monthA;
     return a.name.localeCompare(b.name);
   });
 
@@ -48,7 +59,7 @@ export function AlumniList({ entries, intro }: { entries: AlumniEntry[]; intro?:
       <div className={cn("mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4", !intro && "mt-0")}>
         {sorted.map((entry) => {
           const duration = formatDuration(entry);
-          const displayName = formatAlumniName(entry.name);
+          const displayName = formatAlumniName(entry);
           return (
             <article
               key={`${entry.name}-${entry.role}`}

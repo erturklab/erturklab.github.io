@@ -14,9 +14,10 @@ const sectionOrder = [
   "Co-deputies & Leadership",
   "Operations & Administration",
   "Staff Scientists",
-  "Scientist",
+  "Technical Assistants",
   "Postdocs",
   "PhD Students",
+  "Scientist",
   "Master Students",
 ] as const;
 

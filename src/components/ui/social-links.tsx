@@ -1,6 +1,22 @@
 import site from "@/content/site.json";
 import { cn } from "@/lib/utils";
 
+function LinkedInIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
+      <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+    </svg>
+  );
+}
+
+function BlueSkyIcon({ className }: { className?: string }) {
+  return (
+    <svg viewBox="0 0 600 530" className={className} fill="currentColor" aria-hidden="true">
+      <path d="M135.72 44.03C202.216 93.951 273.74 195.17 300 249.49c26.262-54.316 97.782-155.54 164.28-205.46C512.26 8.009 590-19.862 590 68.825c0 17.712-10.155 148.79-16.111 170.07-20.703 73.984-96.144 92.854-163.25 81.433 117.3 19.964 147.14 86.091 82.697 152.22-122.39 125.59-175.91-31.511-189.63-71.766-2.514-7.38-3.69-10.832-3.708-7.896-.017-2.936-1.193.516-3.707 7.896-13.714 40.255-67.233 197.36-189.63 71.766-64.444-66.128-34.605-132.26 82.697-152.22-67.108 11.421-142.55-7.45-163.25-81.433C20.15 217.613 10 86.535 10 68.825c0-88.687 77.742-60.816 125.72-24.795z" />
+    </svg>
+  );
+}
+
 function GitHubIcon({ className }: { className?: string }) {
   return (
     <svg viewBox="0 0 24 24" className={className} fill="currentColor" aria-hidden="true">
@@ -31,13 +47,15 @@ const linkClass =
   "inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] text-[var(--muted-foreground)] transition-colors hover:border-[var(--primary)]/50 hover:text-[var(--primary)] hover:bg-[var(--secondary)]";
 
 export function SocialLinks({ className, iconClassName }: { className?: string; iconClassName?: string }) {
-  const { github, twitter, instagram } = site.lab.social;
+  const { linkedin, bluesky, github, twitter, instagram } = site.lab.social;
 
   const items = [
+    { href: linkedin, label: "Ertürk Lab on LinkedIn", icon: LinkedInIcon, iconSize: "h-4 w-4" },
+    { href: bluesky, label: "Ertürk Lab on BlueSky", icon: BlueSkyIcon, iconSize: "h-4 w-4" },
     { href: github, label: "Ertürk Lab on GitHub", icon: GitHubIcon, iconSize: "h-4 w-4" },
     { href: twitter, label: "Ertürk Lab on X (Twitter)", icon: XIcon, iconSize: "h-3.5 w-3.5" },
     { href: instagram, label: "Ertürk Lab on Instagram", icon: InstagramIcon, iconSize: "h-4 w-4" },
-  ] as const;
+  ];
 
   return (
     <div className={cn("flex items-center gap-3", className)}>

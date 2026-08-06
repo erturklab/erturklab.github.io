@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { ArrowLeft, ArrowUpRight, ExternalLink } from "lucide-react";
@@ -15,6 +16,8 @@ import {
   projectHref,
 } from "@/lib/projects";
 import { getRelatedProjects } from "@/lib/project-media";
+import { extractDoi } from "@/lib/publications";
+import { AltmetricInit } from "@/components/ui/altmetric-badge";
 import { ProjectPreviewCard } from "@/components/ui/project-preview-card";
 
 export function generateStaticParams() {
@@ -48,6 +51,12 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
   const hasMedia = Boolean(project.media && project.media.length > 0);
 
   return (
+    <>
+    <Script
+      src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"
+      strategy="afterInteractive"
+    />
+    <AltmetricInit />
     <div className="pb-16 md:pb-24">
       <div className="mx-auto max-w-6xl px-4 pt-12 md:px-6 md:pt-16">
         <Link
@@ -144,39 +153,68 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
             <p className="mt-4 text-sm text-[var(--muted-foreground)]">No linked publications yet.</p>
           ) : (
             <div className="mt-8 grid gap-4 lg:grid-cols-2">
-              {publications.map((pub) => (
-                <article
-                  key={`${pub.title}-${pub.year}`}
-                  className="flex flex-col rounded-2xl border border-[var(--border)] bg-[var(--card)]/60 p-6 transition-colors hover:border-[var(--primary)]/30 hover:bg-[var(--card)]"
-                >
-                  <div className="flex flex-wrap items-start justify-between gap-3">
-                    <span className="rounded-full border border-[var(--border)] bg-[var(--secondary)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)]">
-                      {pub.journal}
-                    </span>
-                    <span className="text-sm tabular-nums text-[var(--muted-foreground)]">{pub.year}</span>
-                  </div>
-                  <h3 className="mt-4 text-base font-semibold leading-snug md:text-lg">
-                    {pub.link ? (
-                      <a
-                        href={pub.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-[var(--primary)] hover:underline underline-offset-4"
-                      >
-                        {pub.title}
-                      </a>
-                    ) : (
-                      pub.title
-                    )}
-                  </h3>
-                  <PublicationAuthors authors={pub.authors} className="mt-4" />
-                  {pub.status && (
-                    <p className="mt-auto pt-4 text-xs uppercase tracking-wide text-[var(--muted-foreground)]">
-                      {pub.status}
-                    </p>
-                  )}
-                </article>
-              ))}
+              {publications.map((pub) => {
+                const doi = extractDoi(pub.link);
+                return (
+                  <article
+                    key={`${pub.title}-${pub.year}`}
+                    className="flex flex-col rounded-2xl border border-[var(--border)] bg-[var(--card)]/60 p-6 transition-colors hover:border-[var(--primary)]/30 hover:bg-[var(--card)]"
+                  >
+                    <div className="flex flex-wrap items-start justify-between gap-3">
+                      <span className="rounded-full border border-[var(--border)] bg-[var(--secondary)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)]">
+                        {pub.journal}
+                      </span>
+                      <span className="text-sm tabular-nums text-[var(--muted-foreground)]">{pub.year}</span>
+                    </div>
+                    <h3 className="mt-4 text-base font-semibold leading-snug md:text-lg">
+                      {pub.link ? (
+                        <a
+                          href={pub.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="hover:text-[var(--primary)] hover:underline underline-offset-4"
+                        >
+                          {pub.title}
+                        </a>
+                      ) : (
+                        pub.title
+                      )}
+                    </h3>
+                    <PublicationAuthors authors={pub.authors} className="mt-4" />
+                    <div className="mt-auto flex items-center justify-between pt-4 border-t border-[var(--border)]">
+                      {pub.status ? (
+                        <p className="text-xs uppercase tracking-wide text-[var(--muted-foreground)]">
+                          {pub.status}
+                        </p>
+                      ) : pub.link ? (
+                        <a
+                          href={pub.link}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--muted-foreground)] hover:text-[var(--primary)] hover:underline underline-offset-2"
+                        >
+                          View paper <ExternalLink className="h-3 w-3 shrink-0" />
+                        </a>
+                      ) : (
+                        <span />
+                      )}
+                      {doi && (
+                        <div className="shrink-0" style={{ width: 38, height: 38 }}>
+                          <div
+                            className="altmetric-embed"
+                            data-badge-type="donut"
+                            data-doi={doi}
+                            data-condensed="true"
+                            data-hide-no-mentions="true"
+                            data-link-target="_blank"
+                            style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
+                          />
+                        </div>
+                      )}
+                    </div>
+                  </article>
+                );
+              })}
             </div>
           )}
         </section>
@@ -193,6 +231,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         )}
       </div>
     </div>
+    </>
   );
 }
 

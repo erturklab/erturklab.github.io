@@ -1,5 +1,18 @@
-import { resolveProjectIdFromNote } from "./projects";
 import site from "@/content/site.json";
+
+/**
+ * Extract a clean DOI from a URL string.
+ * Handles standard doi.org, bioRxiv (10.64898/…) and strips suffixes like
+ * .abstract that would break Altmetric lookups.
+ */
+export function extractDoi(url?: string): string | undefined {
+  if (!url) return undefined;
+  const match = url.match(/10\.\d{4,9}\/[^\s"'<>&?#]+/i);
+  if (!match) return undefined;
+  return match[0]
+    .replace(/\.(abstract|full\.pdf|pdf)$/i, "")
+    .replace(/[.,;:)]+$/, "");
+}
 
 export type PublicationType = "publication" | "preprint";
 
@@ -33,12 +46,10 @@ export function sortPublicationsByYear<T extends { year: number; title?: string 
   });
 }
 
-/** Lab flagship papers only — must map to a project page with preview video. */
+/** Lab flagship papers — all publications explicitly marked featured. */
 export function getFeaturedPublications(publications: Publication[]): Publication[] {
   return sortPublicationsByYear(
-    publications.filter(
-      (p) => p.featured && !isPreprint(p) && Boolean(resolveProjectIdFromNote(p.note))
-    )
+    publications.filter((p) => p.featured && !isPreprint(p))
   );
 }
 

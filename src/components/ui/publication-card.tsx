@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
+import { extractDoi } from "@/lib/publications";
 import { getPublicationPreviewMedia } from "@/lib/project-media";
 import { getProjectForPublication, publicationProjectHref } from "@/lib/projects";
 import { LocalVideoPlayer } from "./local-video-player";
@@ -10,6 +11,12 @@ import { ShowcaseImage } from "./showcase-image";
 import { PublicationAuthors } from "./publication-authors";
 import { CARD_PREVIEW_PLAYBACK_RATE } from "@/lib/video";
 import { cn } from "@/lib/utils";
+
+declare global {
+  interface Window {
+    _altmetric_embed_init?: () => void;
+  }
+}
 
 interface PublicationCardProps {
   title: string;
@@ -37,13 +44,31 @@ export function PublicationCard({
   const project = getProjectForPublication({ note, link });
   const preview = getPublicationPreviewMedia(note);
   const projectHrefValue = publicationProjectHref(note, link);
+  const doi = extractDoi(link);
   const poster = preview?.poster ?? image;
   const showMedia = Boolean(preview || image);
+
+  // Re-init Altmetric after client navigation (home / featured cards).
+  useEffect(() => {
+    if (!doi) return;
+    const run = () => {
+      if (typeof window._altmetric_embed_init === "function") {
+        window._altmetric_embed_init();
+      }
+    };
+    run();
+    const t1 = setTimeout(run, 200);
+    const t2 = setTimeout(run, 1200);
+    return () => {
+      clearTimeout(t1);
+      clearTimeout(t2);
+    };
+  }, [doi]);
 
   return (
     <article
       className={cn(
-        "group relative flex flex-col rounded-2xl border border-[var(--border)] bg-[var(--card)] transition-all duration-300",
+        "group relative flex h-full flex-col rounded-2xl border border-[var(--border)] bg-[var(--card)] transition-all duration-300",
         "hover:border-[var(--primary)]/50 hover:shadow-[0_0_40px_-12px] hover:shadow-[var(--primary)]/20",
         className
       )}
@@ -76,7 +101,7 @@ export function PublicationCard({
         </div>
       )}
 
-      <div className="flex flex-col p-5 md:p-6">
+      <div className="flex flex-1 flex-col p-5 md:p-6">
         <div className="flex shrink-0 items-center justify-between gap-3">
           <span className="rounded-full border border-[var(--border)] bg-[var(--secondary)] px-3 py-1 text-[10px] font-semibold uppercase tracking-wide text-[var(--primary)]">
             {journal}
@@ -112,35 +137,71 @@ export function PublicationCard({
           />
         </div>
 
-        <div className="mt-4 shrink-0 border-t border-[var(--border)] pt-4">
-          {project?.name && (
-            <p className="mb-2 truncate text-left text-[11px] font-medium text-[var(--muted-foreground)]">
-              {project.name}
-            </p>
-          )}
-          <div className="flex min-h-[1.25rem] items-center justify-between gap-3">
-            {projectHrefValue ? (
-              <Link
-                href={projectHrefValue}
-                className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--primary)] hover:underline underline-offset-2"
-              >
-                Project page <ArrowUpRight className="h-3 w-3 shrink-0" />
-              </Link>
-            ) : (
-              <span />
+        {/* Project name reserve: fixed min-height so the border-t is always at the same height
+             across all cards in the same row, regardless of whether a name exists. */}
+        <div className="mt-auto">
+          <div className="min-h-[1.375rem]">
+            {project?.name && (
+              <p className="truncate text-left text-[11px] font-medium text-[var(--muted-foreground)]">
+                {project.name}
+              </p>
             )}
-            {link ? (
-              <a
-                href={link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--muted-foreground)] hover:text-[var(--primary)] hover:underline underline-offset-2"
-              >
-                View paper <ExternalLink className="h-3 w-3 shrink-0" />
-              </a>
-            ) : (
-              <span />
-            )}
+          </div>
+          <div className="shrink-0 border-t border-[var(--border)] pt-4">
+            {/* Always 3-col grid so the badge stays geometrically centered */}
+            <div className="grid grid-cols-[1fr_auto_1fr] items-center gap-2">
+              <div className="justify-self-start">
+                {projectHrefValue ? (
+                  <Link
+                    href={projectHrefValue}
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--primary)] hover:underline underline-offset-2"
+                  >
+                    Project page <ArrowUpRight className="h-3 w-3 shrink-0" />
+                  </Link>
+                ) : doi ? (
+                  /* No project page → badge on the left */
+                  <div style={{ width: 38, height: 38 }}>
+                    <div
+                      className="altmetric-embed"
+                      data-badge-type="donut"
+                      data-doi={doi}
+                      data-condensed="true"
+                      data-hide-no-mentions="true"
+                      data-link-target="_blank"
+                      style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+              <div>
+                {/* Center badge only when project page also exists */}
+                {projectHrefValue && doi ? (
+                  <div style={{ width: 38, height: 38 }}>
+                    <div
+                      className="altmetric-embed"
+                      data-badge-type="donut"
+                      data-doi={doi}
+                      data-condensed="true"
+                      data-hide-no-mentions="true"
+                      data-link-target="_blank"
+                      style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
+                    />
+                  </div>
+                ) : null}
+              </div>
+              <div className="justify-self-end">
+                {link ? (
+                  <a
+                    href={link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="inline-flex items-center gap-1 text-[11px] font-medium text-[var(--muted-foreground)] hover:text-[var(--primary)] hover:underline underline-offset-2"
+                  >
+                    View paper <ExternalLink className="h-3 w-3 shrink-0" />
+                  </a>
+                ) : null}
+              </div>
+            </div>
           </div>
         </div>
       </div>
