@@ -348,3 +348,17 @@ body {
 .job-markdown a:hover {
   opacity: 0.85;
 }
+
+/* Altmetric donut scores are baked as dark pixels (often <img>), so fill: overrides
+   do nothing. On dark themes, sit the badge on a white disc — size unchanged. */
+html:not(.light):not(.paper) .altmetric-embed {
+  background: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);
+}
+
+html:not(.light):not(.paper) .altmetric-embed img,
+html:not(.light):not(.paper) .altmetric-embed svg {
+  display: block;
+  border-radius: 50%;
+}
