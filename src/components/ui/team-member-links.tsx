@@ -94,31 +94,33 @@ const contactLinkClass =
 const contactIconClass = "h-4 w-4 shrink-0 text-[var(--muted-foreground)]";
 const orcidIconClass = "h-4 w-4 shrink-0";
 
-/** Social & academic profiles — icon row under the name (not email / ORCID; those go in Contact information). */
+/** Social & academic profiles — icon row under the name. */
 const iconLinkConfig = [
-  { key: "linkedin" as const, label: "LinkedIn", icon: LinkedInIcon, href: (v: string) => v },
-  { key: "github" as const, label: "GitHub", icon: GitHubIcon, href: (v: string) => v },
-  { key: "googleScholar" as const, label: "Google Scholar", icon: GraduationCap, href: (v: string) => v },
-  { key: "wikipedia" as const, label: "Wikipedia", icon: WikipediaIcon, href: (v: string) => v },
-  { key: "twitter" as const, label: "X", icon: XIcon, href: twitterHref },
-  { key: "bluesky" as const, label: "Bluesky", icon: BlueskyIcon, href: blueskyHref },
-  { key: "personalWebsite" as const, label: "Website", icon: Globe, href: (v: string) => normalizeUrl(v, "https://") },
+  { key: "email" as const, label: "Email", icon: Mail, href: (v: string) => `mailto:${v}`, external: false },
+  { key: "linkedin" as const, label: "LinkedIn", icon: LinkedInIcon, href: (v: string) => v, external: true },
+  { key: "github" as const, label: "GitHub", icon: GitHubIcon, href: (v: string) => v, external: true },
+  { key: "orcid" as const, label: "ORCID", icon: OrcidIcon, href: orcidHref, external: true },
+  { key: "googleScholar" as const, label: "Google Scholar", icon: GraduationCap, href: (v: string) => v, external: true },
+  { key: "wikipedia" as const, label: "Wikipedia", icon: WikipediaIcon, href: (v: string) => v, external: true },
+  { key: "twitter" as const, label: "X", icon: XIcon, href: twitterHref, external: true },
+  { key: "bluesky" as const, label: "Bluesky", icon: BlueskyIcon, href: blueskyHref, external: true },
+  { key: "personalWebsite" as const, label: "Website", icon: Globe, href: (v: string) => normalizeUrl(v, "https://"), external: true },
 ];
 
 export function TeamMemberLinksRow({ links, className }: { links?: TeamMemberLinks; className?: string }) {
   if (!links) return null;
 
   const items = iconLinkConfig
-    .map(({ key, label, icon: Icon, href }) => {
+    .map(({ key, label, icon: Icon, href, external }) => {
       const value = links[key];
       if (!value) return null;
       return (
         <a
           key={key}
           href={href(value)}
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label={`${label} profile`}
+          {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
+          aria-label={key === "email" ? `Email ${value}` : `${label} profile`}
+          title={key === "email" ? value : label}
           className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-[var(--border)] bg-[var(--background)]/80 text-[var(--muted-foreground)] transition-colors hover:border-[var(--primary)]/40 hover:text-[var(--primary)]"
         >
           <Icon className="h-4 w-4" aria-hidden />

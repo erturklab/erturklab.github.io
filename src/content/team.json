@@ -133,7 +133,7 @@
     "title": "Dr.",
     "name": "Harsharan S. Bhatia",
     "role": "Omics Technologies Team Leader",
-    "section": "Staff Scientists",
+    "section": "Co-deputies & Leadership",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Harsharan S. Bhatia",
@@ -155,7 +155,7 @@
     "title": "Dr.",
     "name": "Ceren Kimna",
     "role": "Nanotechnology Team Lead",
-    "section": "Staff Scientists",
+    "section": "Co-deputies & Leadership",
     "profileTier": "page",
     "publicationAuthorNames": [
       "Ceren Kimna",
@@ -685,11 +685,31 @@
         "description": "B.Sc. Molecular Biotechnology, Technical University of Munich (TUM), Munich, Germany"
       }
     ],
+    "photo": "/images/team/emirhan-yagmur.jpg",
+    "photoPosition": "center 40%",
     "links": {
       "email": "emirhan.yagmur@helmholtz-munich.de",
       "linkedin": "https://www.linkedin.com/in/emirhan-ya%C4%9Fmur-139554196/",
       "googleScholar": "https://scholar.google.com/citations?user=DHT-brkAAAAJ&hl=en",
       "orcid": "https://orcid.org/0009-0000-3540-4775"
+    }
+  },
+  {
+    "slug": "sun-liuziyue",
+    "name": "Sun Liuziyue",
+    "role": "Master Student",
+    "section": "Master Students",
+    "profileTier": "card",
+    "publicationAuthorNames": [],
+    "bio": "Master's thesis on predicting LNP formulations; bioinformatics and machine learning.",
+    "biography": "My name is Sun. I studied Biomedicine at Fudan University in Shanghai for my bachelor's. Now I am doing my master's in Biology at LMU, shifting more toward the interdisciplinary area of bioinformatics, machine learning, and human health.\n\nI joined the Ertürk Lab for my master's thesis, which is focused on the prediction task of different LNP formulations.",
+    "researchInterests": "Bioinformatics, machine learning, human health, and LNP formulation prediction.",
+    "photo": "/images/team/sun-liuziyue.png",
+    "photoPosition": "center 28%",
+    "links": {
+      "email": "liuziyue.sun@campus.lmu.de",
+      "github": "https://github.com/SaoirseSunLzy",
+      "orcid": "https://orcid.org/0009-0009-8242-0685"
     }
   }
 ]
