@@ -191,8 +191,8 @@ MEMBERS = [
         "photo": "/images/team/ying.jpg",
     },
     {
-        "slug": "jie-zhan",
-        "name": "Jie Zhan",
+        "slug": "jie-zhang",
+        "name": "Jie Zhang",
         "role": "Ph.D. Candidate",
         "section": "PhD Students",
         "profileTier": "page",

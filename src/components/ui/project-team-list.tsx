@@ -1,16 +1,11 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { TeamMember } from "@/lib/team";
-import { cardDisplayName, formatFullName } from "@/lib/team";
+import { cardDisplayName, displayInitials, formatFullName } from "@/lib/team";
 
 function ProjectTeamAvatar({ member }: { member: TeamMember }) {
   if (!member.photo) {
-    const initials = member.name
-      .split(" ")
-      .filter((part) => part.length > 1)
-      .slice(0, 2)
-      .map((part) => part[0])
-      .join("");
+    const initials = displayInitials(member.name);
 
     return (
       <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)] text-sm font-semibold text-[var(--primary)] ring-1 ring-[var(--border)]">

@@ -974,7 +974,8 @@
       "startYear": 2024,
       "startMonth": 1,
       "endYear": 2026,
-      "endMonth": 6
+      "endMonth": 6,
+      "linkedin": "https://www.linkedin.com/in/dr-david-paul-minde-576a6542"
     },
     {
       "name": "Moritz Negwer",
@@ -982,7 +983,8 @@
       "startYear": 2021,
       "startMonth": 9,
       "endYear": 2024,
-      "endMonth": 2
+      "endMonth": 2,
+      "linkedin": "https://www.linkedin.com/in/moritz-negwer-0357ba1b2"
     },
     {
       "name": "Tzu-Lun Ohn",
@@ -997,7 +999,8 @@
       "startYear": 2023,
       "startMonth": 7,
       "endYear": 2025,
-      "endMonth": 6
+      "endMonth": 6,
+      "linkedin": "https://www.linkedin.com/in/peng-wei-69ab4897"
     },
     {
       "name": "Kubilay Doğan Kılıç",
@@ -1006,7 +1009,8 @@
       "startYear": 2024,
       "startMonth": 1,
       "endYear": 2025,
-      "endMonth": 1
+      "endMonth": 1,
+      "linkedin": "https://www.linkedin.com/in/kubilay-do%C4%9Fan-k%C4%B1l%C4%B1%C3%A7-765b2251"
     },
     {
       "name": "Safiah Olabi",
@@ -1015,22 +1019,27 @@
       "startMonth": 1,
       "endYear": 2024,
       "endMonth": 1,
-      "title": "Dr."
+      "title": "Dr.",
+      "linkedin": "https://www.linkedin.com/in/safiah-olabi-22a48646"
     },
     {
       "name": "Alison Wright",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "linkedin": "https://www.linkedin.com/in/wrightohalison"
     },
     {
       "name": "Lamia'a Bahnassawy",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "linkedin": "https://www.linkedin.com/in/lamiaa-bahnassawy"
     },
     {
       "name": "F. Paola Quacquarelli",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "startYear": 2015,
+      "endYear": 2017
     },
     {
       "name": "Rupinder Kaur",
@@ -1040,17 +1049,32 @@
     {
       "name": "Karen Stanic",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "startYear": 2019,
+      "startMonth": 7,
+      "endYear": 2021,
+      "endMonth": 1,
+      "linkedin": "https://www.linkedin.com/in/dr-karen-stanic-9973a147"
     },
     {
       "name": "Benjamin Förstera",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "startYear": 2019,
+      "startMonth": 1,
+      "endYear": 2021,
+      "endMonth": 1,
+      "linkedin": "https://www.linkedin.com/in/benjamin-foerstera-3769bb20b"
     },
     {
       "name": "A. Javier Parra Damas",
       "role": "Postdoc",
-      "title": "Dr."
+      "title": "Dr.",
+      "startYear": 2016,
+      "startMonth": 7,
+      "endYear": 2017,
+      "endMonth": 9,
+      "linkedin": "https://www.linkedin.com/in/arnaldo-parra-damas-a7102230"
     },
     {
       "name": "Mayar Ali",
@@ -1114,7 +1138,8 @@
       "name": "Oliver Schoppe",
       "role": "PhD Student",
       "startYear": 2016,
-      "endYear": 2020
+      "endYear": 2020,
+      "linkedin": "https://www.linkedin.com/in/oschoppe"
     },
     {
       "name": "Karoline Kadletz",
@@ -1122,7 +1147,8 @@
       "startYear": 2021,
       "startMonth": 2,
       "endYear": 2025,
-      "endMonth": 8
+      "endMonth": 8,
+      "linkedin": "https://www.linkedin.com/in/karoline-kadletz-272bb416a"
     },
     {
       "name": "Izabela Horvath",
@@ -1130,7 +1156,8 @@
       "startYear": 2020,
       "startMonth": 5,
       "endYear": 2025,
-      "endMonth": 6
+      "endMonth": 6,
+      "linkedin": "https://www.linkedin.com/in/izabelahorvath"
     },
     {
       "name": "Abid Abrar",
@@ -1138,7 +1165,8 @@
       "startYear": 2023,
       "startMonth": 7,
       "endYear": 2025,
-      "endMonth": 4
+      "endMonth": 4,
+      "linkedin": "https://www.linkedin.com/in/abid-abrar"
     },
     {
       "name": "Furkan Öztürk",
@@ -1146,11 +1174,17 @@
       "startYear": 2020,
       "startMonth": 1,
       "endYear": 2024,
-      "endMonth": 1
+      "endMonth": 1,
+      "linkedin": "https://www.linkedin.com/in/furkan-ozturk-a06830173"
     },
     {
       "name": "Marika Ruiyao Cai",
-      "role": "PhD Student"
+      "role": "PhD Student",
+      "startYear": 2015,
+      "startMonth": 2,
+      "endYear": 2019,
+      "endMonth": 12,
+      "linkedin": "https://www.linkedin.com/in/ruiyao-marika-cai-11a931103"
     },
     {
       "name": "Paul Paetzold",
@@ -1166,7 +1200,8 @@
       "startYear": 2023,
       "startMonth": 10,
       "endYear": 2024,
-      "endMonth": 9
+      "endMonth": 9,
+      "linkedin": "https://www.linkedin.com/in/victor-miro-kolenic-8a6717287"
     },
     {
       "name": "Serhat Kalkan",
@@ -1174,7 +1209,8 @@
       "startYear": 2023,
       "startMonth": 12,
       "endYear": 2024,
-      "endMonth": 9
+      "endMonth": 9,
+      "linkedin": "https://www.linkedin.com/in/serhatbugra"
     },
     {
       "name": "Sen Yang",
@@ -1190,7 +1226,8 @@
       "startYear": 2022,
       "startMonth": 2,
       "endYear": 2023,
-      "endMonth": 6
+      "endMonth": 6,
+      "linkedin": "https://www.linkedin.com/in/selin-ulukaya-0738b3167"
     },
     {
       "name": "Basabdatta Gupta",
@@ -1202,19 +1239,27 @@
     },
     {
       "name": "Madita Reimer",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "linkedin": "https://www.linkedin.com/in/maditareimer"
     },
     {
       "name": "Christoph Dehner",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "linkedin": "https://www.linkedin.com/in/christoph-dehner-794887158"
     },
     {
       "name": "Leander Mrowka",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "linkedin": "https://www.linkedin.com/in/leander-mrowka-a49107153"
     },
     {
       "name": "Louiza Ignatiou",
-      "role": "Master's Student"
+      "role": "Master's Student",
+      "startYear": 2020,
+      "startMonth": 10,
+      "endYear": 2021,
+      "endMonth": 8,
+      "linkedin": "https://www.linkedin.com/in/louiza-ignatiou"
     },
     {
       "name": "Carolina Cigankova",
@@ -1222,7 +1267,8 @@
       "startYear": 2024,
       "startMonth": 10,
       "endYear": 2025,
-      "endMonth": 8
+      "endMonth": 8,
+      "linkedin": "https://www.linkedin.com/in/cigankova"
     },
     {
       "name": "Şebnem Çam",
@@ -1230,7 +1276,8 @@
       "startYear": 2024,
       "startMonth": 5,
       "endYear": 2024,
-      "endMonth": 7
+      "endMonth": 7,
+      "linkedin": "https://www.linkedin.com/in/%C5%9Febnem-%C3%A7am-b02593289"
     },
     {
       "name": "Jakub Grzejdak",
@@ -1238,7 +1285,8 @@
       "startYear": 2024,
       "startMonth": 5,
       "endYear": 2024,
-      "endMonth": 7
+      "endMonth": 7,
+      "linkedin": "https://www.linkedin.com/in/jakub-grzejdak-6a502839a"
     },
     {
       "name": "Inés H. García-Plaza",
@@ -1253,19 +1301,22 @@
       "role": "Administration",
       "startYear": 2019,
       "startMonth": 12,
-      "endYear": 2021
+      "endYear": 2021,
+      "linkedin": "https://www.linkedin.com/in/ana-toman-fabjan-73b733117"
     },
     {
       "name": "Karen Biniossek",
       "role": "Administration",
       "startYear": 2019,
       "startMonth": 6,
-      "endYear": 2021
+      "endYear": 2021,
+      "linkedin": "https://www.linkedin.com/in/karen-biniossek-781451385"
     },
     {
       "name": "Suheda Erener",
       "title": "Dr.",
-      "role": "Research Associate"
+      "role": "Research Associate",
+      "linkedin": "https://www.linkedin.com/in/suheda-erener-phd"
     },
     {
       "name": "Leone Njeramba",

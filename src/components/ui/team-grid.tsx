@@ -7,7 +7,7 @@ import Image from "next/image";
 import { SectionLabel } from "./section-label";
 import { TeamMemberLinksRow } from "./team-member-links";
 import type { TeamMember } from "@/lib/team";
-import { cardDisplayName, formatFullName } from "@/lib/team";
+import { cardDisplayName, displayInitials, formatFullName } from "@/lib/team";
 
 const sectionOrder = [
   "Group Leader",
@@ -20,15 +20,6 @@ const sectionOrder = [
   "Scientist",
   "Master Students",
 ] as const;
-
-function initials(name: string) {
-  return name
-    .split(" ")
-    .filter((p) => p.length > 1)
-    .slice(0, 2)
-    .map((p) => p[0])
-    .join("");
-}
 
 function TeamAvatar({
   src,
@@ -51,7 +42,7 @@ function TeamAvatar({
       <div
         className={`${boxClass} flex items-center justify-center rounded-full bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)] text-xl font-semibold text-[var(--primary)] ring-1 ring-[var(--border)]`}
       >
-        {initials(alt)}
+        {displayInitials(alt)}
       </div>
     );
   }
@@ -79,7 +70,7 @@ function TeamCardContent({ member }: { member: TeamMember }) {
       <div className="mx-auto w-full max-w-[112px]">
         <TeamAvatar
           src={member.photo}
-          alt={formatFullName(member)}
+          alt={member.name}
           position={member.photoPosition ?? "center 20%"}
         />
       </div>
@@ -168,7 +159,7 @@ export function TeamGrid({ members }: { members: TeamMember[] }) {
             <div className="flex flex-col items-center px-6 pt-10 pb-8 sm:px-10 sm:pt-12">
               <TeamAvatar
                 src={active.photo}
-                alt={formatFullName(active)}
+                alt={active.name}
                 position={active.photoPosition ?? "center 20%"}
                 size="modal"
               />

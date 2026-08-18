@@ -350,8 +350,9 @@ body {
 }
 
 /* Altmetric donut scores are baked as dark pixels (often <img>), so fill: overrides
-   do nothing. On dark themes, sit the badge on a white disc — size unchanged. */
-html:not(.light):not(.paper) .altmetric-embed {
+   do nothing. On dark themes, sit the badge on a white disc — only when a donut exists. */
+html:not(.light):not(.paper) .altmetric-embed:has(img),
+html:not(.light):not(.paper) .altmetric-embed:has(svg) {
   background: #ffffff;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.9);

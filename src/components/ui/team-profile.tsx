@@ -3,7 +3,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { ContentPageShell } from "./content-page-shell";
 import type { TeamMember } from "@/lib/team";
-import { formatFullName } from "@/lib/team";
+import { displayInitials, formatFullName } from "@/lib/team";
 import { getProjectsForTeamMember, getPublicationCatalogForTeamMember } from "@/lib/projects";
 import { TeamProfileResearch } from "./team-profile-research";
 import { TeamMemberLinksRow, TeamContactInformation } from "./team-member-links";
@@ -33,12 +33,7 @@ function ProfileAvatar({ member }: { member: TeamMember }) {
   const alt = formatFullName(member);
 
   if (!member.photo) {
-    const initials = member.name
-      .split(" ")
-      .filter((p) => p.length > 1)
-      .slice(0, 2)
-      .map((p) => p[0])
-      .join("");
+    const initials = displayInitials(member.name);
 
     return (
       <div className="relative mx-auto aspect-square w-full max-w-[280px] overflow-hidden rounded-full bg-gradient-to-br from-[var(--primary)]/20 to-[var(--secondary)] ring-1 ring-[var(--border)] sm:mx-0">

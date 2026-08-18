@@ -19,10 +19,9 @@ function LinkedInIcon({ className }: { className?: string }) {
   );
 }
 
-/** Format display name — prepend Dr. title if present. */
+/** Display name without academic titles — role already conveys that. */
 export function formatAlumniName(entry: AlumniEntry): string {
-  const base = entry.name.replace(/^Dr\.?\s+/i, "").trim();
-  return entry.title === "Dr." ? `Dr. ${base}` : base;
+  return entry.name.replace(/^Dr\.?\s+/i, "").trim();
 }
 
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
@@ -37,8 +36,6 @@ function formatDuration(entry: AlumniEntry) {
   const start = fmtPeriod(entry.startMonth, entry.startYear);
   const end = fmtPeriod(entry.endMonth, entry.endYear);
   if (start && end) return `${start} - ${end}`;
-  if (end) return `Until ${end}`;
-  if (start) return `From ${start}`;
   return null;
 }
 

@@ -17,7 +17,7 @@ import {
 } from "@/lib/projects";
 import { getRelatedProjects } from "@/lib/project-media";
 import { extractDoi } from "@/lib/publications";
-import { AltmetricInit } from "@/components/ui/altmetric-badge";
+import { AltmetricInit, AltmetricBadge } from "@/components/ui/altmetric-badge";
 import { ProjectPreviewCard } from "@/components/ui/project-preview-card";
 
 export function generateStaticParams() {
@@ -198,19 +198,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
                       ) : (
                         <span />
                       )}
-                      {doi && (
-                        <div className="shrink-0" style={{ width: 38, height: 38 }}>
-                          <div
-                            className="altmetric-embed"
-                            data-badge-type="donut"
-                            data-doi={doi}
-                            data-condensed="true"
-                            data-hide-no-mentions="true"
-                            data-link-target="_blank"
-                            style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
-                          />
-                        </div>
-                      )}
+                      {doi ? <AltmetricBadge doi={doi} size="sm" className="shrink-0" /> : null}
                     </div>
                   </article>
                 );

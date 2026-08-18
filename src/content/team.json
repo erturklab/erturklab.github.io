@@ -282,12 +282,14 @@
     "photo": "/images/team/ying.jpg"
   },
   {
-    "slug": "jie-zhan",
-    "name": "Jie Zhan",
+    "slug": "jie-zhang",
+    "name": "Jie Zhang",
     "role": "Ph.D. Candidate",
     "section": "PhD Students",
     "profileTier": "page",
-    "publicationAuthorNames": [],
+    "publicationAuthorNames": [
+      "Jie Zhang"
+    ],
     "bio": "Accelerating tissue clearing for large specimens.",
     "biography": "I'm from Xinjiang, China. I studied bioengineering at Hubei University of Technology, then completed my master's in biological and pharmaceutical engineering at Northwestern Polytechnical University, focusing on polymer-based delivery systems for efficient RNA delivery.\n\nIn April 2024, I started my PhD studies at LMU and joined the Ertürk Lab. My work explores different conditions to accelerate the process of tissue clearing.\n\nIn my free time, I like hiking, swimming, and traveling.",
     "researchInterests": "Tissue clearing optimization, polymer delivery systems, and large-specimen imaging.",
@@ -699,11 +701,30 @@
     "name": "Sun Liuziyue",
     "role": "Master Student",
     "section": "Master Students",
-    "profileTier": "card",
-    "publicationAuthorNames": [],
+    "profileTier": "page",
+    "publicationAuthorNames": [
+      "Sun Liuziyue",
+      "Liuziyue Sun"
+    ],
     "bio": "Master's thesis on predicting LNP formulations; bioinformatics and machine learning.",
     "biography": "My name is Sun. I studied Biomedicine at Fudan University in Shanghai for my bachelor's. Now I am doing my master's in Biology at LMU, shifting more toward the interdisciplinary area of bioinformatics, machine learning, and human health.\n\nI joined the Ertürk Lab for my master's thesis, which is focused on the prediction task of different LNP formulations.",
     "researchInterests": "Bioinformatics, machine learning, human health, and LNP formulation prediction.",
+    "education": [
+      {
+        "period": "Present",
+        "description": "M.Sc. Biology, LMU Munich, Munich, Germany"
+      },
+      {
+        "period": "Bachelor's",
+        "description": "B.Sc. Biomedicine, Fudan University, Shanghai, China"
+      }
+    ],
+    "career": [
+      {
+        "period": "Present",
+        "description": "Master's thesis, Ertürk Lab, Institute for Intelligent Biotechnologies (iBIO), Helmholtz Munich"
+      }
+    ],
     "photo": "/images/team/sun-liuziyue.png",
     "photoPosition": "center 28%",
     "links": {

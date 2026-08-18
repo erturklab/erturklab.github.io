@@ -12,7 +12,7 @@ export interface TeamMember {
   name: string;
   role: string;
   section: string;
-  profileTier: "page" | "modal";
+  profileTier: "page" | "modal" | "card";
   /** Exact author strings as they appear on lab publications. */
   publicationAuthorNames?: string[];
   bio: string;
@@ -26,6 +26,25 @@ export interface TeamMember {
 }
 
 export const teamMembers = teamData as TeamMember[];
+
+const NAME_PARTICLES = new Set([
+  "de",
+  "da",
+  "do",
+  "dos",
+  "das",
+  "van",
+  "von",
+  "der",
+  "den",
+  "di",
+  "del",
+  "della",
+  "du",
+  "la",
+  "le",
+  "el",
+]);
 
 export function getTeamMember(slug: string): TeamMember | undefined {
   return teamMembers.find((m) => m.slug === slug);
@@ -41,4 +60,23 @@ export function formatFullName(member: Pick<TeamMember, "title" | "name">): stri
 
 export function cardDisplayName(member: Pick<TeamMember, "name">): string {
   return member.name;
+}
+
+/** First + last name initials, skipping titles and particles (De, van, …). */
+export function displayInitials(name: string): string {
+  const parts = name
+    .replace(/^(?:Prof\.|Dr\.)\s+/i, "")
+    .split(/\s+/)
+    .filter(Boolean);
+
+  if (parts.length === 0) return "";
+
+  const first = parts[0];
+  const last =
+    [...parts]
+      .reverse()
+      .find((part) => !NAME_PARTICLES.has(part.toLowerCase().replace(/\./g, ""))) ??
+    parts[parts.length - 1];
+
+  return `${first[0] ?? ""}${last[0] ?? ""}`.toUpperCase();
 }

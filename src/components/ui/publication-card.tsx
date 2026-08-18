@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 import { ArrowUpRight, ExternalLink } from "lucide-react";
 import { extractDoi } from "@/lib/publications";
@@ -9,14 +9,9 @@ import { getProjectForPublication, publicationProjectHref } from "@/lib/projects
 import { LocalVideoPlayer } from "./local-video-player";
 import { ShowcaseImage } from "./showcase-image";
 import { PublicationAuthors } from "./publication-authors";
+import { AltmetricBadge } from "./altmetric-badge";
 import { CARD_PREVIEW_PLAYBACK_RATE } from "@/lib/video";
 import { cn } from "@/lib/utils";
-
-declare global {
-  interface Window {
-    _altmetric_embed_init?: () => void;
-  }
-}
 
 interface PublicationCardProps {
   title: string;
@@ -47,23 +42,6 @@ export function PublicationCard({
   const doi = extractDoi(link);
   const poster = preview?.poster ?? image;
   const showMedia = Boolean(preview || image);
-
-  // Re-init Altmetric after client navigation (home / featured cards).
-  useEffect(() => {
-    if (!doi) return;
-    const run = () => {
-      if (typeof window._altmetric_embed_init === "function") {
-        window._altmetric_embed_init();
-      }
-    };
-    run();
-    const t1 = setTimeout(run, 200);
-    const t2 = setTimeout(run, 1200);
-    return () => {
-      clearTimeout(t1);
-      clearTimeout(t2);
-    };
-  }, [doi]);
 
   return (
     <article
@@ -158,36 +136,13 @@ export function PublicationCard({
                   >
                     Project page <ArrowUpRight className="h-3 w-3 shrink-0" />
                   </Link>
-                ) : doi ? (
-                  /* No project page → badge on the left */
-                  <div style={{ width: 38, height: 38 }}>
-                    <div
-                      className="altmetric-embed"
-                      data-badge-type="donut"
-                      data-doi={doi}
-                      data-condensed="true"
-                      data-hide-no-mentions="true"
-                      data-link-target="_blank"
-                      style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
-                    />
-                  </div>
-                ) : null}
+                ) : (
+                  <AltmetricBadge doi={doi} size="sm" />
+                )}
               </div>
               <div>
                 {/* Center badge only when project page also exists */}
-                {projectHrefValue && doi ? (
-                  <div style={{ width: 38, height: 38 }}>
-                    <div
-                      className="altmetric-embed"
-                      data-badge-type="donut"
-                      data-doi={doi}
-                      data-condensed="true"
-                      data-hide-no-mentions="true"
-                      data-link-target="_blank"
-                      style={{ transform: "scale(0.59)", transformOrigin: "top left", width: 64, height: 64, display: "block" }}
-                    />
-                  </div>
-                ) : null}
+                {projectHrefValue ? <AltmetricBadge doi={doi} size="sm" /> : null}
               </div>
               <div className="justify-self-end">
                 {link ? (
